@@ -1,3 +1,5 @@
+{{-- 
+NO USE FOR THIS PAGE IN MY PROJECT
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -97,4 +99,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}

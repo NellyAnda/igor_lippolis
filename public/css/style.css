@@ -1,0 +1,77 @@
+/* mobile first */
+
+* {
+  top: 0;
+  left: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Titillium Web';
+}
+
+section {
+  width: 100%;
+}
+
+h2, h3 {
+  font-family: 'Courgette';
+  color: #7BB03B;
+}
+
+img {
+  width: 100%;
+}
+
+label {
+  font-family: 'Courgette';
+  color: #000000;
+}
+
+input {
+  border: 3px solid #FEC84E;
+  
+}
+
+.colored_emphasis,
+.fire_emphasis,
+.timber_emphasis,
+.earth_emphasis,
+.water_emphasis,
+.metal_emphasis {
+  font-weight: bold;
+}
+
+.colored_emphasis,
+.earth_emphasis {
+  color: #FEC84E;
+}
+
+.fire_emphasis {
+  color: #F49845;
+}
+
+.timber_emphasis {
+  color: #7BB03B;
+}
+
+.water_emphasis {
+  color: #55B1F3;
+}
+
+.metal_emphasis {
+  color: #C4C4C4;
+}
+
+.dark_background {
+  background-color: #6D4227;
+  opacity: 85%;
+}
+
+.yin_yang_background {
+  background-image: url('./images/stones.jpg');
+  width: auto;
+}
+
+
+
