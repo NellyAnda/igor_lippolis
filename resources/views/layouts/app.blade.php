@@ -29,7 +29,7 @@
 					</div>
 			@endif
 
-			{{ __('Usted está conectado!') }}
+			{{-- {{ __('Usted está conectado!') }} --}}
 	</div>
 		{{-- I WILL PUT MY NAV HERE --}}
 		

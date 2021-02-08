@@ -19,6 +19,10 @@ h2, h3 {
   color: #7BB03B;
 }
 
+h2 {
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -26,11 +30,15 @@ img {
 label {
   font-family: 'Courgette';
   color: #000000;
+  font-size: 1rem;
+  padding: 10px 20px;
 }
 
 input {
   border: 3px solid #FEC84E;
-  
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .colored_emphasis,
@@ -38,7 +46,8 @@ input {
 .timber_emphasis,
 .earth_emphasis,
 .water_emphasis,
-.metal_emphasis {
+.metal_emphasis,
+.button_text {
   font-weight: bold;
 }
 
@@ -51,7 +60,8 @@ input {
   color: #F49845;
 }
 
-.timber_emphasis {
+.timber_emphasis,
+.button_text {
   color: #7BB03B;
 }
 
@@ -73,5 +83,14 @@ input {
   width: auto;
 }
 
+.button_text {
+  border: 3px solid #7bb03b;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 1rem;
+}
 
-
+.label_input_container {
+  display: flex;
+  flex-direction: column;
+}
