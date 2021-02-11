@@ -21,6 +21,7 @@
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
+	<header>
 	<div id="app">
 		<div class="card-body">
 			@if (session('status'))
@@ -31,9 +32,16 @@
 
 			{{-- {{ __('Usted está conectado!') }} --}}
 	</div>
+
+	<div>
+		@yield('image_header')
+	</div>
+
+		<nav>
 		{{-- I WILL PUT MY NAV HERE --}}
-		<img src="{{ asset(@yield('image_header'))}}" alt="@yield('image_alt')">
-		
+		</nav>
+	</header>
+
 		<main>
 			@yield('content')
 		</main>
