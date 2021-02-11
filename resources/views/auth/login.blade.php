@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('image_header', 'images/underground_index.png')
+@section('image_alt', 'imagen de un libro')
+		
+
+
 @section('content')
 <div class="container">
 	<div>

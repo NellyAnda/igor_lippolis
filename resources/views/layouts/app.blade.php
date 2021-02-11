@@ -32,6 +32,7 @@
 			{{-- {{ __('Usted está conectado!') }} --}}
 	</div>
 		{{-- I WILL PUT MY NAV HERE --}}
+		<img src="{{ asset(@yield('image_header'))}}" alt="@yield('image_alt')">
 		
 		<main>
 			@yield('content')
