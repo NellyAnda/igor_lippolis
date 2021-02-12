@@ -48,6 +48,8 @@
 			<div class="buttons_container">
 				<button type="submit" class="button_text">
 					{{ __('INICIAR SESIÓN') }}
+					{{-- mot de passe correct, redirection vers prise de rdv --}}
+
 				</button>
 			</div>
 		</div>
