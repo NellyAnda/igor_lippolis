@@ -16,7 +16,7 @@
 			@csrf
 			<div class="label_input_container">
 				<label for="email" class="">{{ __('Correo electronico') }}</label>
-				<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+				<input id="email" type="email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 				@error('email')
 				<span class="invalid-feedback" role="alert">
 					<strong>{{ $message }}</strong>
@@ -25,7 +25,7 @@
 			</div>
 			<div class="label_input_container">
 				<label for="password" class="">{{ __('Contraseña') }}</label>
-				<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+				<input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 				@error('password')
 				<span class="" role="alert">
 					<strong>{{ $message }}</strong>
@@ -45,7 +45,7 @@
 					{{ __('Recordarme') }}
 				</label>
 			</div>
-			<div class="buttons_container">
+			<div class="buttons_container align">
 				<button type="submit" class="button_text">
 					{{ __('INICIAR SESIÓN') }}
 					{{-- mot de passe correct, redirection vers prise de rdv --}}
