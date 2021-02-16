@@ -14,14 +14,15 @@
 			<p class="align">
 				<span class="emphasis">Ya tengo una cuenta</span>
 			</p>
-			<div class="buttons_container align">
+			<div class="align">
+				<a href="{{ route('login') }}">
 				<button type="submit" class="button_text">
-					{{ __('CONECTARSE') }}</button>
+					{{ __('CONECTARSE') }}</button></a>
 				</div>
 			</div>
 			<h2>Para pedir una cita, hazte una cuenta</h2>
 			<div class="registration_container">
-				<form method="POST" action="{{ route('register') }}">
+				<form method="POST" action="{{ route('register') }}" class="form_container">
 					@csrf
 					<div class="label_input_container">
 						<label for="name" class="">{{ __('Apellidos') }}</label>
@@ -60,7 +61,6 @@
 						</span>
 						@enderror
 					</div>	
-				
 
 					<div class="label_input_container">
 						<label for="email" class="">{{ __('Correo electronico') }}</label>
@@ -86,7 +86,7 @@
 					</div>
 
 
-					<div class="label_input_container">
+					<div class="label_input_container message_input">
 						<label for="message">{{ __('Mensaje') }}</label>
 						<input id="message" type="textarea" class="message" maxlength="1000" placeholder="Máximo 1000 caracteres" @error('Mensaje') is-invalid @enderror" name="message" value="{{ old('message') }}" required autocomplete="message">
 						@error('message')

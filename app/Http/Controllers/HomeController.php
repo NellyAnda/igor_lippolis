@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => ['home', 'acupuncture', 'therapeutic_technics', 'treatments']]);
     }
 
     /**
@@ -31,6 +31,14 @@ class HomeController extends Controller
         return view('acupuncture');
     }
 
-    
+    public function therapeutic_technics()
+    {
+        return view('therapeutic_technics');
+    }
+
+    public function treatments()
+    {
+        return view('treatments');
+    }
 
 }

@@ -96,7 +96,7 @@ input[type="checkbox"] {
 
 .connection_background_picture {
   background-image: url('/images/diary.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -107,6 +107,14 @@ input[type="checkbox"] {
 .registration_container {
   margin: 0 10%;
 }
+
+.form_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+} 
 
 .checkbox {
   width: 2%;
@@ -133,6 +141,7 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
+.login_label_input_container,
 .label_input_container,
 .connection_registration_container {
   display: flex;
@@ -154,8 +163,6 @@ input[type="checkbox"] {
 
 .message {
   height: 200px;
-  width: 100%;
-
 }
 
 @media screen and (min-width: 576px) {
@@ -164,6 +171,7 @@ input[type="checkbox"] {
     height: 350px;
   }
 
+  .login_label_input_container,
   .label_input_container,
   .checkbox_container {
     width: 70%;
@@ -174,14 +182,14 @@ input[type="checkbox"] {
   }
 
   .buttons_container {
-    margin-left: 15%;
     padding: 20px 0;
   }
 
   .connection_registration_container {
-    display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
+
 
 }
 
@@ -192,6 +200,7 @@ input[type="checkbox"] {
     height:420px;
   }
 
+  .login_label_input_container,
   .label_input_container,
   .checkbox_container {
     width: 60%;
@@ -200,6 +209,7 @@ input[type="checkbox"] {
   .connection_container {
     margin-left: 25%;
   }
+
 
 }
 
@@ -221,11 +231,15 @@ input[type="checkbox"] {
 
   .label_input_container,
   .checkbox_container {
-    width: 50%;
+    width: 35%;
   }
 
   .connection_container {
     margin-left: 30%;
+  }
+
+  .message_input {
+    width: 100%;
   }
 
 }

@@ -14,7 +14,7 @@
 	<div class="connection_container">
 		<form method="POST" action="{{ route('login') }}">
 			@csrf
-			<div class="label_input_container">
+			<div class="login_label_input_container">
 				<label for="email" class="">{{ __('Correo electronico') }}</label>
 				<input id="email" type="email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 				@error('email')
@@ -23,7 +23,7 @@
 				</span>
 				@enderror
 			</div>
-			<div class="label_input_container">
+			<div class="login_label_input_container">
 				<label for="password" class="">{{ __('Contraseña') }}</label>
 				<input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 				@error('password')
@@ -49,10 +49,9 @@
 				<button type="submit" class="button_text">
 					{{ __('INICIAR SESIÓN') }}
 					{{-- mot de passe correct, redirection vers prise de rdv --}}
-
 				</button>
 			</div>
-		</div>
+		</form>
 	</div>
-	@endsection
-	
+</div>
+@endsection
