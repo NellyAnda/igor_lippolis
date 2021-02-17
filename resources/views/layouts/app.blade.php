@@ -29,6 +29,14 @@
 							{{ session('status') }}
 					</div>
 			@endif
+		
+			<form action={{ route('logout') }} method="POST">
+				@csrf
+				<button type="submit" class="button_text">
+					{{ __('LOGOUT') }}
+				</button>
+		
+			</form>
 
 			{{-- {{ __('Usted está conectado!') }} --}}
 	</div>

@@ -116,7 +116,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
-
+.basic_theories_container,
 .connection_container,
 .registration_container {
   margin: 0 10%;
@@ -179,100 +179,104 @@ input[type="checkbox"] {
   height: 200px;
 }
 
-@media screen and (min-width: 576px) {
+.dark_background_top {
+  padding-top: 10%;
+}
 
+@media screen and (min-width: 576px) {
+  
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
     height: 350px;
   }
-
+  
   .login_label_input_container,
   .label_input_container,
   .checkbox_container {
     width: 70%;
   }
-
+  
   .connection_container {
     margin-left: 20%;
   }
-
+  
   .buttons_container {
     padding: 20px 0;
   }
-
+  
   .connection_registration_container {
     flex-direction: row;
     justify-content: space-around;
     margin: 10% 0;
   }
-
-
+  
+  
 }
 
 
 @media screen and (min-width: 768px) {
-
+  
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
     height:420px;
   }
-
+  
   .login_label_input_container,
   .label_input_container,
   .checkbox_container {
     width: 60%;
   }
-
+  
   .connection_container {
     margin-left: 25%;
   }
-
+  
   .connection_registration_container {
     margin: 8% 0;
     justify-content:space-evenly;
   }
-
-
+  
+  
 }
 
 
 @media screen and (min-width: 992px) {
-
+  
   h1 {
     font-size: 3rem;
     padding: 50px 0 0 70px; 
   }
-
+  
   h2{
     font-size: 2.5rem;
   }
-
+  
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
     height: 500px;
   }
-
+  
   .label_input_container,
   .checkbox_container {
     width: 35%;
   }
-
+  
   .connection_container {
     margin-left: 30%;
   }
-
+  
   .message_input {
     width: 100%;
   }
-
+  
 }
 
 
 @media screen and (min-width: 1200px) {
-
+  
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
@@ -284,28 +288,28 @@ input[type="checkbox"] {
 
 
 @media screen and (min-width: 1400px) {
-
+  
   h1 {
     font-size: 2.5rem;
   }
-
+  
   h2 {
     font-size: 2rem;
   }
-
+  
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
     height: 800px;
     background-size: cover;
   }
-
+  
   .checkbox {
     width: 1%;
   }
-
+  
   .connection_registration_container {
     margin: 6% 0;
   }
-
+  
 } 

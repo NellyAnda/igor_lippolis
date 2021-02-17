@@ -8,8 +8,9 @@
 
 
 @section('content')
-    <h2>Teorias basicas de la medicina tradicional China</h2>
-      <h3>Yin Yang</h3>
+  <h2>Teorias basicas de la medicina tradicional China</h2>
+    <h3>Yin Yang</h3>
+    <div class="basic_theories_container">
       <div>
         <p>En un principio , Yin Yang se empleaban para indicar la posición de un lugar respecto al Sol (Yang era el lado soleado y Yin el sombreado), observando la alternancia de los fenómenos naturales, la sucesión del día y la noche...</p>
         <img src="{{asset('images/yin_yang.png')}}" alt="imagen en blanco y negro del símbolo de yin yang">
@@ -32,8 +33,9 @@
       <div>
         <p>Por ejemplo, a la hora de identificar un cuadro clínico de un paciente a menudo se aplican unos principios básicos que orientan el terapeuta en su diagnóstico. Dichos principios básicos incluyen Yin/Yang como elemento clasificador pero también tienen en cuenta otros aspectos.</p>
       </div>
+    </div>
     <h2>Los Cinco Elementos o Cinco Fases (Wu Xing)</h2>
-    <div>
+    <div class="basic_theories_container">
       <div>
         <img src="{{asset('images/five_elements.png')}}" alt="">
       </div>
@@ -51,8 +53,8 @@
         </div>
       </div>
     </div>
-    <div class="dark_background">
-      <div>
+    <div class="dark_background dark_background_top">
+      <div class="basic_theories_container">
         <div>
           <img src="{{asset('images/timber_element.png')}}" alt="imagen del interior de un arbol, madera">
           <p><span class="timber_emphasis">PRIMAVERA</span> : corresponde al <span class="timber_emphasis">elemento Madera</span>, los órganos correspondientes son el <span class="timber_emphasis">hígado y vesícula biliar</span>, el color es el verde. El movimiento de la energía es ascenso y germinación. Es recomendable <span class="timber_emphasis">tomar frutas, alimentos de sabor amargo (acelgas, ensaladas,espinacas..), ácido (naturales no industriales) y dulce (patatas, boniatos, zanahorias...)</span>.</p>
@@ -68,7 +70,7 @@
           amarillo o naranja. El clima dominante es la humedad, se recomiendan alimentos <span class="earth_emphasis">picantes y frescos, frutas y verduras de temporada alternando alimentos neutros insípidos y ligeramente aromáticos</span>. Evitar la ingesta de productos lácteos y grasos que debilitan el bazo.</p>
         </div>
       </div>
-      <div>
+      <div class="basic_theories_container">
         <div>
           <img src="{{asset('images/water_element.png')}}" alt="imagen de una ola, agua">
           <p><span class="water_emphasis">INVIERNO</span> : corresponde al <span class="water_emphasis">elemento Agua</span>, órganos correspondientes son el <span class="water_emphasis">riñón y la vejiga</span>, el color es el negro.<br>
@@ -83,5 +85,4 @@
         </div>
       </div>
     </div>
-
 @endsection
