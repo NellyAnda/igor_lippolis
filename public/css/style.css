@@ -89,19 +89,33 @@ input[type="checkbox"] {
   opacity: 85%;
 }
 
-.yin_yang_background {
-  background-image: url('./images/stones.jpg');
-  width: auto;
-}
-
+.homepage_background_picture,
+.basic_theories_background_picture,
 .connection_background_picture {
-  background-image: url('/images/diary.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 250px;
 }
+
+.homepage_background_picture {
+  background-image: url('/images/japanese_garden_fountain.jpg');
+}
+
+.basic_theories_background_picture {
+  background-image: url('/images/sunny_bamboo_grove.jpg');
+}
+
+.connection_background_picture {
+  background-image: url('/images/diary.jpg');
+}
+
+.yin_yang_background {
+  background-image: url('./images/stones.jpg');
+  width: auto;
+}
+
 
 .connection_container,
 .registration_container {
@@ -167,6 +181,8 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 576px) {
 
+  .homepage_background_picture,
+  .basic_theories_background_picture,
   .connection_background_picture {
     height: 350px;
   }
@@ -197,6 +213,8 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 768px) {
 
+  .homepage_background_picture,
+  .basic_theories_background_picture,
   .connection_background_picture {
     height:420px;
   }
@@ -231,6 +249,8 @@ input[type="checkbox"] {
     font-size: 2.5rem;
   }
 
+  .homepage_background_picture,
+  .basic_theories_background_picture,
   .connection_background_picture {
     height: 500px;
   }
@@ -253,6 +273,8 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 1200px) {
 
+  .homepage_background_picture,
+  .basic_theories_background_picture,
   .connection_background_picture {
     height: 580px;
     background-size: cover;
@@ -271,6 +293,8 @@ input[type="checkbox"] {
     font-size: 2rem;
   }
 
+  .homepage_background_picture,
+  .basic_theories_background_picture,
   .connection_background_picture {
     height: 800px;
     background-size: cover;

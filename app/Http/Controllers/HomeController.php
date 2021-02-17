@@ -26,6 +26,11 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function basic_theories()
+    {
+        return view('basic_theories');
+    }
+
     public function acupuncture()
     {
         return view('acupuncture');

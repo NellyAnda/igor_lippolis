@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
-
+Route::get('/basic_theories', 'HomeController@basic_theories')->name('basic_theories');
 Route::get('/acupuncture', 'HomeController@acupuncture')->name('acupuncture');
 Route::get('/therapeutic_technics', 'HomeController@therapeutic_technics')->name('therapeutic_technics');
 Route::get('/treatments', 'HomeController@treatments')->name('treatments');
