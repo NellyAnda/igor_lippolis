@@ -188,6 +188,7 @@ input[type="checkbox"] {
   .connection_registration_container {
     flex-direction: row;
     justify-content: space-around;
+    margin: 10% 0;
   }
 
 
@@ -208,6 +209,11 @@ input[type="checkbox"] {
 
   .connection_container {
     margin-left: 25%;
+  }
+
+  .connection_registration_container {
+    margin: 8% 0;
+    justify-content:space-evenly;
   }
 
 
@@ -249,6 +255,7 @@ input[type="checkbox"] {
 
   .connection_background_picture {
     height: 580px;
+    background-size: cover;
   }
   
 }
@@ -266,10 +273,15 @@ input[type="checkbox"] {
 
   .connection_background_picture {
     height: 800px;
+    background-size: cover;
   }
 
   .checkbox {
     width: 1%;
+  }
+
+  .connection_registration_container {
+    margin: 6% 0;
   }
 
 } 
