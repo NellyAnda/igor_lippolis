@@ -204,6 +204,15 @@ input[type="checkbox"] {
   padding: 8% 0;
 }
 
+.basic_theories_containers ul {
+  padding: 0 8%;
+}
+
+.basic_theories_containers li {
+  padding: 8% 0;
+  list-style-position: inside;
+}
+
 @media screen and (min-width: 576px) {
   
   .homepage_background_picture,
