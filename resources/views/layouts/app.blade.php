@@ -22,8 +22,7 @@
 </head>
 <body>
 	<header>
-	<div id="app">
-		<div class="card-body">
+		<div class="top_banner">
 			@if (session('status'))
 					<div class="alert alert-success" role="alert">
 							{{ session('status') }}

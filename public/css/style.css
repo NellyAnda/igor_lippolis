@@ -20,14 +20,19 @@ h1 {
   font-size: 2rem;
 }
 
-h2, h3 {
-  color: #7BB03B;
-}
-
 h2 {
   text-align: center;
   margin: 40px 20px;
   font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 15% 10% 10% 10%;
+}
+
+h2, h3 {
+  color: #7BB03B;
 }
 
 img {
@@ -49,6 +54,11 @@ input {
 
 input[type="checkbox"] {
   outline: 2px solid #7BB03B;
+}
+
+.top_banner {
+  height: 20px;
+  position: fixed;
 }
 
 .colored_emphasis,
@@ -87,6 +97,8 @@ input[type="checkbox"] {
 .dark_background {
   background-color: #6D4227;
   opacity: 85%;
+  padding-top: 10%;
+  color: #FFFFFF;
 }
 
 .homepage_background_picture,
@@ -111,12 +123,7 @@ input[type="checkbox"] {
   background-image: url('/images/diary.jpg');
 }
 
-.yin_yang_background {
-  background-image: url('./images/stones.jpg');
-  width: auto;
-}
-
-.basic_theories_container,
+.basic_theories_containers,
 .connection_container,
 .registration_container {
   margin: 0 10%;
@@ -157,9 +164,17 @@ input[type="checkbox"] {
 
 .login_label_input_container,
 .label_input_container,
-.connection_registration_container {
+.connection_registration_container,
+.five_elements_containers,
+.yin_yang_containers {
   display: flex;
   flex-direction: column;
+}
+
+.five_elements_containers,
+.yin_yang_containers {
+  align-items: center;
+  padding-bottom: 10%;
 }
 
 .label_input_container {  
@@ -179,8 +194,14 @@ input[type="checkbox"] {
   height: 200px;
 }
 
-.dark_background_top {
-  padding-top: 10%;
+.five_elements_pictures {
+  width: 150px;
+  padding: 5% 0 10% 0;
+}
+
+.yin_yang_pictures {
+  width: 200px;
+  padding: 8% 0;
 }
 
 @media screen and (min-width: 576px) {
