@@ -20,7 +20,7 @@
     En mi adolescencia seguí estudiando por mi cuenta la fitoterapia y otras practicas como el Yoga y el Tai chi hasta encontrar y consolidar mi formación como medico tradicional chino.</p>
   </div>
 </div>
-<div class="dark_background">
+<div class="dark_background top_spacing">
   <h2>Origen de la Medicina Tradicional China</h2>
   <div>
     <div>

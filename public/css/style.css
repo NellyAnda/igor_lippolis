@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  margin: 15% 10% 10% 10%;
+  margin: 15% 10% 5% 10%;
 }
 
 h2, h3 {
@@ -97,8 +97,15 @@ input[type="checkbox"] {
 .dark_background {
   background-color: #6D4227;
   opacity: 85%;
-  padding-top: 10%;
   color: #FFFFFF;
+}
+
+.top_spacing {
+  padding-top: 10%;
+}
+
+.bottom_spacing {
+  padding-bottom: 10%;
 }
 
 .homepage_background_picture,
@@ -125,7 +132,8 @@ input[type="checkbox"] {
 
 .basic_theories_containers,
 .connection_container,
-.registration_container {
+.registration_container,
+.yin_yang_containers {
   margin: 0 10%;
 }
 
@@ -174,7 +182,6 @@ input[type="checkbox"] {
 .five_elements_containers,
 .yin_yang_containers {
   align-items: center;
-  padding-bottom: 10%;
 }
 
 .label_input_container {  
@@ -201,6 +208,14 @@ input[type="checkbox"] {
 
 .yin_yang_pictures {
   width: 200px;
+}
+
+.five_elements_picture {
+  width: 100%;
+}
+
+.yin_yang_pictures,
+.five_elements_picture {
   padding: 8% 0;
 }
 
@@ -239,20 +254,36 @@ input[type="checkbox"] {
     flex-direction: row;
     justify-content: space-around;
     margin: 10% 0;
+  }  
+
+  .basic_theories_containers li {
+    padding: 5% 0;
   }
-  
-  
+
+  .top_spacing {
+    padding-top: 5%;
+  }
+
+  .bottom_spacing {
+    padding-bottom: 5%;
+  }
 }
 
 
 @media screen and (min-width: 768px) {
-  
+
+  h3 {
+    margin: 9% 10% 5% 10%;
+  }
+
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
     height:420px;
+    background-size: cover;
   }
-  
+
+ 
   .login_label_input_container,
   .label_input_container,
   .checkbox_container {
@@ -268,7 +299,30 @@ input[type="checkbox"] {
     justify-content:space-evenly;
   }
   
-  
+  .yin_yang_containers {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 5%;
+  }
+
+  .yin_yang_containers p {
+    width: 30%;
+  }
+
+  .basic_theories_containers li {
+    padding: 3% 0;
+  }
+
+  .yin_yang_pictures,
+  .five_elements_picture {
+    padding: 0;
+  }
+
+  .five_elements_pictures {
+    width: 150px;
+    padding: 5% 0;
+  }
+
 }
 
 
@@ -279,10 +333,14 @@ input[type="checkbox"] {
     padding: 50px 0 0 70px; 
   }
   
-  h2{
+  h2 {
     font-size: 2.5rem;
   }
   
+  h3 {
+    font-size: 2rem;
+  }
+
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture {
@@ -301,6 +359,7 @@ input[type="checkbox"] {
   .message_input {
     width: 100%;
   }
+
   
 }
 
