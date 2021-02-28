@@ -41,19 +41,19 @@
     </div>
     <h3>Los Cinco Elementos o Cinco Fases (Wu Xing)</h3>
     <div class="five_elements_background_picture">
-    <div class="basic_theories_containers">
+    <div>
       <div>
         <img src="{{asset('images/five_elements.png')}}" class="five_elements_picture" alt="images de los cinco elementos o cinco fases">
       </div>
       <div>
-        <div>
+        <div class="fire_element">
           <p class="five_elements_text top_spacing bottom_spacing"><span class="fire_emphasis">Fuego</span> : se relaciona con el Corazón y el sabor amargo. Su color correspondiente es el rojo y su estación es el <span class="fire_emphasis">verano</span></p>
         </div>
-        <div>
+        <div class="timber_earth_elements">
           <p class="five_elements_text bottom_spacing"><span class="timber_emphasis">Madera</span> : se relaciona con el hígado, el color verde y la <span class="timber_emphasis">primavera</span>, el sabor es el ácido</p>
           <p class="five_elements_text bottom_spacing"><span class="earth_emphasis">Tierra</span> : es el elemento del Bazo, los meses, <span class="earth_emphasis">abril</span>, <span class="earth_emphasis">julio</span>, <span class="earth_emphasis">octubre</span> y <span class="earth_emphasis">enero</span>, corresponderían a la tierra, periodos de transición entre estaciones. Su sabor es el dulce</p>
         </div>
-        <div>
+        <div class="water_metal_elements">
           <p class="five_elements_text bottom_spacing"><span class="water_emphasis">Agua</span> : su órgano correspondiente es el Riñón, la estación correspondiente el <span class="water_emphasis">invierno</span> y el sabor es el salado</p>
           <p class="five_elements_text bottom_spacing"><span class="metal_emphasis">Metal</span> : se relaciona con el Pulmón,su color es el gris, la estación del año es el <span class="metal_emphasis">otoño</span> y el sabor es el picante</p>
         </div>
@@ -61,8 +61,8 @@
     </div>
     </div>
     <div class="dark_background top_spacing">
-      <div class="basic_theories_containers">
-        <div>
+      <div>
+        <div class="five_elements_main_container">
           <div class="five_elements_containers bottom_spacing">
             <img src="{{asset('images/timber_element.png')}}" class="five_elements_pictures" alt="imagen del interior de un arbol, madera">
             <p><span class="timber_emphasis">PRIMAVERA</span> : corresponde al <span class="timber_emphasis">elemento Madera</span>, los órganos correspondientes son el <span class="timber_emphasis">hígado y vesícula biliar</span>, el color es el verde. El movimiento de la energía es ascenso y germinación. Es recomendable <span class="timber_emphasis">tomar frutas, alimentos de sabor amargo (acelgas, ensaladas,espinacas..), ácido (naturales no industriales) y dulce (patatas, boniatos, zanahorias...)</span>.</p>
@@ -78,7 +78,7 @@
             amarillo o naranja. El clima dominante es la humedad, se recomiendan alimentos <span class="earth_emphasis">picantes y frescos, frutas y verduras de temporada alternando alimentos neutros insípidos y ligeramente aromáticos</span>. Evitar la ingesta de productos lácteos y grasos que debilitan el bazo.</p>
           </div>
         </div>
-        <div>
+        <div class="five_elements_main_container">
           <div class="five_elements_containers bottom_spacing">
             <img src="{{asset('images/water_element.png')}}" class="five_elements_pictures" alt="imagen de una ola, agua">
             <p><span class="water_emphasis">INVIERNO</span> : corresponde al <span class="water_emphasis">elemento Agua</span>, órganos correspondientes son el <span class="water_emphasis">riñón y la vejiga</span>, el color es el negro.<br>
