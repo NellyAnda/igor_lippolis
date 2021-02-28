@@ -6,7 +6,6 @@
 </div>
 @endsection
 
-
 @section('content')
   <h2>Teorias basicas de la medicina tradicional China</h2>
     <h3>Yin Yang</h3>
