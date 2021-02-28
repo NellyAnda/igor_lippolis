@@ -12,18 +12,18 @@
     <h3>Yin Yang</h3>
     <div>
       <div class="yin_yang_containers bottom_spacing">
-        <p>En un principio , Yin Yang se empleaban para indicar la posición de un lugar respecto al Sol (Yang era el lado soleado y Yin el sombreado), observando la alternancia de los fenómenos naturales, la sucesión del día y la noche...</p>
+        <p>En un principio, Yin Yang se empleaban para indicar la posición de un lugar respecto al Sol (Yang era el lado soleado y Yin el sombreado), observando la alternancia de los fenómenos naturales, la sucesión del día y la noche...</p>
         <img src="{{asset('images/yin_yang.png')}}" class="yin_yang_pictures" alt="imagen en blanco y negro del símbolo de yin yang">
-        <p>Por ejemplo, una moneda tiene dos caras. La dualidad integrada en un mismo ‘uno’ representa el núcleo de la teoría del Yin Yang. A partir de hay, se dedujo que todo fenómeno de la naturaleza tenía su lado contrario con el que formaba una unidad, un todo. Estos principios se denominaron Yin y Yang.</p>
+        <p>Por ejemplo, una moneda tiene dos caras. La dualidad integrada en un mismo ‘uno’ representa el núcleo de la teoría del Yin Yang. A partir de ahí, se dedujo que todo fenómeno de la naturaleza tenía su lado contrario con el que formaba una unidad, un todo. Estos principios se denominaron Yin y Yang.</p>
       </div>
     </div>  
-      <div class="yin_yang_background">
-        <img src="{{asset('images/stones.jpg')}}" alt="imagen de una pila de pedras con un fundo de naturaleza">
-        <div class="basic_theories_containers top_spacing"> 
-          <p>Al Yin se relacionaron todos los aspectos aparentemente pasivos, lo que es calmado, oscuro, húmedo, sensitivo y los periodos de gestación y fertilidad asociados con la condición femenina. Igualmente,los antiguos asociaron a Yang todo lo opuesto como movimiento, caliente, y todos los aspectos generativos relacionados con la condición masculina. Sus relaciones se expresan en las Cuatro Leyes Básicas de la Teoría de Yin/Yang.</p>
+      <div class="stones_background_picture">
+        <img src="{{asset('images/stones.png')}}" class="stones_picture" alt="imagen de una pila de pedras con un fundo de naturaleza">
+        <div class="basic_theories_containers top_spacing bottom_spacing"> 
+          <p>Al Yin se relacionaron todos los aspectos aparentemente pasivos, lo que es calmado, oscuro, húmedo, sensitivo y los periodos de gestación y fertilidad asociados con la condición femenina. Igualmente, los antiguos asociaron a Yang todo lo opuesto como movimiento, caliente, y todos los aspectos generativos relacionados con la condición masculina. Sus relaciones se expresan en las Cuatro Leyes Básicas de la Teoría de Yin/Yang.</p>
           <ul>
-            <li>Antagonismo e inhibición mutua : si Yin crece, Yang desciende y viceversa. Por ello, la esencia de la patología es el desequilibrio de Yin/Yang.</li>
-            <li>Tienen el mismo origen y se generan mutuamente Son parte del mismo todo, y cada uno constituye la base del otro,es decir, no pueden existir separadamente.</li>
+            <li>Antagonismo e inhibición mutua: si Yin crece, Yang desciende y viceversa. Por ello, la esencia de la patología es el desequilibrio de Yin/Yang.</li>
+            <li>Tienen el mismo origen y se generan mutuamente Son parte del mismo todo, y cada uno constituye la base del otro, es decir, no pueden existir separadamente.</li>
             <li>Sus disminuciones e incrementos están en equilibrio</li>
             <li>Se transforma el uno en el otro : el Yin y el Yang no están siempre estáticos, sino que se mantienen en constante movimiento de transformación pasando de Yin a Yang y viceversa.</li>
           </ul>
@@ -40,6 +40,7 @@
       </div>
     </div>
     <h3>Los Cinco Elementos o Cinco Fases (Wu Xing)</h3>
+    <div class="five_elements_background_picture">
     <div class="basic_theories_containers">
       <div>
         <img src="{{asset('images/five_elements.png')}}" class="five_elements_picture" alt="images de los cinco elementos o cinco fases">
@@ -57,6 +58,7 @@
           <p class="five_elements_text bottom_spacing"><span class="metal_emphasis">Metal</span> : se relaciona con el Pulmón,su color es el gris, la estación del año es el <span class="metal_emphasis">otoño</span> y el sabor es el picante</p>
         </div>
       </div>
+    </div>
     </div>
     <div class="dark_background top_spacing">
       <div class="basic_theories_containers">
