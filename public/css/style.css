@@ -475,7 +475,11 @@ input[type="checkbox"] {
   }
 
   .basic_theories_containers {
-    margin: 0 5%;
+    margin: 0 6%;
+  }
+
+  .basic_theories_containers ul {
+    padding: 0 15% 0 5%;
   }
 
   .timber_earth_elements,
@@ -498,6 +502,10 @@ input[type="checkbox"] {
   .connection_background_picture {
     height: 800px;
     background-size: cover;
+  }
+
+  .basic_theories_containers {
+    margin: 0 7%;
   }
   
   .checkbox {
