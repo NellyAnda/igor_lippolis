@@ -405,7 +405,7 @@ input[type="checkbox"] {
 
   .fire_element {
     margin-left: 20%;
-    width: 100%;
+    width: 80%;
   }
 
   .timber_earth_elements,
@@ -415,10 +415,12 @@ input[type="checkbox"] {
 
   .timber_earth_elements {
     margin: 0 2%;
+    padding-top: 9%;
   }
 
   .water_metal_elements {
-    margin: 0 5%;
+    margin: 0 8%;
+    padding-top: 1%;
   }
 
   .five_elements_containers {
@@ -442,6 +444,10 @@ input[type="checkbox"] {
   .five_elements_main_container:first-child > .five_elements_containers:first-child,
   .five_elements_main_container:first-child > .five_elements_containers:last-child {
     padding-top: 25%;
+  }
+
+  .five_elements_background_picture {
+    height: 500px;
   }
 
 }
@@ -472,6 +478,11 @@ input[type="checkbox"] {
     margin: 0 5%;
   }
 
+  .timber_earth_elements,
+  .water_metal_elements {
+    padding-top: 5%;
+  }
+
   .five_elements_main_container:first-child > .five_elements_containers:first-child,
   .five_elements_main_container:first-child > .five_elements_containers:last-child {
     padding-top: 20%;
@@ -496,5 +507,30 @@ input[type="checkbox"] {
   .connection_registration_container {
     margin: 6% 0;
   }
+
+  .five_elements_background_picture {
+    height: 600px;
+  }
+
+  .water_metal_elements {
+    padding-top: 8%;
+  }
+
+  .fire_element {
+    margin-left: 25%;
+    width: 75%;
+  }
   
+  .timber_earth_elements {
+    margin: 0 3%;
+  }
+
+  .water_metal_elements {
+    margin: 0 10%;
+  }
+
+  .stones_background_picture {
+    background-size: cover;
+  }
+
 } 
