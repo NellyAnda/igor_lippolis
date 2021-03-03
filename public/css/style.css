@@ -248,6 +248,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 576px) {
+
+  h3 {
+    margin-top: 10%;
+  }
   
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -287,6 +291,12 @@ input[type="checkbox"] {
   .bottom_spacing {
     padding-bottom: 5%;
   }
+
+  .acupuncture_picture {
+    width: 60%;
+    margin: 5% 20% 0 20%;
+  }
+
 }
 
 

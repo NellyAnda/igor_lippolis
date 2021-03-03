@@ -15,7 +15,7 @@
 
 <div class="dark_background acupuncture_top_container">
   <div>
-    <img src="{{asset('images/facial_acupuncture.png')}}" class="" alt="imagen de dos maniquíes que muestran puntos de acupuntura">
+    <img src="{{asset('images/facial_acupuncture.png')}}" class="acupuncture_picture" alt="imagen de dos maniquíes que muestran puntos de acupuntura">
   </div>
   <div class="bottom_spacing acupuncture_text_containers">
     <h3 class="align">Acupuntura Craneal</h3>
@@ -38,7 +38,7 @@
   </div>
 </div>
 <div class="buttons_container align">
-  <a href="{{ route('appointments') }}">
+  <a href="{{ route('home') }}">
     <button type="submit" class="button_text">{{ __('PEDIR UNA CITA') }}</button> 
   </a>
 </div>  
