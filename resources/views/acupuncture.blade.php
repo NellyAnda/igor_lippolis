@@ -37,7 +37,7 @@
     <img src="{{asset('images/head_massage.png')}}" class="top_spacing" alt="imagen de una mujer recibiendo un masaje de cabeza">
   </div>
 </div>
-<div class="buttons_container align">
+<div class="buttons_container align top_spacing bottom_spacing">
   <a href="{{ route('home') }}">
     <button type="submit" class="button_text">{{ __('PEDIR UNA CITA') }}</button> 
   </a>
