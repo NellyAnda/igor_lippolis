@@ -2,7 +2,7 @@
 
 @section('image_header')
 <div class="basic_theories_background_picture">
-	<h1>Teorias basicas de la medicina tradicional China</h1>
+	<h1>Teorias basicas de<br/> la medicina tradicional China</h1>
 </div>
 @endsection
 
