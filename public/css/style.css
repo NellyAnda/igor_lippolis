@@ -56,6 +56,11 @@ input[type="checkbox"] {
   outline: 2px solid #7BB03B;
 }
 
+.acupuncture_bottom_container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .top_banner {
   height: 20px;
   position: fixed;
@@ -142,7 +147,8 @@ input[type="checkbox"] {
 .five_elements_main_container,
 .fire_element,
 .timber_earth_elements,
-.water_metal_elements {
+.water_metal_elements,
+.acupuncture_text_containers {
   margin: 0 10%;
 }
 
@@ -291,13 +297,15 @@ input[type="checkbox"] {
   }
 
   .homepage_background_picture,
-  .basic_theories_background_picture,
-  .connection_background_picture,
-  .acupuncture_background_picture {
+    .connection_background_picture {
     height:420px;
     background-size: cover;
   }
 
+  .basic_theories_background_picture,
+  .acupuncture_background_picture {
+    background-size: contain;
+  }
  
   .login_label_input_container,
   .label_input_container,

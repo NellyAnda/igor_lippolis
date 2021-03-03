@@ -21,4 +21,5 @@ Route::get('/acupuncture', 'HomeController@acupuncture')->name('acupuncture');
 Route::get('/therapeutic_technics', 'HomeController@therapeutic_technics')->name('therapeutic_technics');
 Route::get('/treatments', 'HomeController@treatments')->name('treatments');
 
+
 Route::get('/', 'HomeController@index')->name('home');
