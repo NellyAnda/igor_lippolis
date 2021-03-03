@@ -67,7 +67,7 @@ input[type="checkbox"] {
 .earth_emphasis,
 .water_emphasis,
 .metal_emphasis,
-.emphasis,
+.light_emphasis,
 .button_text {
   font-weight: bold;
 }
@@ -94,10 +94,19 @@ input[type="checkbox"] {
   color: #C4C4C4;
 }
 
+.light_emphasis {
+  color: #FFFFFF;
+}
+
 .dark_background {
   background-color: #6D4227;
   opacity: 85%;
   color: #FFFFFF;
+}
+
+.light_background {
+  background-color: #FEC84E;
+  opacity: 85%;
 }
 
 .top_spacing {
@@ -111,7 +120,8 @@ input[type="checkbox"] {
 .homepage_background_picture,
 .basic_theories_background_picture,
 .connection_background_picture,
-.acupuncture_background_picture {
+.acupuncture_background_picture,
+.therapeutic_techniques_background_picture {
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -136,7 +146,7 @@ input[type="checkbox"] {
 }
 
 .therapeutic_techniques_background_picture {
-  background-image: url('/images/chinese_medicine.jpg');
+  background-image: url('/images/chinese_medicine_cupboard.jpg');
 }
 
 .basic_theories_containers,
@@ -261,7 +271,8 @@ input[type="checkbox"] {
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
-  .acupuncture_background_picture {
+  .acupuncture_background_picture,
+  .therapeutic_techniques_background_picture {
     height: 350px;
   }
   
@@ -321,13 +332,14 @@ input[type="checkbox"] {
   }
 
   .homepage_background_picture,
-    .connection_background_picture {
+  .connection_background_picture {
     height:420px;
     background-size: cover;
   }
 
   .basic_theories_background_picture,
-  .acupuncture_background_picture {
+  .acupuncture_background_picture,
+  .therapeutic_techniques_background_picture {
     background-size: contain;
   }
  
@@ -399,7 +411,8 @@ input[type="checkbox"] {
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
-  .acupuncture_background_picture {
+  .acupuncture_background_picture,
+  .therapeutic_techniques_background_picture {
     height: 500px;
   }
   
@@ -535,7 +548,8 @@ input[type="checkbox"] {
 
   .homepage_background_picture,
   .basic_theories_background_picture,
-  .connection_background_picture {
+  .connection_background_picture,
+  .therapeutic_techniques_background_picture {
     height: 580px;
     background-size: cover;
   }
@@ -587,7 +601,8 @@ input[type="checkbox"] {
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
-  .acupuncture_background_picture {
+  .acupuncture_background_picture,
+  .therapeutic_techniques_background_picture {
     height: 800px;
     background-size: cover;
   }
