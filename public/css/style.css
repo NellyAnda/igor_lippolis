@@ -392,19 +392,6 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 992px) {
 
-  /* h1 {
-    font-size: 3rem;
-    padding: 50px 0 0 70px; 
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-  }
-  
-  h3 {
-    font-size: 2rem;
-  } */
-
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
@@ -512,6 +499,23 @@ input[type="checkbox"] {
     height: 500px;
   }
 
+  .acupuncture_top_container .acupuncture_text_containers,
+  .acupuncture_bottom_container .acupuncture_text_containers {
+    width: 60%;
+  } 
+
+  .acupuncture_bottom_container .acupuncture_text_containers {
+    margin: 0 5%;
+  }
+
+  .acupuncture_bottom_container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .acupuncture_bottom_container img {
+    width: 90%;
+  }
 }
 
 

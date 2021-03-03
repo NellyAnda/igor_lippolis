@@ -8,7 +8,7 @@
 
 @section('content')
 <h2>Acupuntura</h2>
-<div class="acupuncture_text_containers">
+<div class="acupuncture_text_containers top_spacing">
   <p>La <span class="colored_emphasis">acupuntura</span> emplea finísimas agujas metálicas sobre puntos especiales de la piel con el objetivo de <span class="colored_emphasis">equilibrar el organismo</span>. Es aplicable a todo tipo de patologías, algunos ejemplos son <span class="colored_emphasis">enfermedades respiratorias</span> (sinusitis, rinitis, resfriado común, asma o bronquitis), <span class="colored_emphasis">enfermedades oftalmológicas</span> como conjuntivitis y cataratas, <span class="colored_emphasis">problemas neurológicos</span> como dolor de cabeza o migraña, <span class="colored_emphasis">problemas gastrointestinales</span> (acidez en el estómago, úlcera duodenal, estreñimiento), <span class="colored_emphasis">problemas ortopédicos</span> (dolor ciático, lumbago, artritis reumatoide), <span class="colored_emphasis">trastornos del sueño</span>.</p>
   <p class="treatment_duration top_spacing bottom_spacing">Duración aproximada de tratamiento : 20/30min</p>
 </div>
