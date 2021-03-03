@@ -36,9 +36,9 @@ class HomeController extends Controller
         return view('acupuncture');
     }
 
-    public function therapeutic_technics()
+    public function therapeutic_techniques()
     {
-        return view('therapeutic_technics');
+        return view('therapeutic_techniques');
     }
 
     public function treatments()

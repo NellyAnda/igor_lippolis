@@ -135,6 +135,10 @@ input[type="checkbox"] {
   background-image: url('/images/chinese_medicine.jpg');
 }
 
+.therapeutic_techniques_background_picture {
+  background-image: url('/images/chinese_medicine.jpg');
+}
+
 .basic_theories_containers,
 .connection_container,
 .registration_container,
@@ -531,10 +535,14 @@ input[type="checkbox"] {
 
   .homepage_background_picture,
   .basic_theories_background_picture,
-  .connection_background_picture,
-  .acupuncture_background_picture{
+  .connection_background_picture {
     height: 580px;
     background-size: cover;
+  }
+
+  .acupuncture_background_picture {
+    height: 580px;
+    background-size: contain;
   }
   
   .yin_yang_containers {
