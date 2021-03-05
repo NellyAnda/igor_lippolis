@@ -3,7 +3,7 @@
 body {
   width: 100%;
   font-family: 'Titillium Web';
-  margin-left: 0;
+  margin: 0;
 }
 
 section {
@@ -18,6 +18,7 @@ h1 {
   color: #FFFFFF;
   padding: 30px 0 0 50px; 
   font-size: 2rem;
+  margin: 0;
 }
 
 h2 {
@@ -157,7 +158,7 @@ input[type="checkbox"] {
 .fire_element,
 .timber_earth_elements,
 .water_metal_elements,
-.acupuncture_text_containers {
+.therapies_text_containers {
   margin: 0 10%;
 }
 
@@ -194,7 +195,8 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
-.acupuncture_top_container,
+.suction_cup_colored_container,
+.therapies_colored_containers,
 .login_label_input_container,
 .label_input_container,
 .connection_registration_container,
@@ -204,7 +206,7 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
-.acupuncture_bottom_container {
+.therapies_colorless_containers {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -308,7 +310,11 @@ input[type="checkbox"] {
     padding-bottom: 5%;
   }
 
-  .acupuncture_picture {
+  .suction_cup_picture,
+  .acupuncture_picture,
+  .ear_acupuncture_picture,
+  .phytotherapy_picture,
+  .teapot_picture {
     width: 60%;
     margin: 5% 20% 0 20%;
   }
@@ -381,23 +387,25 @@ input[type="checkbox"] {
     padding: 5% 0;
   }
 
-  .acupuncture_top_container {
+  .therapies_colored_containers {
     flex-direction: row;
     justify-content: left;
   }
-  
 
-  .acupuncture_top_container .acupuncture_text_containers {
+  .therapies_colored_containers .therapies_text_containers {
     width: 50%;
     margin: 0 3%;
     padding: 0;
   } 
 
-  .acupuncture_top_container .acupuncture_text_containers .treatment_duration { 
+  .therapies_colored_containers .therapies_text_containers .treatment_duration { 
     margin: 0;
   } 
 
-  .acupuncture_picture {
+  .acupuncture_picture,
+  .ear_acupuncture_picture,
+  .phytotherapy_picture,
+  .teapot_picture {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -407,6 +415,8 @@ input[type="checkbox"] {
 
 
 @media screen and (min-width: 992px) {
+
+
 
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -516,21 +526,21 @@ input[type="checkbox"] {
     height: 500px;
   }
 
-  .acupuncture_top_container .acupuncture_text_containers,
-  .acupuncture_bottom_container .acupuncture_text_containers {
+  .therapies_colored_containers .therapies_text_containers,
+  .therapies_colorless_containers .therapies_text_containers {
     width: 60%;
   } 
 
-  .acupuncture_bottom_container .acupuncture_text_containers {
+  .therapies_colorless_containers .therapies_text_containers {
     margin: 0 5%;
   }
 
-  .acupuncture_bottom_container {
+  .therapies_colorless_containers {
     flex-direction: row;
     align-items: center;
   }
 
-  .acupuncture_bottom_container img {
+  .therapies_colorless_containers img {
     width: 90%;
   }
 }
@@ -585,18 +595,39 @@ input[type="checkbox"] {
     padding-top: 2%;
   }
 
-  .acupuncture_bottom_container .acupuncture_text_containers {
+  .therapies_colorless_containers
+  .therapies_text_containers {
     width: 50%;
   } 
 
-  .acupuncture_top_container .acupuncture_text_containers {
+  .suction_cup_colored_container .therapies_text_containers,
+  .therapies_colored_containers .therapies_text_containers {
     margin: 0 10%;
+  }
+
+  .suction_cup_picture {
+    width: 50%;
+    margin: 5% 25% 0 25%;
   }
 
 }
 
 
 @media screen and (min-width: 1400px) {
+
+  .suction_cup_colored_container {
+    flex-direction: row;
+  }
+
+  .suction_cup_picture {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .suction_cup_colored_container .therapies_text_containers {
+    width: 60%;
+  }
   
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -644,13 +675,21 @@ input[type="checkbox"] {
     background-size: cover;
   }
 
-  .acupuncture_bottom_container img {
+  .therapies_colorless_containers img {
     width: 90%;
 
   }
 
-  .acupuncture_bottom_container {
+  .therapies_colorless_containers {
     justify-content: space-evenly;
+  }
+
+  .top_spacing {
+    padding-top: 3%;
+  }
+  
+  .bottom_spacing {
+    padding-bottom: 3%;
   }
 
 } 
