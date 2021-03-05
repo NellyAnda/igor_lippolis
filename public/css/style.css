@@ -122,7 +122,8 @@ input[type="checkbox"] {
 .basic_theories_background_picture,
 .connection_background_picture,
 .acupuncture_background_picture,
-.therapeutic_techniques_background_picture {
+.therapeutic_techniques_background_picture,
+.treatments_background_picture {
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -148,6 +149,10 @@ input[type="checkbox"] {
 
 .therapeutic_techniques_background_picture {
   background-image: url('/images/chinese_medicine_cupboard.jpg');
+}
+
+.treatments_background_picture {
+  background-image: url('/images/tea.jpg');
 }
 
 .basic_theories_containers,
@@ -273,7 +278,8 @@ input[type="checkbox"] {
   .basic_theories_background_picture,
   .connection_background_picture,
   .acupuncture_background_picture,
-  .therapeutic_techniques_background_picture {
+  .therapeutic_techniques_background_picture,
+  .treatments_background_picture {
     height: 350px;
   }
   
@@ -344,7 +350,8 @@ input[type="checkbox"] {
 
   .basic_theories_background_picture,
   .acupuncture_background_picture,
-  .therapeutic_techniques_background_picture {
+  .therapeutic_techniques_background_picture,
+  .treatments_background_picture {
     background-size: contain;
   }
  
@@ -420,7 +427,8 @@ input[type="checkbox"] {
   .basic_theories_background_picture,
   .connection_background_picture,
   .acupuncture_background_picture,
-  .therapeutic_techniques_background_picture {
+  .therapeutic_techniques_background_picture,
+  .treatments_background_picture {
     height: 500px;
   }
   
@@ -557,7 +565,8 @@ input[type="checkbox"] {
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
-  .therapeutic_techniques_background_picture {
+  .therapeutic_techniques_background_picture,
+  .treatments_background_picture {
     height: 580px;
     background-size: cover;
   }
@@ -610,7 +619,8 @@ input[type="checkbox"] {
   .basic_theories_background_picture,
   .connection_background_picture,
   .acupuncture_background_picture,
-  .therapeutic_techniques_background_picture {
+  .therapeutic_techniques_background_picture,
+  .treatments_background_picture {
     height: 800px;
     background-size: cover;
   }
