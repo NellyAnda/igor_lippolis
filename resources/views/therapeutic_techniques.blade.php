@@ -19,9 +19,12 @@
     <img src="{{asset('images/moxibustion.png')}}" class="top_spacing" alt="imagen de un paciente que recibe un tratamiento de moxibustión.">
   </div>
 </div>
-<div class="light_background suction_cup_colored_container">
+
+
+
+<div class="light_background therapies_colored_containers">
   <div>
-    <img src="{{asset('images/suction_cup.png')}}" class="suction_cup_picture" alt="imagen de un paciente que recibe un tratamiento de ventosa">
+    <img src="{{asset('images/suction_cups.png')}}" class="suction_cups_picture" alt="imagen de un paciente que recibe un tratamiento de ventosa">
   </div>
   <div class="bottom_spacing therapies_text_containers">
     <h3 class="align">Ventosas</h3>
@@ -48,8 +51,8 @@
 
   <div class="bottom_spacing therapies_text_containers">
     <h3 class="align">Auriculoterapia</h3>
-    <p class="top_spacing">Tecnica terapeutica de la medicina tradicional china en la que se estimulan puntos especificos del pabellon auricular y la oreja para generar un efecto en el organismo que <span class="colored_emphasis">favorezca</span> y <span class="colored_emphasis">armonize ciertas funciones corporales</span>. La <span class="colored_emphasis">auriculoterapia</span> se puede utilizar, en muchos casos, como <span class="colored_emphasis">tratamiento único</span> aunque lo más habitual es que se utilice como complemento a otros tratamientos (acupuntura, fitoterapia, alimentación, etc...)</p>
-    <p>Una de las aplicaciones de la <span class="colored_emphasis">auriculoterapia</span> que, hoy en día está retomando mucho auge, es para combatir adicciones (especialmente la del tabaco) o para adelgazar ya que ayuda mucho a reducir los niveles de ansiedad.También podemos destacar entre las aplicaciones de la Auriculoterapia su uso para tratar casos agudos (lumbalgias, ciáticas, hemorroides, alergias, anginas, migrañas, etc...)</p>
+    <p class="top_spacing">Tecnica terapeutica de la medicina tradicional china en la que se estimulan puntos especificos del pabellon auricular y la oreja para generar un efecto en el organismo que <span class="colored_emphasis">favorezca</span> y <span class="colored_emphasis">armonize ciertas funciones corporales</span>. La <span class="colored_emphasis">auriculoterapia</span> se puede utilizar, en muchos casos, como <span class="colored_emphasis">tratamiento único</span> aunque lo más habitual es que se utilice como complemento a otros tratamientos (acupuntura, fitoterapia, alimentación, etc...).</p>
+    <p>Una de las aplicaciones de la <span class="colored_emphasis">auriculoterapia</span> que, hoy en día está retomando mucho auge, es para combatir adicciones (especialmente la del tabaco) o para adelgazar ya que ayuda mucho a reducir los niveles de ansiedad.También podemos destacar entre las aplicaciones de la Auriculoterapia su uso para tratar casos agudos (lumbalgias, ciáticas, hemorroides, alergias, anginas, migrañas, etc...).</p>
   </div>
 </div>
 <div class="therapies_colorless_containers">

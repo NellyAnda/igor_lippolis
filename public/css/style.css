@@ -195,7 +195,6 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
-.suction_cup_colored_container,
 .therapies_colored_containers,
 .login_label_input_container,
 .label_input_container,
@@ -310,7 +309,7 @@ input[type="checkbox"] {
     padding-bottom: 5%;
   }
 
-  .suction_cup_picture,
+  .suction_cups_picture,
   .acupuncture_picture,
   .ear_acupuncture_picture,
   .phytotherapy_picture,
@@ -405,6 +404,7 @@ input[type="checkbox"] {
   .acupuncture_picture,
   .ear_acupuncture_picture,
   .phytotherapy_picture,
+  .suction_cups_picture,
   .teapot_picture {
     width: 100%;
     height: 100%;
@@ -415,8 +415,6 @@ input[type="checkbox"] {
 
 
 @media screen and (min-width: 992px) {
-
-
 
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -600,34 +598,13 @@ input[type="checkbox"] {
     width: 50%;
   } 
 
-  .suction_cup_colored_container .therapies_text_containers,
   .therapies_colored_containers .therapies_text_containers {
     margin: 0 10%;
   }
 
-  .suction_cup_picture {
-    width: 50%;
-    margin: 5% 25% 0 25%;
-  }
-
 }
 
-
 @media screen and (min-width: 1400px) {
-
-  .suction_cup_colored_container {
-    flex-direction: row;
-  }
-
-  .suction_cup_picture {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  .suction_cup_colored_container .therapies_text_containers {
-    width: 60%;
-  }
   
   .homepage_background_picture,
   .basic_theories_background_picture,
