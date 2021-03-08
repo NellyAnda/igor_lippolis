@@ -69,6 +69,7 @@ input[type="checkbox"] {
 .water_emphasis,
 .metal_emphasis,
 .light_emphasis,
+.dark_emphasis,
 .button_text {
   font-weight: bold;
 }
@@ -97,6 +98,10 @@ input[type="checkbox"] {
 
 .light_emphasis {
   color: #FFFFFF;
+}
+
+.dark_emphasis {
+  color: #000000;
 }
 
 .dark_background {
@@ -445,12 +450,63 @@ input[type="checkbox"] {
     width: 100%;
   }
 
-  .stones_picture {
+  .stones_picture,
+  .lotus_picture,
+  .woman_breathing_picture,
+  .hand_massage_picture,
+  .woman_closed_eyes_picture,
+  .man_stretching_picture,
+  .woman_in_bed_picture,
+  .chinese_herbal_medicine_picture,
+  .woman_meditating_picture {
     display: none;
   }
   
   .stones_background_picture {
     background-image: url('/images/stones.png');
+  }
+
+  .lotus_background_picture {
+    background-image: url('/images/lotus.jpg'); 
+  }
+
+  .woman_breathing_background_picture {
+    background-image: url('/images/woman_breathing.jpg');
+  }
+
+  .hand_massage_background_picture {
+    background-image: url('/images/hand_massage.png');
+  }
+
+  .woman_closed_eyes_background_picture {
+    background-image: url('/images/woman_closed_eyes.jpg');
+  }
+
+  .man_stretching_background_picture {
+    background-image: url('/images/man_stretching.jpg');
+  }
+
+  .woman_in_bed_background_picture {
+    background-image: url('/images/woman_in_bed.jpg');
+  }
+
+  .chinese_herbal_medicine_background_picture {
+    background-image: url('/images/chinese_herbal_medicine.jpg');
+  }
+
+  .woman_meditating_background_picture {
+    background-image: url('/images/woman_meditating.jpg');
+  }
+
+  .stones_background_picture,
+  .lotus_background_picture,
+  .woman_breathing_background_picture,
+  .hand_massage_background_picture,
+  .woman_closed_eyes_background_picture,
+  .man_stretching_background_picture,
+  .woman_in_bed_background_picture,
+  .chinese_herbal_medicine_background_picture,
+  .woman_meditating_background_picture {
     background-repeat: no-repeat;
     color: #FFFFFF;
     width: 100%;
@@ -658,7 +714,15 @@ input[type="checkbox"] {
     margin: 0 10%;
   }
 
-  .stones_background_picture {
+  .stones_background_picture,
+  .lotus_background_picture,
+  .woman_breathing_background_picture,
+  .hand_massage_background_picture,
+  .woman_closed_eyes_background_picture,
+  .man_stretching_background_picture,
+  .woman_in_bed_background_picture,
+  .chinese_herbal_medicine_background_picture,
+  .woman_meditating_background_picture {
     background-size: cover;
   }
 
