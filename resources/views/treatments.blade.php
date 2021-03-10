@@ -81,7 +81,7 @@
         
       </div>
       <div>
-        <img src="images/acupuncture.jpg" alt="imagen del vientre de una mujer recibiendo tratamiento de acupuntura">
+        <img src="images/acupuncture.jpg" class="abdominal_acupuncture_picture" alt="imagen del vientre de una mujer recibiendo tratamiento de acupuntura">
       </div>
     </div>
     <div>
