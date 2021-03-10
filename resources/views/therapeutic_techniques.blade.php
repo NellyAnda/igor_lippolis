@@ -11,7 +11,7 @@
 <div class="therapies_colorless_containers">
   <div class="therapies_text_containers">
     <h3 class="align">Moxibustión</h3>
-    <p class="top_spacing">Se realizan tratamientos aprovechando las propriedades curativas de la <span class="colored_emphasis"> planta</span> “<span class="colored_emphasis"> Artemisae Vulgaris</span>”. Con la moxa es posible aplicar calor sobre una zona muy pequeña y precisa, aumentando la eficacia y los efectos beneficiosos que tienen otras técnicas de termoterapia (lámparas de infrarrojos, o la sencilla bolsa de agua).</p>
+    <p class="top_spacing">Se realizan tratamientos aprovechando las propriedades curativas de la <span class="colored_emphasis"> planta</span> “<span class="colored_emphasis">Artemisae Vulgaris</span>”. Con la moxa es posible aplicar calor sobre una zona muy pequeña y precisa, aumentando la eficacia y los efectos beneficiosos que tienen otras técnicas de termoterapia (lámparas de infrarrojos, o la sencilla bolsa de agua).</p>
     <p>Es muy usada para dolores articulares (artrosis, reuma), lumbago, constitución débil, problemas respiratorios, cansancio, diarrea crónica, dolor abdominal, vómitos, retención de líquidos, dolores menstruales.</p>
     <p class="treatment_duration top_spacing bottom_spacing">Duración aproximada de tratamiento : 15/20min</p>
   </div>

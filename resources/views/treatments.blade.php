@@ -11,14 +11,14 @@
 
 <h2>Tratamientos</h2>
 
-<div class="lotus_background_picture">
+<div class="lotus_background_picture top_spacing bottom_spacing">
   <img src="{{asset('images/lotus.jpg')}}" class="lotus_picture" alt="imagen de un flor de loto rosa">
-  <div class=""> 
+  <div> 
     <div>
       <div>
-        <h3>Beneficios de la acupuntura cosmetica</h3>
+        <h3 class="top_spacing bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
       </div>
-      <div>
+      <div class="treatments_containers">
         <ul>
           <li>Incrementa la producción de colágeno</li>
           <li>Técnica indolora que se realiza en el gabinete, sin necesidad de un periodo de recuperación</li>
@@ -40,9 +40,9 @@
     </div>
     <div>
       <div>
-        <h3>¿ Cuándo se perciben los resultados ?</h3>
+        <h3 class="top_spacing bottom_spacing">¿ Cuándo se perciben los resultados ?</h3>
       </div>
-      <div>
+      <div class="treatments_containers">
         <p>
           La <span class="colored_emphasis">acupuntura estética</span> destaca principalmente por sus efectos inmediatos. Muchas personas afirman que ya después de la primera sesión de acupuntura sienten la piel más tersa y más suave.<br>
           <span class="colored_emphasis">Al recibir mejor aporte de sangre, los tejidos reaccionan al momento.</span>
@@ -53,13 +53,13 @@
   </div>
 </div>
 
-<div class="woman_breathing_background_picture">
+<div class="woman_breathing_background_picture top_spacing bottom_spacing">
   <img src="{{asset('images/woman_breathing.jpg')}}" class="woman_breathing_picture" alt="imagen de una mujer mirando al cielo, respirando profundamente y estirando los brazos hacia atrás">
   <div class=""> 
     <div>
-      <h3>Tabaquismo</h3>
+      <h3 class="top_spacing bottom_spacing">Tabaquismo</h3>
     </div>
-    <div>
+    <div class="treatments_containers">
       <p>La medicina tradicional china ayuda a retomar una <span class="dark_emphasis">vida sana</span> sin tabaco :</p>
       <p>Ayuda a <span class="dark_emphasis">reducir o eliminar los síntomas del síndrome de abstinencia</span> tales como ansiedad, ganas compulsivas de fumar, irritabilidad, falta de concentración, depresión, migraña, cansancio.</p>
       <p>Contribuye a <span class="dark_emphasis">limpiar los pulmones y el organismo</span> de todas las sustancias nocivas del tabaco.</p>
@@ -70,10 +70,10 @@
 </div>
 
 
-<div class="dark_background top_spacing">
-  <h3>Acupuntura para perder peso</h3>
-  <div>
-    <div>
+<div class="dark_background top_spacing bottom_spacing">
+  <h3 class="bottom_spacing">Acupuntura para perder peso</h3>
+  <div class="acupuncture_treatment">
+    <div class="treatments_containers top_spacing bottom_spacing">
       <p>
         Los tratamientos de la Medicina China para <span class="colored_emphasis">adelgazar</span> no son nuevos y son altamente eficaces. Para la Medicina Tradicional China la <span class="colored_emphasis">obesidad</span> y el <span class="colored_emphasis">peso en exceso</span>, una vez que se hayan descartado causas médicas más complejas, son el resultado de la acumulación de Tan-Humedad. El Tan es un desecho que <span class="colored_emphasis">se acumula en el cuerpo</span> debido a que los órganos que están implicados en la <span class="colored_emphasis">digestión</span> y el <span class="colored_emphasis">metabolismo de los líquidos</span>, el bazo y el estómago, no funcionan bien. Lo más adecuado antes de comenzar el tratamiento es realizar un mediante una diferenciación de síndromes según la Medicina Tradicional China.</p>
         <p>Una de las diferencias de la Medicina China con respecto a la Occidental es que no sólo realiza el tratamiento del síndrome actual y sus síntomas, sino también <span class="colored_emphasis">la causa que lo ha originado</span>. En la estadística basada en la evidencia que mide la eficacia de la acupuntura para la pérdida de peso se comprobó que los tratamientos aumentan y regulan la grelina, una hormona que controla la iniciación de las comidas y la <span class="colored_emphasis">disminución de la insulina y la leptina</span>, hormona que estimula la sensación de estar lleno y regula el almacenamiento de grasa y el metabolismo. La insulina regula el metabolismo de los <span class="colored_emphasis">carbohidratos</span> y las <span class="colored_emphasis">grasas</span> y la absorción de la <span class="colored_emphasis">glucosa</span> de la sangre.
@@ -86,9 +86,9 @@
     </div>
     <div>
       <div>
-        <img src="images/acupuncture_meridian_traditional_chinese_medicine.png" alt="imagen del cuerpo humano con las líneas de los meridianos utilizados en la medicina china">
+        <img src="images/acupuncture_meridian_traditional_chinese_medicine.png" class="meridian_picture" alt="imagen del cuerpo humano con las líneas de los meridianos utilizados en la medicina china">
       </div>
-      <div>
+      <div class="treatments_containers top_spacing">
         <p>Está demostrado ademas que, como reacción al pinchazo de la aguja, en unos puntos muy específicos del organismo, éste libera sustancias transmisoras específicas y que por esta razón el estímulo de la aguja actúa como <span class="colored_emphasis">calmante</span> y <span class="colored_emphasis">regulador del sistema vegetativo</span> (o autónomo). Como efecto directo, los trastornos funcionales de los órganos y los del sistema nervioso, en particular los del sistema vegetativo, así como los <span class="colored_emphasis">problemas de circulación</span> y los <span class="colored_emphasis">dolores crónicos</span> pueden <span class="colored_emphasis">ser mejorados</span>.</p>
         <p>Este hallazgo sugiere que la acupuntura puede realmente reducir las hormonas que conducen a comer en exceso. Por lo tanto esta técnica puede controlar el apetito <span class="colored_emphasis">aumentando el metabolismo basal y estimulando la eliminación de líquidos a nivel renal</span>, es decir, los estímulos producidos por la acupuntura, controlan el apetito, disminuyen la ansiedad por comer exageradamente y regulan el metabolismo, todo lo cual, <span class="colored_emphasis">favorece la pérdida de peso</span> y <span class="colored_emphasis">potencia la autoestima</span>.</p>
       </div>
@@ -96,24 +96,29 @@
   </div>
   
   
-  <div class="hand_massage_background_picture">
+  <div class="hand_massage_background_picture top_spacing bottom_spacing">
     <img src="{{asset('images/hand_massage.png')}}" class="hand_massage_picture" alt="imagen de una mujer recibiendo un masaje de manos">
-    <div class="basic_theories_containers top_spacing bottom_spacing"> 
+    <div class="treatments_containers"> 
+      <div>
+        <h3 class="top_spacing bottom_spacing">Sindrome premenstrual</h3>
+      </div>
+      <div>
       <p>El <span class="colored_emphasis">síndrome premenstrual</span> comprende síntomas emocionales y físicos que aparecen antes del <span class="colored_emphasis">período menstrual</span> (agotamiento, tristeza, perdida de concentración, irritabilidad, agresividad, distensión abdominal, insomnio...)<br>
         La sintomatología puede aparecer desde las dos semanas anteriores hasta el día previo a la menstruación.</p>
         <p>El tratamiento incluye técnicas de acupuntura, digitopresion, moxibustion así como la integración de plantas medicinales y alimentos apropiados dependiendo de las manifestaciones patológicas, de la lengua, del pulso, y otras técnicas de diagnostico.</p>
+      </div>  
       </div>
     </div>
     
     
     
     
-    <div class="woman_closed_eyes_background_picture">
+    <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing">
       <img src="{{asset('images/woman_closed_eyes.jpg')}}" class="woman_closed_eyes_picture" alt="imagen del rostro de una mujer en las sombras con los ojos cerrados">
-      <div class="basic_theories_containers top_spacing bottom_spacing"> 
+      <div class="treatments_containers"> 
         <div>
           <div>
-            <h3>Cefalea</h3>
+            <h3 class="top_spacing bottom_spacing">Cefalea</h3>
           </div>
           <div>
             <p>En la medicina tradicional china las <span class="colored_emphasis">cefaleas</span> no constituyen entidades aisladas patológicamente hablando, sino que son la consecuencia de desequilibrios fisiologicos y/o emocionales provocados por causas como debilidad constitucional, irregularidades alimentarias, alteraciones emocionales, traumatismos o descanso insuficiente entre otras.</p>
@@ -129,12 +134,12 @@
     </div>
     
     <div>
-      <div class="man_stretching_background_picture">
+      <div class="man_stretching_background_picture top_spacing bottom_spacing">
         <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
         <div>
-          <h3>Lumbalgia</h3>
+          <h3 class="top_spacing bottom_spacing">Lumbalgia</h3>
         </div>
-        <div>
+        <div class="treatments_containers">
           <p>Es la forma con la que se denomina al dolor en la región lumbar. Puede ser <span class="dark_emphasis">bilateral o unilateral</span>.<br>
             Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
@@ -142,12 +147,12 @@
         </div>
         
         
-        <div class="woman_in_bed_background_picture">
+        <div class="woman_in_bed_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_in_bed_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
           <div>
-            <h3>Insomnio</h3>
+            <h3 class="top_spacing bottom_spacing">Insomnio</h3>
           </div>
-          <div>
+          <div class="treatments_containers">
             <p>La acupuntura para el insomnio ha sido practicada durante cientos de años con resultados óptimos.<br>
               La MTC es muy efectiva para tratar este trastorno, incluyendo el <span class="dark_emphasis">insomnio</span> de tipo crónico que se ha tratado con fármacos durante mucho tiempo.<br>
               El tratamiento puede tener duraciones diferentes, dependiendo de cada persona. El insomnio suele remitir entre las cuatro y diez sesiones. A menudo es necesario añadir a la terapia la moxibustión y el uso de plantas medicinales.</p>
@@ -156,14 +161,14 @@
         </div>
         
         
-        <div class="chinese_herbal_medicine_background_picture">
+        <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/chinese_herbal_medicine.jpg')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
           <div class=""> 
             <div>
               <div>
-                <h3>Defensas imunitarias</h3>
+                <h3 class="top_spacing bottom_spacing">Defensas imunitarias</h3>
               </div>
-              <div>
+              <div class="treatments_containers">
                 <p><span class="colored_emphasis">Energéticamente</span> debe haber un equilibrio en el organismo para que los diferentes sistemas que lo integran puedan funcionar a su máximo potencial y en armonía. En el caso del <span class="colored_emphasis">sistema inmunologico</span>, en la medicina tradicional china encontramos el Wei Qi (energía defensiva) que tiene función de protección y adaptación del organismo análogas al sistema inmunológico.<br>
                   Objetivo del tratamiento es que el organismo sea capaz de <span class="colored_emphasis">mantener el equilibrio</span> (homeostasis) aunque las condiciones externas cambien. </p>
                 </div>
@@ -172,14 +177,14 @@
           </div>
           
           
-          <div class="woman_meditating_background_picture">
+          <div class="woman_meditating_background_picture top_spacing bottom_spacing">
             <img src="{{asset('images/woman_meditating.jpg')}}" class="woman_meditating_picture" alt="imagen de una mujer sentada con las piernas cruzadas sobre una duna de arena y frente al desierto">
             <div class=""> 
               
               <div>
-                <h3>Tratamiento del ansiedad</h3>
+                <h3 class="top_spacing bottom_spacing">Tratamiento del ansiedad</h3>
               </div>
-              <div>
+              <div class="treatments_containers">
                 <div>
                   <p>Por <span class="colored_emphasis">ansiedad</span> se entiende un <span class="colored_emphasis">estado crónico de desasosiego y miedo</span>; que puede ser inducido también de otras emociones tales como la reflexión excesiva, el exceso de alegría, la preocupación, la conmoción, la vergüenza, la culpa.<br>
                     Cada uno de estos estados anímicos puede llevar a un estancamiento de energía o de sangre y provocar desequilibrios fisiológicos en el Yin o en el Yang y en los diferentes elementos (u órganos).
@@ -192,6 +197,11 @@
             </div>
           </div>
           
+          <div class="buttons_container align top_spacing bottom_spacing">
+            <a href="{{ route('home') }}">
+              <button type="submit" class="button_text">{{ __('PEDIR UNA CITA') }}</button> 
+            </a>
+          </div>
           
           @endsection 
           

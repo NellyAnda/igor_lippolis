@@ -29,7 +29,8 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  margin: 15% 10% 5% 10%;
+  margin: 5% 10%;
+  /* text-align: center; */
 }
 
 h2, h3 {
@@ -168,7 +169,8 @@ input[type="checkbox"] {
 .fire_element,
 .timber_earth_elements,
 .water_metal_elements,
-.therapies_text_containers {
+.therapies_text_containers,
+.treatments_containers {
   margin: 0 10%;
 }
 
@@ -205,17 +207,23 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
+.treatments_containers h3 {
+  margin-left: 0;
+}
+
 .therapies_colored_containers,
 .login_label_input_container,
 .label_input_container,
 .connection_registration_container,
 .five_elements_containers,
-.yin_yang_containers {
+.yin_yang_containers,
+.treatments_containers {
   display: flex;
   flex-direction: column;
 }
 
-.therapies_colorless_containers {
+.therapies_colorless_containers,
+.acupuncture_treatment {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -260,17 +268,24 @@ input[type="checkbox"] {
   padding: 8% 0;
 }
 
-.basic_theories_containers ul {
+.basic_theories_containers ul,
+.treatments_containers ul {
   padding: 0 8%;
 }
 
-.basic_theories_containers li {
+.basic_theories_containers li,
+.treatments_containers li {
   padding: 8% 0;
   list-style-position: inside;
 }
 
 .treatment_duration {
   font-weight: 600;
+}
+
+.meridian_picture {
+  width: 90%;
+  padding: 0 5%;
 }
 
 @media screen and (min-width: 576px) {
@@ -308,7 +323,8 @@ input[type="checkbox"] {
     margin: 10% 0;
   }  
 
-  .basic_theories_containers li {
+  .basic_theories_containers li,
+  .treatments_containers li {
     padding: 5% 0;
   }
 
@@ -385,7 +401,8 @@ input[type="checkbox"] {
     width: 30%;
   }
 
-  .basic_theories_containers li {
+  .basic_theories_containers li,
+  .treatments_containers li {
     padding: 3% 0;
   }
 
@@ -636,11 +653,13 @@ input[type="checkbox"] {
     margin: 0;
   }
 
-  .basic_theories_containers {
+  .basic_theories_containers,
+  .treatments_containers {
     margin: 0 6%;
   }
 
-  .basic_theories_containers ul {
+  .basic_theories_containers ul,
+  .treatments_containers ul {
     padding: 0 15% 0 5%;
   }
 
@@ -681,7 +700,8 @@ input[type="checkbox"] {
     background-size: cover;
   }
 
-  .basic_theories_containers {
+  .basic_theories_containers,
+  .treatments_containers {
     margin: 0 7%;
   }
   
