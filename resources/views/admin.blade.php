@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', '')
+@section('title', 'Panel de administrador')
 
 @section('content')
 <div class="">
 	<div class="">
-		<h1>Panneau d'administration</h1>
+		<h1>Panel de administrador</h1>
 		<div class="">
 			<div class="">
 				<div class="">

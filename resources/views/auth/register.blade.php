@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Crear una cuenta')
+
 @section('image_header')
 <div class="connection_background_picture">
 	<h1>Crear una cuenta<br>

@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<title>@yield('pageTitle')</title> 
+
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	
@@ -31,13 +32,51 @@
 		
 			<form action={{ route('logout') }} method="POST">
 				@csrf
-				<button type="submit" class="button_text">
+				{{-- <button type="submit" class="button_text">
 					{{ __('LOGOUT') }}
-				</button>
+				</button> --}}
 		
 			</form>
 
 			{{-- {{ __('Usted está conectado!') }} --}}
+
+
+			@guest
+			<a class="menu nav-item nav-link" href="{{ route('login') }}">
+				{{ __('Connexion') }}
+			</a>
+			@if (Route::has('register'))
+			<a class="menu nav-item nav-link" href="{{ route('register') }}">
+				{{ __('S\'enregistrer') }}
+			</a>
+			@endif
+			{{-- @else
+			
+			<li class="nav-item dropdown">
+				<img class="userAvatar" src="{{ asset(Auth::user()->avatar) }}" alt="user avatar">
+				<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+					{{ Auth::user()->user_name }}
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+					@if (Auth::user()->isAdmin)
+					<a class="dropdown-item" href="{{route('admin')}}">Page d'admministration</a>
+					@endif
+					<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="dropdown-item">
+						Mon Compte
+					</a>
+					<a class="dropdown-item" href="{{ route('logout') }}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+						{{ __('Logout') }}
+					</a>
+					
+					<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+						@csrf
+					</form>
+				</div>
+			</li>
+			@endguest --}}
+
+
+
 	</div>
 
 	<div>
@@ -46,6 +85,13 @@
 
 		<nav>
 		{{-- I WILL PUT MY NAV HERE --}}
+
+
+
+
+
+
+
 		</nav>
 	</header>
 

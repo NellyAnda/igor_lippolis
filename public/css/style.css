@@ -29,8 +29,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  margin: 5% 10%;
-  /* text-align: center; */
+  text-align: center;
 }
 
 h2, h3 {
@@ -289,11 +288,10 @@ input[type="checkbox"] {
   padding: 0 5%;
 }
 
+
 @media screen and (min-width: 576px) {
 
-  h3 {
-    margin-top: 10%;
-  }
+
   
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -351,8 +349,6 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 768px) {
 
-
-
   h1 {
     font-size: 3rem;
   }
@@ -363,7 +359,6 @@ input[type="checkbox"] {
   
   h3 {
     font-size: 2rem;
-    margin: 9% 10% 5% 10%;
   }
 
   .homepage_background_picture,
@@ -442,8 +437,25 @@ input[type="checkbox"] {
     height: 100%;
     margin: 0;
   }
-  
 
+  .man_stretching_picture,
+  .woman_in_bed_picture {
+    display: none;
+  }
+
+  .man_stretching_background_picture {
+    background-image: url('/images/man_stretching.jpg');
+    background-size: cover;
+    height: 1277px;
+  }
+
+
+  .woman_in_bed_background_picture {
+    background-image: url('/images/woman_in_bed.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 892px;
+  }
 }
 
 
@@ -476,8 +488,6 @@ input[type="checkbox"] {
   .woman_breathing_picture,
   .hand_massage_picture,
   .woman_closed_eyes_picture,
-  .man_stretching_picture,
-  .woman_in_bed_picture,
   .chinese_herbal_medicine_picture,
   .woman_meditating_picture {
     display: none;
@@ -503,14 +513,6 @@ input[type="checkbox"] {
     background-image: url('/images/woman_closed_eyes.jpg');
   }
 
-  .man_stretching_background_picture {
-    background-image: url('/images/man_stretching.jpg');
-  }
-
-  .woman_in_bed_background_picture {
-    background-image: url('/images/woman_in_bed.jpg');
-  }
-
   .chinese_herbal_medicine_background_picture {
     background-image: url('/images/chinese_herbal_medicine.jpg');
   }
@@ -520,12 +522,9 @@ input[type="checkbox"] {
   }
 
   .stones_background_picture,
-  
   .woman_breathing_background_picture,
   .hand_massage_background_picture,
   .woman_closed_eyes_background_picture,
-  .man_stretching_background_picture,
-  .woman_in_bed_background_picture,
   .chinese_herbal_medicine_background_picture,
   .woman_meditating_background_picture {
     background-repeat: no-repeat;

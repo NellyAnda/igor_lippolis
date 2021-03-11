@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Conectarse')
+
 @section('image_header')
 <div class="connection_background_picture">
 	<h1>Conectarse</h1>
 </div>
 @endsection
-
-
 
 @section('content')
 <div>

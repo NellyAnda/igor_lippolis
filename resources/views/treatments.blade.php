@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Tratamientos')
+
 @section('image_header')
 <div class="treatments_background_picture">
   <h1>Tratamientos</h1>
@@ -165,7 +167,7 @@
         
         
         <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">
-          <img src="{{asset('images/chinese_herbal_medicine.jpg')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
+          <img src="{{asset('images/chinese_herbal_medicine_small.png')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
           <div class=""> 
             <div>
               <div>

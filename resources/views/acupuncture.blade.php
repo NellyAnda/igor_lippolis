@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Acupuntura')
+
 @section('image_header')
 <div class="acupuncture_background_picture">
   <h1>Acupuntura</h1>
@@ -18,7 +20,7 @@
     <img src="{{asset('images/facial_acupuncture.png')}}" class="acupuncture_picture" alt="imagen de dos maniquíes que muestran puntos de acupuntura">
   </div>
   <div class="bottom_spacing therapies_text_containers">
-    <h3 class="align">Acupuntura Craneal</h3>
+    <h3 class="top_spacing">Acupuntura Craneal</h3>
     <p class="top_spacing">Por <span class="colored_emphasis">acupuntura craneal</span> o <span class="colored_emphasis">craneopuntura</span> se entiende un conjunto de técnicas terapéuticas que se basan en la utilización de agujas de acupuntura para estimular líneas áreas o puntos en la región de la calota craneana.</p>
     <p>Está comprobado que la estimulación de dichos puntos o áreas del cráneo tiene potentes efectos terapéuticos, sobre todo en el <span class="colored_emphasis">tratamiento de patologías o lesiones neurológicas</span>.</p>
     <p>Esta distribución de áreas de aplicación se basa en la neuroanatomía y no tiene relación con la medicina tradicional china.</p>
@@ -26,7 +28,7 @@
   </div>
 </div>
 
-<h3 class="align">Acupuntura Estética</h3>
+<h3 class="top_spacing">Acupuntura Estética</h3>
 <div class="therapies_colorless_containers">
   <div class="therapies_text_containers">
     <p class="top_spacing">La acupuntura es una técnica antigua utilizada por los ancestros para el cuidado de la salud. La unión de <span class="colored_emphasis">acupuntura</span> y la <span class="colored_emphasis">estética</span> ha resultado un excelente descubrimiento para la <span class="colored_emphasis">medicina estética</span>, en beneficio de los profesionales de esta rama y de los pacientes que recurren a ella en busca de una solución a su problema <span class="colored_emphasis">sin recurrir a tratamientos químicos</span>.</p>

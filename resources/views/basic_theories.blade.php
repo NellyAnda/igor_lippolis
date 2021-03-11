@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Teorias basicas de la medicina tradicional China')
+
 @section('image_header')
 <div class="basic_theories_background_picture">
 	<h1>Teorias basicas de<br> la medicina tradicional China</h1>
@@ -8,7 +10,7 @@
 
 @section('content')
   <h2>Teorias basicas de la medicina tradicional China</h2>
-    <h3>Yin Yang</h3>
+    <h3 class="top_spacing">Yin Yang</h3>
     <div>
       <div class="yin_yang_containers bottom_spacing">
         <p>En un principio, Yin Yang se empleaban para indicar la posición de un lugar respecto al Sol (Yang era el lado soleado y Yin el sombreado), observando la alternancia de los fenómenos naturales, la sucesión del día y la noche...</p>
@@ -38,7 +40,7 @@
         <p>Por ejemplo, a la hora de identificar un cuadro clínico de un paciente a menudo se aplican unos principios básicos que orientan el terapeuta en su diagnóstico. Dichos principios básicos incluyen Yin/Yang como elemento clasificador pero también tienen en cuenta otros aspectos.</p>
       </div>
     </div>
-    <h3>Los Cinco Elementos o Cinco Fases (Wu Xing)</h3>
+    <h3 class="top_spacing">Los Cinco Elementos o Cinco Fases (Wu Xing)</h3>
     <div class="five_elements_background_picture">
     <div>
       <div>
