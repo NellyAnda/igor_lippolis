@@ -133,9 +133,11 @@
       </div>
     </div>
     
-    <div>
+
       <div class="man_stretching_background_picture top_spacing bottom_spacing">
         <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
+
+
         <div>
           <h3 class="top_spacing bottom_spacing">Lumbalgia</h3>
         </div>
@@ -144,6 +146,7 @@
             Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
           </div>
+
         </div>
         
         
