@@ -135,7 +135,7 @@
       </div>
     </div>
     
-
+    <div class="lumbalgia_insomnia_container">
       <div class="man_stretching_background_picture top_spacing bottom_spacing">
         <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
 
@@ -148,12 +148,12 @@
             Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
           </div>
-
         </div>
         
         
-        <div class="woman_in_bed_background_picture top_spacing bottom_spacing">
-          <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_in_bed_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
+        <div class="woman_opened_eyes_background_picture top_spacing bottom_spacing">
+          <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_opened_eyes_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
+          <div class="woman_opened_eyes_text_container">
           <div>
             <h3 class="top_spacing bottom_spacing">Insomnio</h3>
           </div>
@@ -164,6 +164,7 @@
             </div>
           </div>
         </div>
+    </div>
         
         
         <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">

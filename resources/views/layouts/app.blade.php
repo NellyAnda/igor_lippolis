@@ -32,16 +32,16 @@
 		
 			<form action={{ route('logout') }} method="POST">
 				@csrf
-				{{-- <button type="submit" class="button_text">
+				<button type="submit" class="button_text">
 					{{ __('LOGOUT') }}
-				</button> --}}
+				</button>
 		
 			</form>
 
 			{{-- {{ __('Usted está conectado!') }} --}}
 
 
-			@guest
+			{{-- @guest
 			<a class="menu nav-item nav-link" href="{{ route('login') }}">
 				{{ __('Connexion') }}
 			</a>
@@ -49,7 +49,7 @@
 			<a class="menu nav-item nav-link" href="{{ route('register') }}">
 				{{ __('S\'enregistrer') }}
 			</a>
-			@endif
+			@endif --}}
 			{{-- @else
 			
 			<li class="nav-item dropdown">
