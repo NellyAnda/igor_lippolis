@@ -15,10 +15,10 @@
 
 <div class="lotus_background_picture top_spacing bottom_spacing">
   <img src="{{asset('images/lotus.jpg')}}" class="lotus_picture" alt="imagen de un flor de loto rosa">
-  <div> 
-    <div>
+  <div class="lotus_text_container"> 
+    <div class="lotus_text_containers">
       <div>
-        <h3 class="top_spacing bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
+        <h3 class="bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
       </div>
       <div class="treatments_containers">
         <ul>
@@ -40,7 +40,7 @@
         </ul>
       </div>
     </div>
-    <div>
+    <div class="lotus_text_containers">
       <div>
         <h3 class="top_spacing bottom_spacing">¿ Cuándo se perciben los resultados ?</h3>
       </div>
@@ -113,8 +113,6 @@
     </div>
     
     
-    
-    
     <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing">
       <img src="{{asset('images/woman_closed_eyes.jpg')}}" class="woman_closed_eyes_picture" alt="imagen del rostro de una mujer en las sombras con los ojos cerrados">
       <div class="treatments_containers"> 
@@ -136,9 +134,9 @@
     </div>
     
     <div class="lumbalgia_insomnia_container">
+  
       <div class="man_stretching_background_picture top_spacing bottom_spacing">
         <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
-
 
         <div>
           <h3 class="top_spacing bottom_spacing">Lumbalgia</h3>
@@ -148,8 +146,10 @@
             Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
           </div>
-        </div>
-        
+
+      </div>
+      
+   
         
         <div class="woman_opened_eyes_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_opened_eyes_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
@@ -164,6 +164,7 @@
             </div>
           </div>
         </div>
+
     </div>
         
         
