@@ -18,7 +18,7 @@
   <div class="lotus_text_container"> 
     <div class="lotus_text_containers">
       <div>
-        <h3 class="bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
+        <h3 class="top_spacing bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
       </div>
       <div class="treatments_containers">
         <ul>
@@ -57,11 +57,11 @@
 
 <div class="woman_breathing_background_picture top_spacing bottom_spacing">
   <img src="{{asset('images/woman_breathing.jpg')}}" class="woman_breathing_picture" alt="imagen de una mujer mirando al cielo, respirando profundamente y estirando los brazos hacia atrás">
-  <div class=""> 
-    <div>
+  <div class="smoking_text_container"> 
+    <div class="smoking_text_containers">
       <h3 class="top_spacing bottom_spacing">Tabaquismo</h3>
     </div>
-    <div class="treatments_containers">
+    <div class="treatments_containers smoking_text_containers">
       <p>La medicina tradicional china ayuda a retomar una <span class="dark_emphasis">vida sana</span> sin tabaco :</p>
       <p>Ayuda a <span class="dark_emphasis">reducir o eliminar los síntomas del síndrome de abstinencia</span> tales como ansiedad, ganas compulsivas de fumar, irritabilidad, falta de concentración, depresión, migraña, cansancio.</p>
       <p>Contribuye a <span class="dark_emphasis">limpiar los pulmones y el organismo</span> de todas las sustancias nocivas del tabaco.</p>
@@ -72,10 +72,10 @@
 </div>
 
 
-<div class="dark_background top_spacing bottom_spacing">
+<div class="dark_background acupuncture_main_container top_spacing bottom_spacing">
   <h3 class="bottom_spacing">Acupuntura para perder peso</h3>
   <div class="acupuncture_treatment">
-    <div class="treatments_containers top_spacing bottom_spacing">
+    <div class="treatments_containers acupuncture_text_containers top_spacing bottom_spacing">
       <p>
         Los tratamientos de la Medicina China para <span class="colored_emphasis">adelgazar</span> no son nuevos y son altamente eficaces. Para la Medicina Tradicional China la <span class="colored_emphasis">obesidad</span> y el <span class="colored_emphasis">peso en exceso</span>, una vez que se hayan descartado causas médicas más complejas, son el resultado de la acumulación de Tan-Humedad. El Tan es un desecho que <span class="colored_emphasis">se acumula en el cuerpo</span> debido a que los órganos que están implicados en la <span class="colored_emphasis">digestión</span> y el <span class="colored_emphasis">metabolismo de los líquidos</span>, el bazo y el estómago, no funcionan bien. Lo más adecuado antes de comenzar el tratamiento es realizar un mediante una diferenciación de síndromes según la Medicina Tradicional China.</p>
         <p>Una de las diferencias de la Medicina China con respecto a la Occidental es que no sólo realiza el tratamiento del síndrome actual y sus síntomas, sino también <span class="colored_emphasis">la causa que lo ha originado</span>. En la estadística basada en la evidencia que mide la eficacia de la acupuntura para la pérdida de peso se comprobó que los tratamientos aumentan y regulan la grelina, una hormona que controla la iniciación de las comidas y la <span class="colored_emphasis">disminución de la insulina y la leptina</span>, hormona que estimula la sensación de estar lleno y regula el almacenamiento de grasa y el metabolismo. La insulina regula el metabolismo de los <span class="colored_emphasis">carbohidratos</span> y las <span class="colored_emphasis">grasas</span> y la absorción de la <span class="colored_emphasis">glucosa</span> de la sangre.
@@ -86,11 +86,11 @@
         <img src="images/acupuncture.jpg" class="abdominal_acupuncture_picture" alt="imagen del vientre de una mujer recibiendo tratamiento de acupuntura">
       </div>
     </div>
-    <div>
+    <div class="acupuncture_treatment">
       <div>
         <img src="images/acupuncture_meridian_traditional_chinese_medicine.png" class="meridian_picture" alt="imagen del cuerpo humano con las líneas de los meridianos utilizados en la medicina china">
       </div>
-      <div class="treatments_containers top_spacing">
+      <div class="treatments_containers acupuncture_text_containers top_spacing">
         <p>Está demostrado ademas que, como reacción al pinchazo de la aguja, en unos puntos muy específicos del organismo, éste libera sustancias transmisoras específicas y que por esta razón el estímulo de la aguja actúa como <span class="colored_emphasis">calmante</span> y <span class="colored_emphasis">regulador del sistema vegetativo</span> (o autónomo). Como efecto directo, los trastornos funcionales de los órganos y los del sistema nervioso, en particular los del sistema vegetativo, así como los <span class="colored_emphasis">problemas de circulación</span> y los <span class="colored_emphasis">dolores crónicos</span> pueden <span class="colored_emphasis">ser mejorados</span>.</p>
         <p>Este hallazgo sugiere que la acupuntura puede realmente reducir las hormonas que conducen a comer en exceso. Por lo tanto esta técnica puede controlar el apetito <span class="colored_emphasis">aumentando el metabolismo basal y estimulando la eliminación de líquidos a nivel renal</span>, es decir, los estímulos producidos por la acupuntura, controlan el apetito, disminuyen la ansiedad por comer exageradamente y regulan el metabolismo, todo lo cual, <span class="colored_emphasis">favorece la pérdida de peso</span> y <span class="colored_emphasis">potencia la autoestima</span>.</p>
       </div>
@@ -100,31 +100,31 @@
   
   <div class="hand_massage_background_picture top_spacing bottom_spacing">
     <img src="{{asset('images/hand_massage.png')}}" class="hand_massage_picture" alt="imagen de una mujer recibiendo un masaje de manos">
-    <div class="treatments_containers"> 
-      <div>
+    <div class="treatments_containers hand_massage_text_container"> 
+      <div class="hand_massage_text_containers">
         <h3 class="top_spacing bottom_spacing">Sindrome premenstrual</h3>
       </div>
-      <div>
-      <p>El <span class="colored_emphasis">síndrome premenstrual</span> comprende síntomas emocionales y físicos que aparecen antes del <span class="colored_emphasis">período menstrual</span> (agotamiento, tristeza, perdida de concentración, irritabilidad, agresividad, distensión abdominal, insomnio...)<br>
+      <div class="hand_massage_text_containers">
+        <p>El <span class="colored_emphasis">síndrome premenstrual</span> comprende síntomas emocionales y físicos que aparecen antes del <span class="colored_emphasis">período menstrual</span> (agotamiento, tristeza, perdida de concentración, irritabilidad, agresividad, distensión abdominal, insomnio...).<br>
         La sintomatología puede aparecer desde las dos semanas anteriores hasta el día previo a la menstruación.</p>
         <p>El tratamiento incluye técnicas de acupuntura, digitopresion, moxibustion así como la integración de plantas medicinales y alimentos apropiados dependiendo de las manifestaciones patológicas, de la lengua, del pulso, y otras técnicas de diagnostico.</p>
       </div>  
-      </div>
     </div>
+  </div>
     
     
     <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing">
       <img src="{{asset('images/woman_closed_eyes.jpg')}}" class="woman_closed_eyes_picture" alt="imagen del rostro de una mujer en las sombras con los ojos cerrados">
-      <div class="treatments_containers"> 
+      <div class="headache_text_container"> 
         <div>
           <div>
             <h3 class="top_spacing bottom_spacing">Cefalea</h3>
           </div>
-          <div>
+          <div class="treatments_containers headache_text_containers">
             <p>En la medicina tradicional china las <span class="colored_emphasis">cefaleas</span> no constituyen entidades aisladas patológicamente hablando, sino que son la consecuencia de desequilibrios fisiologicos y/o emocionales provocados por causas como debilidad constitucional, irregularidades alimentarias, alteraciones emocionales, traumatismos o descanso insuficiente entre otras.</p>
           </div>
         </div>
-        <div>
+        <div class="treatments_containers headache_text_containers">
           <p>Se pueden diferenciar tres diferentes grados de cefalea :</p>
           <p><span class="colored_emphasis">Cefalalgia</span> : dolor de cabeza que se caracteriza por una sensación de pesadez, hinchazón, dolor pulsátil, sensación de quemazón...</p>
           <p><span class="colored_emphasis">Cefalea</span> : grado de intensidad mayor, aunque a menudo se emplea como sinónimo de cefalea. La causa es más tensional.</p>

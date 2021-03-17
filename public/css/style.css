@@ -206,10 +206,6 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
-/* .treatments_containers h3 {
-  margin-left: 0;
-} */
-
 .therapies_colored_containers,
 .login_label_input_container,
 .label_input_container,
@@ -225,6 +221,10 @@ input[type="checkbox"] {
 .acupuncture_treatment {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.acupuncture_treatment:last-child {
+  flex-direction: column;
 }
 
 .five_elements_containers,
@@ -466,6 +466,7 @@ input[type="checkbox"] {
     justify-content: flex-end;
   }
 
+
 }
 
 
@@ -493,6 +494,7 @@ input[type="checkbox"] {
     width: 100%;
   }
 
+  .five_elements_picture,
   .stones_picture,
   .lotus_picture,
   .woman_breathing_picture,
@@ -509,7 +511,6 @@ input[type="checkbox"] {
 
   .lotus_background_picture {
     background-image: url('/images/lotus.jpg'); 
-    height: 100%;
   }
 
   .woman_breathing_background_picture {
@@ -533,6 +534,18 @@ input[type="checkbox"] {
   }
 
   .stones_background_picture,
+  .hand_massage_background_picture,
+  .woman_closed_eyes_background_picture,
+  .chinese_herbal_medicine_background_picture,
+  .woman_meditating_background_picture,
+  .lotus_text_containers:last-child h3,
+  .smoking_text_containers h3,
+  .lotus_text_containers li {
+    color: #FFFFFF;
+  }
+
+  .stones_background_picture,
+  .lotus_background_picture,
   .woman_breathing_background_picture,
   .hand_massage_background_picture,
   .woman_closed_eyes_background_picture,
@@ -540,20 +553,14 @@ input[type="checkbox"] {
   .woman_meditating_background_picture {
     background-repeat: no-repeat;
     background-size: cover;
-    color: #FFFFFF;
     width: 100%;
     height: 100%;
     margin-bottom: 5%;
   }
 
-  .lotus_background_picture
-   {
-    background-repeat: no-repeat;
-  background-size: cover;
-  }
 
-  .five_elements_picture {
-    display: none;
+  .acupuncture_main_container {
+    margin-bottom: 5%;
   }
 
   .five_elements_background_picture {
@@ -567,7 +574,10 @@ input[type="checkbox"] {
 
   .fire_element,
   .timber_earth_elements,
-  .water_metal_elements {
+  .water_metal_elements,
+  .lotus_text_container,
+  .smoking_text_container,
+  .five_elements_main_container  {
     display: flex;
     flex-direction: row;
   }
@@ -576,6 +586,8 @@ input[type="checkbox"] {
     width: 25%;
   }
 
+  .lotus_text_containers ul,
+  .lotus_text_containers li,
   .five_elements_text.bottom_spacing {
     padding: 0;
   }
@@ -604,11 +616,11 @@ input[type="checkbox"] {
     width: 30%;
   }
 
+  .therapies_colorless_containers .therapies_text_containers,
   .five_elements_main_container {
-    display: flex;
-    flex-direction: row;
     margin: 0 5%;
   }
+   
 
   .five_elements_main_container:first-child {
     justify-content: space-between;
@@ -632,9 +644,6 @@ input[type="checkbox"] {
     width: 60%;
   } 
 
-  .therapies_colorless_containers .therapies_text_containers {
-    margin: 0 5%;
-  }
 
   .therapies_colorless_containers {
     flex-direction: row;
@@ -645,38 +654,51 @@ input[type="checkbox"] {
     width: 90%;
   }
 
-  .lotus_text_containers ul {
+  .lotus_text_containers ul,
+  .lotus_text_containers h3,
+  .smoking_text_containers h3,
+  .hand_massage_text_containers h3 {
     margin: 0;
-    padding: 0;
   }
 
-  .lotus_text_containers li {
-    padding: 0;
 
-    color: #FFFFFF;
-  }
 
-  .lotus_text_container {
-    display: flex;
-    flex-direction: row;
+  .lotus_text_container,
+  .smoking_text_container {
     justify-content: space-evenly;
+  }
+
+  .smoking_text_containers:last-child {
+    width: 50%;
+    margin: 3% 0 10% 22%;
   }
 
   .lotus_text_containers {
     width: 47%;
   }
 
-  .lotus_text_containers h3 {
-    margin: 0;
-  }
-
-  .lotus_text_container:last-child {
+  .lotus_text_container:last-child{
     align-items: flex-end;
   }
 
-  .lotus_text_containers:last-child h3 {
-    color: #FFFFFF;
-  }  
+  .hand_massage_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 47%;
+    margin: 0;
+  }
+
+  .hand_massage_text_containers p {
+    margin: 10%;
+  }
+
+  .headache_text_container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
 
 }
 
