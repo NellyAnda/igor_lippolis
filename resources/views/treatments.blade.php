@@ -164,23 +164,20 @@
               </div>
             </div>
           </div>
-          
         </div>
         
         
         <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/chinese_herbal_medicine_small.png')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
-          <div> 
             <div class="immune_system_text_container">
               <div class="immune_system_text_containers">
                 <h3 class="top_spacing bottom_spacing">Defensas imunitarias</h3>
               </div>
-              <div class="treatments_containers bottom_spacing immune_system_text_containers">
+              <div class="treatments_containers immune_system_text_containers bottom_spacing">
                 <p><span class="colored_emphasis">Energéticamente</span> debe haber un equilibrio en el organismo para que los diferentes sistemas que lo integran puedan funcionar a su máximo potencial y en armonía. En el caso del <span class="colored_emphasis">sistema inmunologico</span>, en la medicina tradicional china encontramos el Wei Qi (energía defensiva) que tiene función de protección y adaptación del organismo análogas al sistema inmunológico.</p>
                 <p>Objetivo del tratamiento es que el organismo sea capaz de <span class="colored_emphasis">mantener el equilibrio</span> (homeostasis) aunque las condiciones externas cambien.</p>
                 </div>
               </div>
-            </div>
           </div>
           
           
