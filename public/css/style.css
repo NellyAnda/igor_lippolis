@@ -520,6 +520,7 @@ input[type="checkbox"] {
 
   .woman_breathing_background_picture {
     background-image: url('/images/woman_breathing.jpg');
+    background-position-y: center;
   }
 
   .hand_massage_background_picture {
@@ -821,7 +822,27 @@ input[type="checkbox"] {
     margin: 8% 5% 15% 10%;
   }
 
+  .acupuncture_main_container h3 {
+    padding: 0;
+  }
 
+  .acupuncture_treatment,
+  .acupuncture_treatment:last-child {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .acupuncture_text_containers {
+    padding: 2% 0;
+    margin: 0 5%;
+    width: 95%;
+  }
+
+  .headache_text_containers {
+    margin: 15% 6%;
+    width: 35%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
