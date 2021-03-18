@@ -106,21 +106,21 @@
       </div>
       <div class="hand_massage_text_containers">
         <p>El <span class="colored_emphasis">síndrome premenstrual</span> comprende síntomas emocionales y físicos que aparecen antes del <span class="colored_emphasis">período menstrual</span> (agotamiento, tristeza, perdida de concentración, irritabilidad, agresividad, distensión abdominal, insomnio...).<br>
-        La sintomatología puede aparecer desde las dos semanas anteriores hasta el día previo a la menstruación.</p>
-        <p>El tratamiento incluye técnicas de acupuntura, digitopresion, moxibustion así como la integración de plantas medicinales y alimentos apropiados dependiendo de las manifestaciones patológicas, de la lengua, del pulso, y otras técnicas de diagnostico.</p>
-      </div>  
+          La sintomatología puede aparecer desde las dos semanas anteriores hasta el día previo a la menstruación.</p>
+          <p>El tratamiento incluye técnicas de acupuntura, digitopresion, moxibustion así como la integración de plantas medicinales y alimentos apropiados dependiendo de las manifestaciones patológicas, de la lengua, del pulso, y otras técnicas de diagnostico.</p>
+        </div>  
+      </div>
     </div>
-  </div>
     
     
     <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing">
       <img src="{{asset('images/woman_closed_eyes.jpg')}}" class="woman_closed_eyes_picture" alt="imagen del rostro de una mujer en las sombras con los ojos cerrados">
       <div class="headache_text_container"> 
-        <div>
+        <div class="treatments_containers headache_text_containers">
           <div>
             <h3 class="top_spacing bottom_spacing">Cefalea</h3>
           </div>
-          <div class="treatments_containers headache_text_containers">
+          <div>
             <p>En la medicina tradicional china las <span class="colored_emphasis">cefaleas</span> no constituyen entidades aisladas patológicamente hablando, sino que son la consecuencia de desequilibrios fisiologicos y/o emocionales provocados por causas como debilidad constitucional, irregularidades alimentarias, alteraciones emocionales, traumatismos o descanso insuficiente entre otras.</p>
           </div>
         </div>
@@ -134,10 +134,10 @@
     </div>
     
     <div class="lumbalgia_insomnia_container">
-  
+      
       <div class="man_stretching_background_picture top_spacing bottom_spacing">
         <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
-
+        
         <div>
           <h3 class="top_spacing bottom_spacing">Lumbalgia</h3>
         </div>
@@ -146,38 +146,38 @@
             Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
           </div>
-
-      </div>
-      
-   
+          
+        </div>
+        
+        
         
         <div class="woman_opened_eyes_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_opened_eyes_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
           <div class="woman_opened_eyes_text_container">
-          <div>
-            <h3 class="top_spacing bottom_spacing">Insomnio</h3>
-          </div>
-          <div class="treatments_containers">
-            <p>La acupuntura para el insomnio ha sido practicada durante cientos de años con resultados óptimos.<br>
-              La MTC es muy efectiva para tratar este trastorno, incluyendo el <span class="dark_emphasis">insomnio</span> de tipo crónico que se ha tratado con fármacos durante mucho tiempo.<br>
-              El tratamiento puede tener duraciones diferentes, dependiendo de cada persona. El insomnio suele remitir entre las cuatro y diez sesiones. A menudo es necesario añadir a la terapia la moxibustión y el uso de plantas medicinales.</p>
+            <div>
+              <h3 class="top_spacing bottom_spacing">Insomnio</h3>
+            </div>
+            <div class="treatments_containers">
+              <p>La acupuntura para el insomnio ha sido practicada durante cientos de años con resultados óptimos.<br>
+                La MTC es muy efectiva para tratar este trastorno, incluyendo el <span class="dark_emphasis">insomnio</span> de tipo crónico que se ha tratado con fármacos durante mucho tiempo.<br>
+                El tratamiento puede tener duraciones diferentes, dependiendo de cada persona. El insomnio suele remitir entre las cuatro y diez sesiones. A menudo es necesario añadir a la terapia la moxibustión y el uso de plantas medicinales.</p>
+              </div>
             </div>
           </div>
+          
         </div>
-
-    </div>
         
         
         <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">
           <img src="{{asset('images/chinese_herbal_medicine_small.png')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
-          <div class=""> 
-            <div>
-              <div>
+          <div> 
+            <div class="immune_system_text_container">
+              <div class="immune_system_text_containers">
                 <h3 class="top_spacing bottom_spacing">Defensas imunitarias</h3>
               </div>
-              <div class="treatments_containers">
-                <p><span class="colored_emphasis">Energéticamente</span> debe haber un equilibrio en el organismo para que los diferentes sistemas que lo integran puedan funcionar a su máximo potencial y en armonía. En el caso del <span class="colored_emphasis">sistema inmunologico</span>, en la medicina tradicional china encontramos el Wei Qi (energía defensiva) que tiene función de protección y adaptación del organismo análogas al sistema inmunológico.<br>
-                  Objetivo del tratamiento es que el organismo sea capaz de <span class="colored_emphasis">mantener el equilibrio</span> (homeostasis) aunque las condiciones externas cambien. </p>
+              <div class="treatments_containers bottom_spacing immune_system_text_containers">
+                <p><span class="colored_emphasis">Energéticamente</span> debe haber un equilibrio en el organismo para que los diferentes sistemas que lo integran puedan funcionar a su máximo potencial y en armonía. En el caso del <span class="colored_emphasis">sistema inmunologico</span>, en la medicina tradicional china encontramos el Wei Qi (energía defensiva) que tiene función de protección y adaptación del organismo análogas al sistema inmunológico.</p>
+                <p>Objetivo del tratamiento es que el organismo sea capaz de <span class="colored_emphasis">mantener el equilibrio</span> (homeostasis) aunque las condiciones externas cambien.</p>
                 </div>
               </div>
             </div>
@@ -186,18 +186,18 @@
           
           <div class="woman_meditating_background_picture top_spacing bottom_spacing">
             <img src="{{asset('images/woman_meditating.jpg')}}" class="woman_meditating_picture" alt="imagen de una mujer sentada con las piernas cruzadas sobre una duna de arena y frente al desierto">
-            <div class=""> 
+            <div class="anxiety_text_main_container"> 
               
               <div>
                 <h3 class="top_spacing bottom_spacing">Tratamiento del ansiedad</h3>
               </div>
-              <div class="treatments_containers">
-                <div>
+              <div class="treatments_containers anxiety_text_container">
+                <div class="anxiety_text_containers">
                   <p>Por <span class="colored_emphasis">ansiedad</span> se entiende un <span class="colored_emphasis">estado crónico de desasosiego y miedo</span>; que puede ser inducido también de otras emociones tales como la reflexión excesiva, el exceso de alegría, la preocupación, la conmoción, la vergüenza, la culpa.<br>
                     Cada uno de estos estados anímicos puede llevar a un estancamiento de energía o de sangre y provocar desequilibrios fisiológicos en el Yin o en el Yang y en los diferentes elementos (u órganos).
                   </p>
                 </div>
-                <div>
+                <div class="anxiety_text_containers">
                   <p>Se ha demostrado que la acupuntura  tiene acción sobre el sistema nervioso autónomo <span class="colored_emphasis">disminuyendo la presión arterial en situaciones de estrés y también tiene efectos en los centros del dolor y del miedo en el cerebro</span>, regiones que se activan a raíz de trastornos postraumáticos ocasionados por el estrés , por lo que se puede llegar a sentir un importante alivio de la sintomatologia propria del ansiedad a partir de las primeras sesiones.</p>
                 </div>
               </div>
