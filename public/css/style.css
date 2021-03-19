@@ -530,6 +530,7 @@ input[type="checkbox"] {
 
   .woman_closed_eyes_background_picture {
     background-image: url('/images/woman_closed_eyes.jpg');
+    background-position-y: center;
   }
 
   .woman_meditating_background_picture {
@@ -962,14 +963,47 @@ input[type="checkbox"] {
     padding: 0;
   }
 
-.man_stretching_background_picture,
-.woman_opened_eyes_background_picture,
-.woman_closed_eyes_background_picture {
-  height: 1000px;
-}
+  .man_stretching_background_picture,
+  .woman_opened_eyes_background_picture,
+  .lotus_background_picture {
+    height: 1000px;
+  }
 
-.headache_text_container {
-  justify-content: bottom;
-}
+  .woman_closed_eyes_background_picture,
+  .woman_breathing_background_picture {
+    height: 800px;
+  }
+
+  .headache_text_container {
+    height: 100%;
+    align-items: center;
+  }
+
+
+  .headache_text_container h3 {
+    padding: 0 0 10% 0;
+  }
+
+
+  .hand_massage_text_containers {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .hand_massage_text_containers p {
+    margin: 20% 0;
+  }
+
+  .smoking_text_containers:last-child {
+    margin: 8% 0 10% 22%;
+  }
+
+  .treatments_containers ul {
+    padding: 10% 15% 20% 5%;
+  }
+
+  .treatments_containers ul li {
+    padding: 1% 0;
+  }
 
 } 
