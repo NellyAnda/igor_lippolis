@@ -3,6 +3,7 @@
 @section('image_header')
 <div class="homepage_background_picture">
 	<h1>Igor Lippolis</h1>
+  <h2>Licenciado en Medicina China y Medicina Natural y Tradicional</h2>
 </div>
 @endsection
 

@@ -46,7 +46,9 @@ class HomeController extends Controller
         return view('treatments');
     }
 
-    public function admin() {
+    public function admin() 
+    {
         return view('admin');
-      }
+    }
+
 }

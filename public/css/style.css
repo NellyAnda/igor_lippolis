@@ -1,5 +1,12 @@
 /* mobile first */
 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   font-family: 'Titillium Web';
@@ -57,10 +64,94 @@ input[type="checkbox"] {
   outline: 2px solid #7BB03B;
 }
 
-.top_banner {
-  height: 20px;
-  position: fixed;
+
+.ham {
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+  margin-top: 250px;
 }
+
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #7BB03B;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.showNav {
+  transform: translateY(250px);
+}
+
+.navbar ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #7BB03B;
+  text-decoration: none;
+  font-family: 'Courgette';
+  font-size: 1.5rem;
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus {
+  border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+
+
+.top_banner {
+  height: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-evenly;
+}
+
+
+.social_network {
+  height: 30px;
+  width: 30px;
+}
+
+
+
 
 .colored_emphasis,
 .fire_emphasis,
@@ -723,6 +814,10 @@ input[type="checkbox"] {
     padding: 0;
   }
 
+  .headache_text_container p {
+    margin: 5% 0;
+  } 
+
 }
 
 
@@ -848,6 +943,9 @@ input[type="checkbox"] {
     margin-left: 5%;
     margin-right: 15%;
   }
+
+
+
 
 }
 
