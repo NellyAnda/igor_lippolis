@@ -28,7 +28,7 @@
 					@csrf
 					<div class="label_input_container">
 						<label for="name" class="">{{ __('Apellidos') }}</label>
-						<input id="name" type="text" @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+						<input id="name" type="text" @error('name') is-invalid @enderror name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 						@error('name')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>
@@ -37,7 +37,7 @@
 					</div>
 					<div class="label_input_container">
 						<label for="first_name" class="">{{ __('Nombre') }}</label>
-						<input id="first_name" type="text" @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
+						<input id="first_name" type="text" @error('first_name') is-invalid @enderror name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
 						@error('first_name')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>
@@ -46,7 +46,7 @@
 					</div>	
 					<div class="label_input_container">
 						<label for="address" class="">{{ __('Dirección completa') }}</label>
-						<input id="address" type="text" @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
+						<input id="address" type="text" @error('address') is-invalid @enderror name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
 						@error('address')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>
@@ -66,7 +66,7 @@
 
 					<div class="label_input_container">
 						<label for="email" class="">{{ __('Correo electronico') }}</label>
-						<input id="email" type="email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+						<input id="email" type="email" @error('email') is-invalid @enderror name="email" value="{{ old('email') }}" required autocomplete="email">
 						@error('email')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>
@@ -75,7 +75,7 @@
 					</div>
 					<div class="label_input_container">
 						<label for="password" class="">{{ __('Contraseña') }}</label>
-						<input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+						<input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password">
 						@error('password')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>
@@ -84,13 +84,13 @@
 					</div>
 					<div class="label_input_container">
 						<label for="password-confirm" class="">{{ __('Repetir contraseña') }}</label>
-						<input id="password-confirm" type="password"" name="password_confirmation" required autocomplete="new-password">
+						<input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
 					</div>
 
 
 					<div class="label_input_container message_input">
 						<label for="message">{{ __('Mensaje') }}</label>
-						<input id="message" type="textarea" class="message" maxlength="1000" placeholder="Máximo 1000 caracteres" @error('Mensaje') is-invalid @enderror" name="message" value="{{ old('message') }}" required autocomplete="message">
+						<input id="message" type="textarea" class="message" maxlength="1000" placeholder="Máximo 1000 caracteres" @error('Mensaje') is-invalid @enderror name="message" value="{{ old('message') }}" required autocomplete="message">
 						@error('message')
 						<span class="invalid-feedback" role="alert">
 							<strong>{{ $message }}</strong>

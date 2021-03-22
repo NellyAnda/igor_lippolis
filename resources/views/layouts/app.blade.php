@@ -11,12 +11,13 @@
 	<title>{{ config('app.name', 'Laravel') }}</title>
 	
 	<!-- Scripts -->
-	{{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 	
+	<script src="https://kit.fontawesome.com/f3115f342a.js" crossorigin="anonymous"></script>
 	
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
 	
 	<!-- Styles -->
 	
@@ -29,29 +30,33 @@
 		<div class="top_banner">
 			<a href="https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="social_network" alt="icono de Facebook"></a>
 			<a href="https://www.instagram.com/igor.chinesemedicine/" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="social_network" alt="icono de Instagram"></a>
-			<a href="tel:+34632387065"><img src="{{asset('images/phone.svg')}}" class="social_network" alt="icono de telefono">632 387 065</a>
+			<a href="tel:+34632387065"><img src="{{asset('images/phone.svg')}}" class="social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
 			@if (session('status'))
 			<div class="alert alert-success" role="alert">
 				{{ session('status') }}
 			</div>
 			@endif
-				<a class="menuLink" href="{{ route('home') }}">Pedir cita</a>
+				<a href="{{ route('home') }}">Pedir cita</a>
 			@guest
 				@if (Route::has('register'))
-				<a href="{{ route('register') }}"> {{ __('S\'enregistrer') }} </a>
+				<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
 				@endif
-				<a href="{{ route('login') }}"> {{ __('Connexion') }} </a>
-			@else
-				<div>
+				<ul>
+					<li><a href="{{ route('login') }}"> {{ __('Conectarse') }} </a>
+				@else
+				<ul class="top_navbar">
 					@if (Auth::user()->administrator === 1)
-						<a href="{{route('admin')}}">Pagina administrativa</a>
+						<li><a href="{{route('admin')}}" class="topMenuLink">Pagina administrativa</a></li>
 					@endif
-						<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} ">Mi cuenta</a>
-						<a href=" {{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> {{ __('Desconectarse') }} </a>
-						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+						<li><a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="topMenuLink">Mi cuenta</a></li>
+						<li><a href=" {{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="topMenuLink"> {{ __('Desconectarse') }} </a></li>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="topMenuLink">
 						@csrf
 						</form>
-				</div>
+					</ul>
+					<i class="fas fa-caret-down dropdown"></i>
+				</li>
+				</ul>
 			@endguest
 		</div>
 		<div>

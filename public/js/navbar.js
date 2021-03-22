@@ -17,3 +17,23 @@ menuLinks.forEach(
     menuLink.addEventListener('click', openmenu);
   }
 )
+
+
+
+let dropDown = document.querySelector('.dropdown');
+let topnavbar = document.querySelector('.top_navbar');
+
+
+dropDown.addEventListener('click', opentopmenu);
+
+function opentopmenu(){
+  topnavbar.classList.toggle('showTopNav');
+}
+
+let topMenuLinks = document.querySelectorAll('.topMenuLink');
+
+topMenuLinks.forEach(
+  function(topMenuLinks) {
+    topMenuLinks.addEventListener('click', opentopmenu);
+  }
+)
