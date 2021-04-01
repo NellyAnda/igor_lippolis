@@ -28,41 +28,45 @@
 <body>
 	<header>
 		<div class="top_banner">
-			<a href="https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="social_network" alt="icono de Facebook"></a>
-			<a href="https://www.instagram.com/igor.chinesemedicine/" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="social_network" alt="icono de Instagram"></a>
-			<a href="tel:+34632387065"><img src="{{asset('images/phone.svg')}}" class="social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
-			@if (session('status'))
-			<div class="alert alert-success" role="alert">
-				{{ session('status') }}
+			<div class="social_networks">
+				<a href="https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="social_network" alt="icono de Facebook"></a>
+				<a href="https://www.instagram.com/igor.chinesemedicine/" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="social_network" alt="icono de Instagram"></a>
+				<a href="tel:+34632387065"><img src="{{asset('images/phone.svg')}}" class="social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
 			</div>
-			@endif
-				<a href="{{ route('home') }}">Pedir cita</a>
-			@guest
-				@if (Route::has('register'))
-				<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
+			<div class="top_navbar_links">
+				@if (session('status'))
+				<div class="alert alert-success" role="alert">
+					{{ session('status') }}
+				</div>
 				@endif
-				<ul>
-					<li><a href="{{ route('login') }}"> {{ __('Conectarse') }} </a>
-				@else
-				<ul class="top_navbar">
-					@if (Auth::user()->administrator === 1)
-						<li><a href="{{route('admin')}}" class="topMenuLink">Pagina administrativa</a></li>
+					<a href="{{ route('home') }}">Pedir cita</a>
+				@guest
+					@if (Route::has('register'))
+					<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
 					@endif
-						<li><a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="topMenuLink">Mi cuenta</a></li>
-						<li><a href=" {{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="topMenuLink"> {{ __('Desconectarse') }} </a></li>
-						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="topMenuLink">
-						@csrf
-						</form>
+					<ul>
+						<li><a href="{{ route('login') }}"> {{ __('Conectarse') }} </a>
+					@else
+					<ul class="top_navbar">
+						@if (Auth::user()->administrator === 1)
+							<li><a href="{{route('admin')}}" class="topMenuLink">Pagina administrativa</a></li>
+						@endif
+							<li><a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="topMenuLink">Mi cuenta</a></li>
+							<li><a href=" {{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="topMenuLink"> {{ __('Desconectarse') }} </a></li>
+							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="topMenuLink">
+							@csrf
+							</form>
+						</ul>
+						<i class="fas fa-caret-down dropdown"></i>
+					</li>
 					</ul>
-					<i class="fas fa-caret-down dropdown"></i>
-				</li>
-				</ul>
-			@endguest
+				@endguest
+			</div>
 		</div>
 		<div>
 			@yield('image_header')
 		</div>
-		<button class="ham"></button>
+		<button class="ham nav_button"></button>
 		<nav class="navbar">
 			<ul>
 				<li><a class="menuLink" href="{{ route('home') }}">Inicio</a></li>

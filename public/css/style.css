@@ -64,7 +64,6 @@ input[type="checkbox"] {
   outline: 2px solid #7BB03B;
 }
 
-
 .dropdown {
   position: absolute;
   z-index: 1000;
@@ -85,13 +84,13 @@ input[type="checkbox"] {
 .top_navbar {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
   overflow: hidden;
-  color: white;
   transform: translateY(-100%);
   transition: transform 0.2s ease;
+  background-color: #FFFFFF;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .top_navbar ul {
@@ -104,12 +103,17 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+.top_banner a,
 .top_navbar li a {
   color: #000000;
   text-decoration: none;
 }
 
-.ham {
+.top_banner li {
+  list-style: none;
+}
+
+.nav_button {
   position: absolute;
   z-index: 1000;
   top: 20px;
@@ -119,9 +123,13 @@ input[type="checkbox"] {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
   background-size: 100%;
   margin-top: 250px;
+}
+
+.ham {
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+
 }
 
 .showClose {
@@ -168,8 +176,6 @@ input[type="checkbox"] {
   border-bottom: 2px solid white;
 }
 
-
-
 .top_banner {
   height: 50px;
   position: fixed;
@@ -180,17 +186,32 @@ input[type="checkbox"] {
   opacity: 0.8;
   width: 100%;
   z-index: 1000;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
+.top_navbar_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.social_networks {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .social_network {
   height: 30px;
   width: 30px;
 }
 
-
-
+.phone {
+  display: none;
+}
 
 .colored_emphasis,
 .fire_emphasis,
