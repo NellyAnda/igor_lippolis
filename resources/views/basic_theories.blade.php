@@ -10,7 +10,7 @@
 
 @section('content')
   <h2>Teorias basicas de la medicina tradicional China</h2>
-    <h3 class="top_spacing">Yin Yang</h3>
+    <h3 class="top_spacing bottom_spacing">Yin Yang</h3>
     <div>
       <div class="yin_yang_containers bottom_spacing">
         <p>En un principio, Yin Yang se empleaban para indicar la posición de un lugar respecto al Sol (Yang era el lado soleado y Yin el sombreado), observando la alternancia de los fenómenos naturales, la sucesión del día y la noche...</p>

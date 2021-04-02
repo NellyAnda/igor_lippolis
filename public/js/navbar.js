@@ -6,7 +6,8 @@ let deployedTop = false;
 let deployedBottom = false;
 
 
-dropDown.addEventListener('click', toggleTopMenu);
+
+dropDown.addEventListener('click', toggleTopMenu); 
 
 function toggleTopMenu(){
   
@@ -17,11 +18,11 @@ function toggleTopMenu(){
     deployedBottom = false;
   }
 
-  if (!topnavbar.classList.contains('showTopNav')) {
+  if (!topnavbar.classList.contains('showTopNav')) { 
     topnavbar.classList.add('showTopNav');
     deployedTop = true;
   } else {
-    topnavbar.classList.remove('showTopNav');
+    topnavbar.classList.remove('showTopNav'); 
     deployedTop = false;
   }
  
@@ -45,7 +46,7 @@ function openmenu(){
     deployedTop = false;
   }
 
-  if (!navbar.classList.contains('showNav')) {
+  if (!navbar.classList.contains('showNav'))  {
     navbar.classList.add('showNav');
     hamButton.classList.add('showClose');
     hamButton.classList.remove('ham');
@@ -66,3 +67,6 @@ menuLinks.forEach(
     menuLink.addEventListener('click', openmenu);
   }
 )
+
+
+

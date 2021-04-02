@@ -23,14 +23,14 @@ h1, h2, h3, label {
 
 h1 {
   color: #FFFFFF;
-  padding: 30px 0 0 50px; 
+  padding: 55px 0 0 10px; 
   font-size: 2rem;
   margin: 0;
 }
 
 h2 {
   text-align: center;
-  margin: 40px 20px;
+  padding: 40px 20px;
   font-size: 1.7rem;
 }
 
@@ -64,6 +64,19 @@ input[type="checkbox"] {
   outline: 2px solid #7BB03B;
 }
 
+.top_banner {
+  height: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
 .dropdown {
   position: absolute;
   z-index: 1000;
@@ -80,6 +93,30 @@ input[type="checkbox"] {
 .showTopNav {
   transform: translateY(0%) !important;
 } 
+
+.top_navbar_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.social_networks {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social_network {
+  height: 30px;
+  width: 30px;
+}
+
+.phone {
+  display: none;
+}
 
 .top_navbar {
   position: absolute;
@@ -107,33 +144,16 @@ input[type="checkbox"] {
 .top_navbar li a {
   color: #000000;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .top_banner li {
   list-style: none;
 }
 
-.nav_button {
-  position: absolute;
-  z-index: 1000;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-size: 100%;
-  margin-top: 250px;
-}
-
-.ham {
-  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-
-}
-
-.showClose {
-  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+.homepage_background_picture h2 {
+  color: #FFFFFF;
+  display: none;
 }
 
 .navbar {
@@ -151,6 +171,28 @@ input[type="checkbox"] {
 
 .showNav {
   transform: translateY(250px);
+}
+
+.nav_button {
+  position: absolute;
+  z-index: 1000;
+  top: 5px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: 100%;
+  margin-top: 250px;
+}
+
+.ham {
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+}
+
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
 }
 
 .navbar ul {
@@ -176,42 +218,6 @@ input[type="checkbox"] {
   border-bottom: 2px solid white;
 }
 
-.top_banner {
-  height: 50px;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #FFFFFF;
-  opacity: 0.8;
-  width: 100%;
-  z-index: 1000;
-  justify-content: space-between;
-}
-
-.top_navbar_links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
-}
-
-.social_networks {
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.social_network {
-  height: 30px;
-  width: 30px;
-}
-
-.phone {
-  display: none;
-}
 
 .colored_emphasis,
 .fire_emphasis,
@@ -311,6 +317,8 @@ input[type="checkbox"] {
   background-image: url('/images/tea.jpg');
 }
 
+.presentation_container,
+.medicine_origin_containers,
 .basic_theories_containers,
 .connection_container,
 .registration_container,
@@ -368,13 +376,16 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+.presentation_container,
+.medicine_origin_container,
 .therapies_colorless_containers,
 .acupuncture_treatment {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.acupuncture_treatment:last-child {
+.acupuncture_treatment:last-child,
+.medicine_origin_container:last-child {
   flex-direction: column;
 }
 
@@ -434,9 +445,11 @@ input[type="checkbox"] {
 }
 
 .meridian_picture,
-.abdominal_acupuncture_picture {
+.abdominal_acupuncture_picture,
+.tea_set_picture,
+.bamboo_grove_picture {
   width: 90%;
-  padding: 0 5%;
+  margin: 0 5%;
 }
 
 
@@ -981,6 +994,8 @@ input[type="checkbox"] {
     padding: 0;
   }
 
+  .medicine_origin_container,
+  .medicine_origin_container:last-child,
   .acupuncture_treatment,
   .acupuncture_treatment:last-child {
     flex-direction: row;
@@ -1141,7 +1156,6 @@ input[type="checkbox"] {
   .headache_text_container h3 {
     padding: 0 0 10% 0;
   }
-
 
   .hand_massage_text_containers {
     width: 60%;
