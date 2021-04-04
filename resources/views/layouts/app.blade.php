@@ -57,10 +57,15 @@
 							@csrf
 							</form>
 						</ul>
+						
 						<i class="fas fa-caret-down dropdown"></i>
+
 					</li>
 					</ul>
 				@endguest
+
+				
+
 			</div>
 		</div>
 		<div>

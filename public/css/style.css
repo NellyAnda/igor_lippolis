@@ -88,6 +88,7 @@ input[type="checkbox"] {
   background-color: transparent;
   background-size: 100%;
   color: #000000;
+  visibility: visible;
 }
 
 .showTopNav {
@@ -98,7 +99,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 70%;
+  width: 65%;
 }
 
 .social_networks {
@@ -365,6 +366,7 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
+.presentation_container,
 .therapies_colored_containers,
 .login_label_input_container,
 .label_input_container,
@@ -913,6 +915,28 @@ input[type="checkbox"] {
     background-size: cover;
   }
 
+  .top_navbar_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+  }
+  
+  .top_navbar {
+    width: 25%;
+    align-items: center;
+  }
+
+  .presentation_container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .igor {
+    width: 95%;
+  }
+
   .acupuncture_background_picture {
     height: 580px;
     background-size: contain;
@@ -922,6 +946,8 @@ input[type="checkbox"] {
     margin: 0;
   }
 
+  .presentation_container,
+  .medicine_origin_containers,
   .basic_theories_containers,
   .treatments_containers {
     margin: 0 6%;
@@ -1003,10 +1029,11 @@ input[type="checkbox"] {
     align-items: center;
   }
 
+  
   .acupuncture_text_containers {
     padding: 2% 0;
     margin: 0 5%;
-    width: 95%;
+    width: 90%;
   }
 
   .headache_text_containers {
@@ -1036,6 +1063,8 @@ input[type="checkbox"] {
     background-size: cover;
   }
 
+  .presentation_container,
+  .medicine_origin_containers,
   .basic_theories_containers,
   .treatments_containers {
     margin: 0 7%;

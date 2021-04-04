@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 let deployedTop = false;
 let deployedBottom = false;
 
-
+if (dropDown != null) 
 
 dropDown.addEventListener('click', toggleTopMenu); 
 
@@ -21,6 +21,7 @@ function toggleTopMenu(){
   if (!topnavbar.classList.contains('showTopNav')) { 
     topnavbar.classList.add('showTopNav');
     deployedTop = true;
+
   } else {
     topnavbar.classList.remove('showTopNav'); 
     deployedTop = false;
@@ -43,6 +44,7 @@ function openmenu(){
 
   if (deployedTop) {
     topnavbar.classList.remove('showTopNav');
+    
     deployedTop = false;
   }
 
@@ -56,8 +58,7 @@ function openmenu(){
     hamButton.classList.remove('showClose');
     hamButton.classList.add('ham');
     deployedBottom = false;
-  }
-
+  }  
 }
 
 let menuLinks = document.querySelectorAll('.menuLink');
@@ -67,6 +68,4 @@ menuLinks.forEach(
     menuLink.addEventListener('click', openmenu);
   }
 )
-
-
 

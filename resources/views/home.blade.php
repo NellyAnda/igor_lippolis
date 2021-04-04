@@ -13,7 +13,7 @@
 
 <div class="presentation_container bottom_spacing">
   <div class="top_spacing">
-    <img src="images/igor_lippolis.jpg" alt="imagen del terapeuta Igor Lippolis">
+    <img src="images/igor_lippolis.jpg" class="igor" alt="imagen del terapeuta Igor Lippolis">
   </div>  
   <div>
     <h2>Presentación</h2>
@@ -21,20 +21,20 @@
     En mi adolescencia seguí estudiando por mi cuenta la fitoterapia y otras practicas como el Yoga y el Tai chi hasta encontrar y consolidar mi formación como medico tradicional chino.</p>
   </div>
 </div>
-<div class="dark_background">
-  <h2>Origen de la Medicina Tradicional China</h2>
+<div class="dark_background top_spacing bottom_spacing">
+  <h3 class="bottom_spacing">Origen de la Medicina Tradicional China</h3>
   <div class="medicine_origin_container">
-    <div class="medicine_origin_containers bottom_spacing">
+    <div class="medicine_origin_containers top_spacing bottom_spacing">
         <p>La vida moderna nos somete a tensiones y a un estilo de vida que nos lleva al deterioro de nuestra salud y bienestar. Existe una sabiduría para la curación que desde hace milenios se ocupa de devolver al ser humano la <span class="colored_emphasis">salud</span> y el <span class="colored_emphasis">bienestar</span>, armonizando todos los aspectos de su ser : <span class="colored_emphasis">La Medicina China</span>.
         </p>
-        <p>La Medicina Tradicional China considera al cuerpo humano como un todo, y atribuye la enfermedad al desequilibrio entre los diferentes elementos del mismo, por lo que su tratamiento, más que destinado a la curación de un síntoma concreto, se enfoca al restablecimiento del equilibrio corporal, enfatizando la necesidad de llevar una vida sana. </p>
+        <p>La Medicina Tradicional China considera al cuerpo humano como un todo, y atribuye la enfermedad al desequilibrio entre los diferentes elementos del mismo, por lo que su tratamiento, más que destinado a la curación de un síntoma concreto, se enfoca al restablecimiento del equilibrio corporal, enfatizando la necesidad de llevar una vida sana.</p>
       </div>  
-      <div class="bottom_spacing">
+      <div>
         <img src="images/chinese_tea_set.jpg" class="tea_set_picture" alt="imagen de un juego de té chino">
       </div>
     
   </div>
-  <div class="medicine_origin_container bottom_spacing">
+  <div class="medicine_origin_container">
       <div>
         <img src="images/bamboo_grove.jpg" class="bamboo_grove_picture" alt="imagen de un camino en un bosque de bambú">
       </div>
@@ -45,7 +45,7 @@
   </div>
 </div>
 <div>
-  <h2>Tratamientos populares</h2>
+  <h3 class="top_spacing bottom_spacing">Tratamientos populares</h3>
 </div>
 
 @endsection

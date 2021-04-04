@@ -42,7 +42,7 @@
     </div>
     <div class="lotus_text_containers">
       <div>
-        <h3 class="top_spacing bottom_spacing">¿ Cuándo se perciben los resultados ?</h3>
+        <h3 class="top_spacing bottom_spacing">¿Cuándo se perciben los resultados?</h3>
       </div>
       <div class="treatments_containers">
         <p>
