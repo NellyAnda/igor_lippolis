@@ -39,7 +39,7 @@
 					{{ session('status') }}
 				</div>
 				@endif
-					<a href="{{ route('home') }}">Pedir cita</a>
+					{{-- <a href="{{ route('home') }}">Pedir cita</a> --}}
 				@guest
 					@if (Route::has('register'))
 					<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
@@ -82,7 +82,10 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="desktop_navbar bottom_spacing">
+		<script type="text/javascript" src="{{ asset('js/navbar.js') }}" ></script>
+	</header>
+	<main>
+		<div class="desktop_navbar">
 			<nav class="desktop_nav">
 				<ul>
 					<li><a class="" href="{{ route('home') }}">Inicio</a></li>
@@ -94,9 +97,6 @@
 				</ul>
 			</nav>
 		</div>	
-		<script type="text/javascript" src="{{ asset('js/navbar.js') }}" ></script>
-	</header>
-	<main>
 		@yield('content')
 	</main>
 </body>
