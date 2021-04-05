@@ -10,7 +10,7 @@
 	@endsection
 	
 	@section('content')
-	<div class="">
+	<div>
 		<h2>Crear una cuenta</h2>
 		<div class="registration_container connection_registration_container">
 			<p class="align">
@@ -73,6 +73,7 @@
 						</span>
 						@enderror
 					</div>
+
 					<div class="label_input_container">
 						<label for="password" class="">{{ __('Contraseña') }}</label>
 						<input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password">
@@ -82,6 +83,7 @@
 						</span>
 						@enderror
 					</div>
+					
 					<div class="label_input_container">
 						<label for="password-confirm" class="">{{ __('Repetir contraseña') }}</label>
 						<input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">

@@ -48,4 +48,19 @@
   <h3 class="top_spacing bottom_spacing">Tratamientos populares</h3>
 </div>
 
+
+{{-- <div class="container_restaurant">
+	@foreach ($restaurants as $restaurant)
+	<div class="items_restaurant">
+		<img src=" {{asset($restaurant->image)}} " class="img_r_left" >
+		<div class="restaurant_right">  
+			<h3>{{$restaurant->name}}</h3>
+			<p class="restaurant_text">{{$restaurant->description}}</p>
+			<a href=" {{route('Restaurant.show', ['Restaurant' => $restaurant->id])}}" class="restaurant_button">En savoir plus</a>
+		</div>
+	</div>
+	@endforeach
+</div> --}}
+
+
 @endsection
