@@ -56,11 +56,9 @@
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="topMenuLink">
 							@csrf
 							</form>
-						</ul>
-						
+					</ul>
 						<i class="fas fa-caret-down dropdown"></i>
-
-					</li>
+							</li>
 					</ul>
 				@endguest
 
@@ -71,17 +69,31 @@
 		<div>
 			@yield('image_header')
 		</div>
-		<button class="ham nav_button"></button>
-		<nav class="navbar">
-			<ul>
-				<li><a class="menuLink" href="{{ route('home') }}">Inicio</a></li>
-				<li><a class="menuLink" href="{{ route('basic_theories') }}">Teorias Basicas</a></li>
-				<li><a class="menuLink" href="{{ route('acupuncture') }}">Acupuntura</a></li>
-				<li><a class="menuLink" href="{{ route('therapeutic_techniques') }}">Tecnicas Terapeuticas</a></li>
-				<li><a class="menuLink" href="{{ route('treatments') }}">Tratamientos</a></li>
-				<li><a class="menuLink" href="{{ route('home') }}">Pedir cita</a></li>
-			</ul>
-		</nav>
+		<div class="mobile_navbar">
+			<button class="ham nav_button"></button>
+			<nav class="navbar">
+				<ul>
+					<li><a class="menuLink" href="{{ route('home') }}">Inicio</a></li>
+					<li><a class="menuLink" href="{{ route('basic_theories') }}">Teorias Basicas</a></li>
+					<li><a class="menuLink" href="{{ route('acupuncture') }}">Acupuntura</a></li>
+					<li><a class="menuLink" href="{{ route('therapeutic_techniques') }}">Tecnicas Terapeuticas</a></li>
+					<li><a class="menuLink" href="{{ route('treatments') }}">Tratamientos</a></li>
+					<li><a class="menuLink" href="{{ route('home') }}">Pedir cita</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="desktop_navbar bottom_spacing">
+			<nav class="desktop_nav">
+				<ul>
+					<li><a class="" href="{{ route('home') }}">Inicio</a></li>
+					<li><a class="" href="{{ route('basic_theories') }}">Teorias Basicas</a></li>
+					<li><a class="" href="{{ route('acupuncture') }}">Acupuntura</a></li>
+					<li><a class="" href="{{ route('therapeutic_techniques') }}">Tecnicas Terapeuticas</a></li>
+					<li><a class="" href="{{ route('treatments') }}">Tratamientos</a></li>
+					<li><a class="" href="{{ route('home') }}">Pedir cita</a></li>
+				</ul>
+			</nav>
+		</div>	
 		<script type="text/javascript" src="{{ asset('js/navbar.js') }}" ></script>
 	</header>
 	<main>

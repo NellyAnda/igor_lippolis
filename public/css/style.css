@@ -1,6 +1,5 @@
 /* mobile first */
 
-
 * {
   padding: 0;
   margin: 0;
@@ -62,6 +61,10 @@ input {
 
 input[type="checkbox"] {
   outline: 2px solid #7BB03B;
+}
+
+.desktop_navbar {
+  display: none;
 }
 
 .top_banner {
@@ -215,7 +218,8 @@ input[type="checkbox"] {
   font-size: 1.5rem;
 }
 
-.navbar ul li a:hover, .navbar ul li a:focus {
+.navbar ul li a:hover, 
+.navbar ul li a:focus {
   border-bottom: 2px solid white;
 }
 
@@ -458,7 +462,14 @@ input[type="checkbox"] {
 @media screen and (min-width: 576px) {
 
 
-  
+  .showNav {
+    transform: translateY(350px);
+  }
+
+  .nav_button {
+    margin-top: 350px;
+  }
+
   .homepage_background_picture,
   .basic_theories_background_picture,
   .connection_background_picture,
@@ -529,18 +540,22 @@ input[type="checkbox"] {
 
   .homepage_background_picture,
   .basic_theories_background_picture,
-  .connection_background_picture {
-    height:420px;
-    background-size: cover;
-  }
-
-  
+  .connection_background_picture,
   .acupuncture_background_picture,
   .therapeutic_techniques_background_picture,
   .treatments_background_picture {
+    height:420px;
     background-size: contain;
   }
- 
+
+  .showNav {
+    transform: translateY(420px);
+  }
+
+  .nav_button {
+    margin-top: 420px;
+  }
+
   .login_label_input_container,
   .label_input_container,
   .checkbox_container {
@@ -642,6 +657,42 @@ input[type="checkbox"] {
 
 
 @media screen and (min-width: 992px) {
+
+.mobile_navbar {
+  display: none;
+}
+
+.desktop_navbar {
+  display: block;
+}
+
+.desktop_nav {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+.desktop_nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.desktop_nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Courgette';
+  font-size: 1.5rem;
+}
+
+.desktop_nav ul li a:hover, 
+.desktop_nav ul li a:focus {
+  border-bottom: 2px solid #FEC84E;
+}
 
   .homepage_background_picture,
   .basic_theories_background_picture,
