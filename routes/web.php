@@ -26,3 +26,4 @@ Route::get('/admin', 'HomeController@admin')->name('admin');
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::resource('User','UserController');
+Route::resource('HomepageTreatments', 'HomepageTreatmentsController');

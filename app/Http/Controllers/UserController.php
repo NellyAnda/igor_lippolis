@@ -73,7 +73,7 @@ class UserController extends Controller
     {
         $user = User::find($id);
 		$user->fill($request->all());
-		$user->save();
+    	$user->save();
 		return redirect()->route('home');
     }
 

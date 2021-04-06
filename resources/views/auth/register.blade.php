@@ -73,7 +73,7 @@
 						</span>
 						@enderror
 					</div>
-
+					
 					<div class="label_input_container">
 						<label for="password" class="">{{ __('Contraseña') }}</label>
 						<input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password">
@@ -83,7 +83,6 @@
 						</span>
 						@enderror
 					</div>
-					
 					<div class="label_input_container">
 						<label for="password-confirm" class="">{{ __('Repetir contraseña') }}</label>
 						<input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">

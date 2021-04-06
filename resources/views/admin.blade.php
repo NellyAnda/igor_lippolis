@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Panel de administrador')
+@section('pageTitle', 'Panel de administrador')
+
+@section('image_header')
+<div class="admin_background_picture">
+	<h1>Panel de administrador</h1>
+</div>
+@endsection
+
 
 @section('content')
 <div class="">
@@ -8,19 +15,23 @@
 		<h1>Panel de administrador</h1>
 		<div class="">
 			<div class="">
+			
+			
 				<div class="">
 					<h2>Tratamientos de la pagina de inicio</h2>
 					<div>
-						<a href="{{route('home')}}" class="">
-							
+
+						
+						<a href="{{route('HomepageTreatments.create')}}" class="">
               <button type="submit" class="button_text">{{ __('Añadir un tratamiento') }}</button> 
 						</a>
-						<a href="{{route('home')}}" class="">
-							
-              <button type="submit" class="button_text">{{ __('Suprimir un tratamiento') }}</button> 
+						<a href="{{route('HomepageTreatments.index')}}" class="">
+              <button type="submit" class="button_text">{{ __('Modificar un tratamiento') }}</button> 
 						</a>
 					</div>
 				</div>
+
+
 				<div class="">
 					<h2>Citas</h2>
 					<div>

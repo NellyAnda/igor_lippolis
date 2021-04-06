@@ -27,7 +27,7 @@
 				<label for="password" class="">{{ __('Contraseña') }}</label>
 				<input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 				@error('password')
-				<span class="" role="alert">
+				<span class="invalid-feedback" role="alert">
 					<strong>{{ $message }}</strong>
 				</span>
 				@enderror

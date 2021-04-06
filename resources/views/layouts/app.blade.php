@@ -51,7 +51,7 @@
 						@if (Auth::user()->administrator === 1)
 							<li><a href="{{route('admin')}}" class="topMenuLink">Pagina administrativa</a></li>
 						@endif
-							<li><a href=" {{ route('User.edit', ['User' => Auth::user()->id]) }} " class="topMenuLink">Mi cuenta</a></li>
+							<li><a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="topMenuLink">Mi cuenta</a></li>
 							<li><a href=" {{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="topMenuLink"> {{ __('Desconectarse') }} </a></li>
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="topMenuLink">
 							@csrf

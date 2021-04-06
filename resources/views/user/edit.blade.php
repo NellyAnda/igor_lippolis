@@ -61,10 +61,10 @@
       </span>
       @enderror
     </div>
-    
+
     <div class="label_input_container">
       <label for="password" class="">{{ __('Contraseña actual') }}</label>
-      <input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password">
+      <input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="current-password">
       @error('password')
       <span class="invalid-feedback" role="alert">
         <strong>{{ $message }}</strong>
