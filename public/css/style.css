@@ -75,6 +75,7 @@ input[type="checkbox"] {
   display: none;
 }
 
+
 .top_banner {
   height: 52px;
   position: fixed;
@@ -1310,5 +1311,7 @@ input[type="checkbox"] {
   .treatments_containers ul li {
     padding: 1% 0;
   }
+
+
   
 } 

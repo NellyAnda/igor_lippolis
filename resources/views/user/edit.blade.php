@@ -64,16 +64,17 @@
 
     <div class="label_input_container">
       <label for="password" class="">{{ __('Contraseña actual') }}</label>
-      <input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="current-password">
-      @error('password')
-      <span class="invalid-feedback" role="alert">
-        <strong>{{ $message }}</strong>
-      </span>
-      @enderror
+      <input id="password" type="password" @error('password') is-invalid @enderror name="current-password" required autocomplete="new-password">
+      @if(session()->has('message'))
+			<div class="container-fluid">
+				{{ session()->get('message') }}
+			</div>
+			@endif
+
     </div>
     <div class="label_input_container">
       <label for="password" class="">{{ __('Nueva contraseña') }}</label>
-      <input id="password" type="password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password">
+      <input id="password" type="password" @error('password') is-invalid @enderror name="new-password" autocomplete="new-password">
       @error('password')
       <span class="invalid-feedback" role="alert">
         <strong>{{ $message }}</strong>
@@ -82,7 +83,7 @@
     </div>
     <div class="label_input_container">
       <label for="password-confirm" class="">{{ __('Repetir nueva contraseña') }}</label>
-      <input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password">
+      <input id="password-confirm" type="password" name="new-password_confirmation" autocomplete="new-password">
     </div>
 					<div class="">
 						<div class="">

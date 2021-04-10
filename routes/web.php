@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
+Route::resource('User','UserController');
+Route::resource('Treatment', 'TreatmentController');
+
 Route::get('/basic_theories', 'HomeController@basic_theories')->name('basic_theories');
 Route::get('/acupuncture', 'HomeController@acupuncture')->name('acupuncture');
 Route::get('/therapeutic_techniques', 'HomeController@therapeutic_techniques')->name('therapeutic_techniques');
@@ -25,5 +28,3 @@ Route::get('/admin', 'HomeController@admin')->name('admin');
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::resource('User','UserController');
-Route::resource('HomepageTreatments', 'HomepageTreatmentsController');

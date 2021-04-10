@@ -84,6 +84,9 @@
 		</div>
 		<script type="text/javascript" src="{{ asset('js/navbar.js') }}" ></script>
 	</header>
+
+
+
 	<main>
 		<div class="desktop_navbar">
 			<nav class="desktop_nav">

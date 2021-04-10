@@ -14,9 +14,8 @@
 					<p>Dirección : <span> {{ $user->address }} </span></p>
           <p>Número de teléfono : <span> {{ $user->phone_number }} </span></p>
           <p>Correo electronico : <span> {{ $user->email }} </span></p>
-					<p>Contrasena : <span> {{ $user->password }} </span></p>
 					<a class="btn btn-primary text-secondary" href="{{route('User.edit', ['User' => $user->id])}}">
-						Modifiez vos informations
+						Modificar su perfil
 					</a>
 				</div>
 			</div>

@@ -22,10 +22,10 @@
 					<div>
 
 						
-						<a href="{{route('HomepageTreatments.create')}}" class="">
+						<a href="{{route('Treatment.create')}}" class="">
               <button type="submit" class="button_text">{{ __('Añadir un tratamiento') }}</button> 
 						</a>
-						<a href="{{route('HomepageTreatments.index')}}" class="">
+						<a href="{{route('Treatment.index')}}" class="">
               <button type="submit" class="button_text">{{ __('Modificar un tratamiento') }}</button> 
 						</a>
 					</div>

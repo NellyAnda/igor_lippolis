@@ -82,14 +82,14 @@
         </p>
         
       </div>
-      <div>
-        <img src="images/acupuncture.jpg" class="abdominal_acupuncture_picture" alt="imagen del vientre de una mujer recibiendo tratamiento de acupuntura">
-      </div>
+      
+        <img src="images/acupuncture.jpg" class="abdominal_acupuncture_picture top_spacing" alt="imagen del vientre de una mujer recibiendo tratamiento de acupuntura">
+      
     </div>
     <div class="acupuncture_treatment">
-      <div>
+      
         <img src="images/acupuncture_meridian_traditional_chinese_medicine.png" class="meridian_picture" alt="imagen del cuerpo humano con las líneas de los meridianos utilizados en la medicina china">
-      </div>
+      
       <div class="treatments_containers acupuncture_text_containers top_spacing">
         <p>Está demostrado ademas que, como reacción al pinchazo de la aguja, en unos puntos muy específicos del organismo, éste libera sustancias transmisoras específicas y que por esta razón el estímulo de la aguja actúa como <span class="colored_emphasis">calmante</span> y <span class="colored_emphasis">regulador del sistema vegetativo</span> (o autónomo). Como efecto directo, los trastornos funcionales de los órganos y los del sistema nervioso, en particular los del sistema vegetativo, así como los <span class="colored_emphasis">problemas de circulación</span> y los <span class="colored_emphasis">dolores crónicos</span> pueden <span class="colored_emphasis">ser mejorados</span>.</p>
         <p>Este hallazgo sugiere que la acupuntura puede realmente reducir las hormonas que conducen a comer en exceso. Por lo tanto esta técnica puede controlar el apetito <span class="colored_emphasis">aumentando el metabolismo basal y estimulando la eliminación de líquidos a nivel renal</span>, es decir, los estímulos producidos por la acupuntura, controlan el apetito, disminuyen la ansiedad por comer exageradamente y regulan el metabolismo, todo lo cual, <span class="colored_emphasis">favorece la pérdida de peso</span> y <span class="colored_emphasis">potencia la autoestima</span>.</p>

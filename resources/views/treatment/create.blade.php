@@ -12,8 +12,8 @@
 @section('content')
 <h2>Añadir un tratamiento</h2>
 <div class="top_spacing bottom_spacing">
-<form method="POST" action="{{ route('admin') }}" class="form_container">
-
+<form method="POST" action="{{ route('Treatment.store') }}" class="form_container">
+@csrf
   <label for="treatment_path">Elige un tratamiento</label>
 
     <select name="treatment_path" id="treatment_path">
