@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-
+use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
@@ -72,27 +72,29 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
+    { 
+    
         $request->validate([
             'name' => 'required|string|max:255',
             'first_name' => 'required|string|max:255',
             'address' => 'required|string|max:255',
             'phone_number' => 'required|string|max:255',
             'email'=>'required|string|email|max:255',
-            'current_password' => 'required',
-            'new_password'=>'string|min:8|confirmed',
-            'new-password_confirmation'=>'string'
+            'current-password' => 'required',
+            'new-password'=>'string|min:8|confirmed',
             ]);
 
         $user = User::find($id);
-
+        
         $currentPassword = Hash::make($request->get('current-password'));
+        
 
         $newPassword = $request->get('new-password');
-        $passwordConfirmation = $request->get('new-password_confirmation');
-
+        $passwordConfirmation = $request->get('new-password-confirmation');
+        
 
         if (strcmp($currentPassword, $user->password)) {
+            
            if (strcmp($newPassword, $passwordConfirmation)) {
                 $user->fill([
                     'name'=>$request->get('name'),
@@ -100,11 +102,13 @@ class UserController extends Controller
                     'address'=>$request->get('address'),
                     'phone_number'=>$request->get('phone_number'),
                     'email'=>$request->get('email'),
-                    'password'=>$request->get('new_password'),
+                    'password'=>$request->get('new-password'),
                 ]);
+
                 $user->save();
                 return redirect()->route('User.show', ['User' => $user]);
-           } elseif (strcmp($newPassword, $passwordConfirmation)) { // string vide
+                
+            } elseif ($newPassword == null && $passwordConfirmation == null) { // string vide
                 $user->fill([
                     'name'=>$request->get('name'),
                     'first_name'=>$request->get('first_name'),
@@ -120,9 +124,6 @@ class UserController extends Controller
         } else {
             return redirect()->route('User.edit', ['User' => $user])->with('message', 'La contraseña es incorrecta');
         };
-
-		
-
         
     }
 

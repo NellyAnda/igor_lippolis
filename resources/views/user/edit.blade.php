@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Su cuenta')
+@section('pageTitle', 'Modificar a su cuenta')
 
-@section('image_header')
+{{-- @section('image_header')
 <div class="connection_background_picture">
-	<h1>Su cuenta</h1>
+	<h1>Modificar a su cuenta</h1>
 	</div>
-	@endsection
+	@endsection --}}
 	
 	@section('content')
 
 <h2>Su cuenta</h2>
 <div class="registration_container">
-  <form method="POST" action="{{ route('User.update', ['User' => $user->id]) }}"  class="form_container">
+  <form method="POST" action="{{route('User.update', ['User' => $user->id])}}"  class="form_container align">
     @csrf
     @method('PUT')
     <div class="label_input_container">
@@ -83,15 +83,18 @@
     </div>
     <div class="label_input_container">
       <label for="password-confirm" class="">{{ __('Repetir nueva contraseña') }}</label>
-      <input id="password-confirm" type="password" name="new-password_confirmation" autocomplete="new-password">
+      <input id="password-confirm" type="password" name="new-password-confirmation" autocomplete="new-password">
     </div>
-					<div class="">
+
+
+
+					
 						<div class="">
 							<button type="submit" class="button_text">
 								{{ __('Engravar') }}
 							</button>
 						</div>
-					</div>
+					
 				</form>
 				<form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}" style="display: contents">
 				@csrf
