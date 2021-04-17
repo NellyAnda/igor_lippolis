@@ -24,5 +24,16 @@
 		</div>
 	</div>
 </div>
+@if(session()->has('message-new-password'))
+	<div class="container-fluid">
+		{{ session()->get('message-new-password') }}
+	</div>
+@elseif(session()->has('message-new-data'))
+<div class="container-fluid">
+			{{ session()->get('message-new-data') }}
+</div>
+
+@endif
+
 </div>
 @endsection

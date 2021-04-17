@@ -81,48 +81,46 @@ class UserController extends Controller
             'phone_number' => 'required|string|max:255',
             'email'=>'required|string|email|max:255',
             'current-password' => 'required',
-            'new-password'=>'string|min:8|confirmed',
             ]);
 
         $user = User::find($id);
         
-        $currentPassword = Hash::make($request->get('current-password'));
-        
+        $currentPassword = $request->get('current-password');        
 
         $newPassword = $request->get('new-password');
         $passwordConfirmation = $request->get('new-password-confirmation');
         
-
-        if (strcmp($currentPassword, $user->password)) {
+        if (Hash::check($currentPassword, $user->password)) {
             
-           if (strcmp($newPassword, $passwordConfirmation)) {
+            if ($newPassword == null && $passwordConfirmation == null) { 
                 $user->fill([
                     'name'=>$request->get('name'),
                     'first_name'=>$request->get('first_name'),
                     'address'=>$request->get('address'),
                     'phone_number'=>$request->get('phone_number'),
                     'email'=>$request->get('email'),
-                    'password'=>$request->get('new-password'),
+                ]);
+                $user->save();
+                return redirect()->route('User.show', ['User' => $user])->with('message-new-data','Tu perfil es actualizado');
+                 
+            } elseif ($newPassword == $passwordConfirmation) {
+                $user->fill([
+                    'name'=>$request->get('name'),
+                    'first_name'=>$request->get('first_name'),
+                    'address'=>$request->get('address'),
+                    'phone_number'=>$request->get('phone_number'),
+                    'email'=>$request->get('email'),
+                    'password'=>Hash::make($request->get('new-password')),
                 ]);
 
                 $user->save();
-                return redirect()->route('User.show', ['User' => $user]);
-                
-            } elseif ($newPassword == null && $passwordConfirmation == null) { // string vide
-                $user->fill([
-                    'name'=>$request->get('name'),
-                    'first_name'=>$request->get('first_name'),
-                    'address'=>$request->get('address'),
-                    'phone_number'=>$request->get('phone_number'),
-                    'email'=>$request->get('email'),
-                ]);
-                $user->save();
-                return redirect()->route('User.show', ['User' => $user]);
+                return redirect()->route('User.show', ['User' => $user])->with('message-new-password','La nueva contraseña es registrada') ;
+
             } else {
-                //message les 2 mots de passe ne se correspondent pas
+                return redirect()->route('User.edit', ['User' => $user])->with('message-confirmation','La contraseña de confirmación no corresponde');
             }
         } else {
-            return redirect()->route('User.edit', ['User' => $user])->with('message', 'La contraseña es incorrecta');
+             return redirect()->route('User.edit', ['User' => $user])->with('message','La contraseña es incorrecta');
         };
         
     }

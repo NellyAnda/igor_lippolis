@@ -84,6 +84,11 @@
     <div class="label_input_container">
       <label for="password-confirm" class="">{{ __('Repetir nueva contraseña') }}</label>
       <input id="password-confirm" type="password" name="new-password-confirmation" autocomplete="new-password">
+      @if(session()->has('message-confirmation'))
+			<div class="container-fluid">
+				{{ session()->get('message-confirmation') }}
+			</div>
+			@endif
     </div>
 
 
