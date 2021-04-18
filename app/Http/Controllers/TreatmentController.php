@@ -40,10 +40,13 @@ class TreatmentController extends Controller
     $picture = $request->file('picture')->store('public/homepage_treatments');
     $picture = substr($picture, 7);
     
-    $treatments = new Treatment(['treatment_name' => $request->get('treatment_name'),'treatment_path' => $request->get('treatment_path'),'treatment_picture_description' => $request->get('treatment_picture_description'),'picture' => $picture]);
+    $treatments = new Treatment(['treatment_name' => $request->get('treatment_name'),'treatment_path' => $request->get('treatment_path'),
+    
+    'treatment_picture_description' => $request->get('treatment_picture_description'),'picture' => $picture]);
+    
     $treatments->save();
     
-    return redirect()->route('home')->with('message', 'El tratamiento ha sido anadido');
+    return redirect()->route('home')->with('message-treatment-added', 'El tratamiento ha sido añadido');
   }
   
   /**

@@ -2,11 +2,11 @@
 
 @section('pageTitle', 'Modificar a su cuenta')
 
-{{-- @section('image_header')
+@section('image_header')
 <div class="connection_background_picture">
 	<h1>Modificar a su cuenta</h1>
 	</div>
-	@endsection --}}
+	@endsection
 	
 	@section('content')
 
@@ -70,8 +70,12 @@
 				{{ session()->get('message') }}
 			</div>
 			@endif
-
     </div>
+
+    <div>
+      <p>Cambiar a mi contraseña</p>
+    </div>
+
     <div class="label_input_container">
       <label for="password" class="">{{ __('Nueva contraseña') }}</label>
       <input id="password" type="password" @error('password') is-invalid @enderror name="new-password" autocomplete="new-password">

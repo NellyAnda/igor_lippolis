@@ -17,6 +17,11 @@
   <div>
     <img src="images/igor_lippolis.jpg" class="igor" alt="imagen del terapeuta Igor Lippolis">
   </div>  
+  @if(session()->has('message-treatment-added'))
+			<div class="container-fluid">
+				{{ session()->get('message-treatment-added') }}
+			</div>
+	@endif
   <div class="bottom_spacing">
     <h2>Presentación</h2>
     <p>Mi nombre es Igor Lippolis, <span class="colored_emphasis">Licenciado en Medicina China y Medicina Natural y Tradicional</span>. Durante toda mi infancia he tenido la gran suerte de acercarme a un concepto de salud enfocado en el cuidado diario de mi cuerpo que considera la alimentación como primer recurso ante la enfermedad.<br>

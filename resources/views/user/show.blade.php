@@ -2,11 +2,11 @@
 
 @section('pageTitle', 'Su cuenta')
 
-{{-- @section('image_header')
+@section('image_header')
 <div class="connection_background_picture">
 	<h1>Su cuenta</h1>
 </div>
-@endsection --}}
+@endsection
 
 @section('content')
 <div class="container">

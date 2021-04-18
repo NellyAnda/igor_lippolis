@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('pageTitle', 'Añadir un tratamiento')
-
+{{-- 
 @section('image_header')
 <div class="admin_background_picture">
 	<h1>Añadir un tratamiento</h1>
 </div>
-@endsection
+@endsection --}}
 
 
 @section('content')
