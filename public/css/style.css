@@ -63,6 +63,15 @@ input[type="checkbox"] {
   outline: 2px solid #7BB03B;
 }
 
+.brown_button_text {
+  color: #6D4227;
+  font-weight: bold;
+  border: 3px solid #6D4227;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 1rem;
+}
+
 .homepage_treatment_container {
   background-color: blue;
   height: 100px;
@@ -72,6 +81,9 @@ input[type="checkbox"] {
   display: none;
 }
 
+.admin_page_main_container {
+  width: 100%;
+}
 
 .top_banner {
   height: 52px;
@@ -235,7 +247,7 @@ input[type="checkbox"] {
   border-bottom: 2px solid white;
 }
 
-
+.brown_emphasis,
 .colored_emphasis,
 .fire_emphasis,
 .timber_emphasis,
@@ -246,6 +258,10 @@ input[type="checkbox"] {
 .dark_emphasis,
 .button_text {
   font-weight: bold;
+}
+
+.brown_emphasis {
+  color: #6D4227;
 }
 
 .colored_emphasis,
@@ -387,6 +403,7 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
+.admin_page_buttons_containers,
 .presentation_container,
 .therapies_colored_containers,
 .login_label_input_container,
@@ -412,6 +429,7 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+.admin_page_buttons_containers,
 .five_elements_containers,
 .yin_yang_containers {
   align-items: center;
@@ -1002,7 +1020,7 @@ input[type="checkbox"] {
   }
 
   h3 {
-    margin: 3% 5% 3% 8%;
+    margin: 3% 5%;
   }
 
   .admin_background_picture,

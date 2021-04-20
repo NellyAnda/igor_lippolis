@@ -9,31 +9,42 @@
 @endsection
 
 @section('content')
-<div class="container">
-	<div class="card">				
-		<div class="col">
-			<h2 class="">Su cuenta</h2>
-			<p>Apellidos : <span> {{ $user->name }} </span></p>
-			<p>Nombre : <span> {{ $user->first_name }} </span></p>
-			<p>Dirección : <span> {{ $user->address }} </span></p>
-			<p>Número de teléfono : <span> {{ $user->phone_number }} </span></p>
-			<p>Correo electronico : <span> {{ $user->email }} </span></p>
-			<a class="btn btn-primary text-secondary" href="{{route('User.edit', ['User' => $user->id])}}">
-				Modificar su perfil
-			</a>
+<div>
+	<h2>Su cuenta</h2>
+	<div class="treatments_containers align">
+		<div class="top_spacing bottom_spacing align">
+			<p class="brown_emphasis">Apellidos :</p>
+			<p> {{ $user->name }} </p>
 		</div>
+		<div class="bottom_spacing align">
+			<p class="brown_emphasis"><span >Nombre :</p>
+				<p> {{ $user->first_name }} </p>
+			</div>
+			<div class="bottom_spacing align">
+				<p class="brown_emphasis">Dirección :</p>
+				<p> {{ $user->address }} </p>
+			</div>
+			<div class="bottom_spacing align">
+				<p class="brown_emphasis">Número de teléfono :</p>
+				<p> {{ $user->phone_number }} </p>
+			</div>
+			<div class="bottom_spacing align">
+				<p class="brown_emphasis">Correo electronico :</p>
+				<p> {{ $user->email }} </p>
+			</div>
+		</div>	
+		<div class="top_spacing bottom_spacing align">	
+			<a href="{{route('User.edit', ['User' => $user->id])}}"><button class="button_text">Modificar su perfil</button></a>
+		</div>	
 	</div>
-</div>
-@if(session()->has('message-new-password'))
-	<div class="container-fluid">
+	@if(session()->has('message-new-password'))
+	<div>
 		{{ session()->get('message-new-password') }}
 	</div>
-@elseif(session()->has('message-new-data'))
-<div class="container-fluid">
-			{{ session()->get('message-new-data') }}
-</div>
-
-@endif
-
+	@elseif(session()->has('message-new-data'))
+	<div>
+		{{ session()->get('message-new-data') }}
+	</div>
+	@endif
 </div>
 @endsection
