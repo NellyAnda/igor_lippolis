@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('pageTitle', 'Añadir un tratamiento')
-{{-- 
+
 @section('image_header')
 <div class="admin_background_picture">
 	<h1>Añadir un tratamiento</h1>
 </div>
-@endsection --}}
+@endsection
 
 
 @section('content')
@@ -43,18 +43,18 @@
   </div>
 
 
-    <div class="form-group">
+    <div class="">
       <label for="picture">Imagen del tratamiento</label>
       <input type="file" name="picture" id="picture">
     </div>
-    <div class="form-group">
+    <div class="">
       <label for="treatment_picture_description">Texto alternativo del imagen</label>
       <input type="text" name="treatment_picture_description" id="treatment_picture_description">
     </div>
   </div>
-
+  <div class="align">
   <input class="button_text" type="submit" value="Añadir el tratamiento">
-
+</div>
   </form>
 
 

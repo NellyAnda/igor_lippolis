@@ -11,7 +11,7 @@
 @section('content')
 <div>
 	<h2>Su cuenta</h2>
-	<div class="treatments_containers align">
+	<div class="user_info_containers align">
 		<div class="top_spacing bottom_spacing align">
 			<p class="brown_emphasis">Apellidos :</p>
 			<p> {{ $user->name }} </p>

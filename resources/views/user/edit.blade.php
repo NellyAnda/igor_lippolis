@@ -4,14 +4,14 @@
 
 @section('image_header')
 <div class="connection_background_picture">
-	<h1>Modificar a su cuenta</h1>
-	</div>
-	@endsection
-	
-	@section('content')
+  <h1>Modificar a su cuenta</h1>
+</div>
+@endsection
+
+@section('content')
 
 <h2>Su cuenta</h2>
-<div class="registration_container">
+<div class="user_info_containers">
   <form method="POST" action="{{route('User.update', ['User' => $user->id])}}"  class="form_container align">
     @csrf
     @method('PUT')
@@ -61,57 +61,59 @@
       </span>
       @enderror
     </div>
-
-    <div class="label_input_container">
+    
+    <div class="label_input_container bottom_spacing">
       <label for="password" class="">{{ __('Contraseña actual') }}</label>
       <input id="password" type="password" @error('password') is-invalid @enderror name="current-password" required autocomplete="new-password">
       @if(session()->has('message'))
-			<div class="container-fluid">
-				{{ session()->get('message') }}
-			</div>
-			@endif
+      <div class="container-fluid">
+        {{ session()->get('message') }}
+      </div>
+      @endif
     </div>
-
-    <div>
-      <p>Cambiar a mi contraseña</p>
+  </div>   
+  <div>
+    <h3 class="top_spacing bottom_spacing change_password_title">Cambiar a mi contraseña</h3>
+  </div>
+  
+  <div class="user_info_containers align">    
+    <div class="form_container">
+      <div class="label_input_container">
+        <label for="password" class="">{{ __('Nueva contraseña') }}</label>
+        <input id="password" type="password" @error('password') is-invalid @enderror name="new-password" autocomplete="new-password">
+        @error('password')
+        <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+      </div>
+      <div class="label_input_container bottom_spacing">
+        <label for="password-confirm" class="">{{ __('Repetir nueva contraseña') }}</label>
+        <input id="password-confirm" type="password" name="new-password-confirmation" autocomplete="new-password">
+        @if(session()->has('message-confirmation'))
+        <div class="container-fluid">
+          {{ session()->get('message-confirmation') }}
+        </div>
+        @endif
+      </div>
+      
     </div>
-
-    <div class="label_input_container">
-      <label for="password" class="">{{ __('Nueva contraseña') }}</label>
-      <input id="password" type="password" @error('password') is-invalid @enderror name="new-password" autocomplete="new-password">
-      @error('password')
-      <span class="invalid-feedback" role="alert">
-        <strong>{{ $message }}</strong>
-      </span>
-      @enderror
+    
+    <div class="top_spacing bottom_spacing">
+      <button type="submit" class="button_text">
+        {{ __('Engravar') }}
+      </button>
     </div>
-    <div class="label_input_container">
-      <label for="password-confirm" class="">{{ __('Repetir nueva contraseña') }}</label>
-      <input id="password-confirm" type="password" name="new-password-confirmation" autocomplete="new-password">
-      @if(session()->has('message-confirmation'))
-			<div class="container-fluid">
-				{{ session()->get('message-confirmation') }}
-			</div>
-			@endif
+    
+  </form>
+  <form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}" style="display: contents">
+    @csrf
+    @method('DELETE')
+    <div class="bottom_spacing align">
+      <button type="submit" class="button_text">{{ __('Borrar su cuenta') }}</button>
     </div>
+  </form>
+</div>
 
-
-
-					
-						<div class="">
-							<button type="submit" class="button_text">
-								{{ __('Engravar') }}
-							</button>
-						</div>
-					
-				</form>
-				<form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}" style="display: contents">
-				@csrf
-				@method('DELETE')
-        <button type="submit" class="button_text">{{ __('Borrar su cuenta') }}</button>
-				</form>
-			</div>
-		</div>
-	</div>
 </div>
 @endsection

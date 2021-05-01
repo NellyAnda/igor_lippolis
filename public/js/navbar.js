@@ -37,7 +37,6 @@ topMenuLinks.forEach(
   }
 )
 
-
 hamButton.addEventListener('click', openmenu);
 
 function openmenu(){
