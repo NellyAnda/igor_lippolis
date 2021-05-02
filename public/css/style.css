@@ -16,7 +16,7 @@ section {
   width: 100%;
 }
 
-h1, h2, h3, label {
+h1, h2, h3, h4, label {
   font-family: 'Courgette';
 }
 
@@ -61,6 +61,11 @@ input {
 
 input[type="checkbox"] {
   outline: 2px solid #7BB03B;
+}
+
+footer {
+  background-color: #7BB03B;
+  text-align: center;
 }
 
 .brown_button_text {

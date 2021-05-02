@@ -102,5 +102,54 @@
 		</div>	
 		@yield('content')
 	</main>
+	<footer>
+		<div class="top_spacing">
+			{{-- social network --}}
+
+			<a href="https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="social_network" alt="icono de Facebook"></a>
+				<a href="https://www.instagram.com/igor.chinesemedicine/" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="social_network" alt="icono de Instagram"></a>
+				<a href="tel:+34632387065"><img src="{{asset('images/phone.svg')}}" class="social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
+		</div>
+
+		<div>
+
+		<div class="top_spacing">
+			{{-- direccion --}}
+			<h4>Direcciones :</h4>
+			<div>
+				<div class="top_spacing">
+					<p>Las planas<br>Calle Maria Antonia<br>08196 Sant cugat</p>
+				</div>
+				<div class="top_spacing">
+					<p>Calle Provenza 292  6-3<br>08008 Barcelona<br>Metro: DIagonal (L3 - L5)<br>Ferrocarril : Provença</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="top_spacing">
+			{{-- horarios --}}
+			<h4>Horarios de atención :</h4>
+			<div>
+				<p class="top_spacing">De lunes a sábado :<br>De las 9 a las 20</p>
+				<p class="top_spacing">Los domingos :<br>Cerrado (se puede solicitar cita con<br> antelación o por emergencias)</p>
+			</div>
+			<div>
+				<p>Tratamientos a domicilio</p>
+			</div>
+		</div>
+		<div>
+			{{-- legal mentions --}}
+			<a href="">Aviso legal</a>
+			<a href="">Política de privacidad</a>
+			<a href="">Política de cookies</a>
+		</div>
+
+		</div>
+
+		<div class="top_spacing">
+			{{-- copyright --}}
+			<p>© Copyright Igor Lippolis</p>
+		</div>
+	</footer>
 </body>
 </html>
