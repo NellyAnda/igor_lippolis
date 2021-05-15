@@ -38,6 +38,10 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 h2, h3 {
   color: #7BB03B;
 }
@@ -66,7 +70,12 @@ input[type="checkbox"] {
 footer {
   background-color: #7BB03B;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.9;
 }
+
+
 
 .brown_button_text {
   color: #6D4227;
@@ -136,6 +145,7 @@ footer {
   align-items: center;
 }
 
+.footer_social_network,
 .social_network {
   height: 30px;
   width: 30px;
@@ -168,18 +178,28 @@ footer {
   align-items: center;
 }
 
+.footer_link,
 .forgotten_password a,
 .top_banner a,
 .top_navbar li a {
   color: #000000;
-  font-weight: 600;
-
 }
 
+.forgotten_password a,
+.top_banner a,
+.top_navbar li a {
+  font-weight: 600;
+}
+
+.footer_link,
 .top_banner a,
 .top_navbar li a {
   text-decoration: none;
 }
+
+.footer_address_link:hover {
+  font-weight: bold;
+} 
 
 .top_banner li {
   list-style: none;
@@ -418,7 +438,8 @@ footer {
 .five_elements_containers,
 .yin_yang_containers,
 .treatments_containers,
-.user_info_containers {
+.user_info_containers,
+.footer_links {
   display: flex;
   flex-direction: column;
 }
@@ -500,7 +521,6 @@ footer {
   margin: 0 5%;
 }
 
-
 @media screen and (min-width: 576px) {
 
   .top_navbar_links {
@@ -574,6 +594,8 @@ footer {
     width: 60%;
     margin: 5% 20% 0 20%;
   }
+
+
 
 }
 
@@ -713,6 +735,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .footer_text_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
 }

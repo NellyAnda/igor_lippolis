@@ -131,10 +131,17 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
         $user = User::find($id);
-		$user->delete();
-		return redirect()->route('home');
+
+        $currentPassword = $request->get('current-password');       
+
+        if (Hash::check($currentPassword, $user->password)) {
+            $user->delete();
+            return redirect()->route('home');
+        } else {
+            return redirect()->route('User.edit', ['User' => $user])->with('message-delete','Para borrar a tu cuenta, confirma a tu contraseña');
+        };    
     }
 }
