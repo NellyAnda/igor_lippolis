@@ -19,7 +19,7 @@
 @if(session()->has('message-confirmation'))
 <div class="align">
   {{ session()->get('message-confirmation') }}
-</div>
+</div> 
 @endif
 @if(session()->has('message'))
 <div class="align">

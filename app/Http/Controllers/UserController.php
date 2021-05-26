@@ -120,7 +120,7 @@ class UserController extends Controller
                 return redirect()->route('User.edit', ['User' => $user])->with('message-confirmation','La contraseña de confirmación no corresponde');
             }
         } else {
-             return redirect()->route('User.edit', ['User' => $user])->with('message','La contraseña es incorrecta');
+            return redirect()->route('User.edit', ['User' => $user])->with('message','La contraseña es incorrecta');
         };
         
     }

@@ -37,7 +37,8 @@ class deleteInactiveUsers extends Command
      *
      * @return int
      */
-    public function handle()
+
+    public function deleteInactiveUsers()
     {
         $date = \strtotime(Carbon::now().'- 3 years');
         $users = User::all()->where('last_login_at','>',$date);
@@ -45,5 +46,10 @@ class deleteInactiveUsers extends Command
         foreach ($users as $user) {
             $user->delete();
         }
+    }
+
+    public function handle()
+    {
+       $this->deleteInactiveUsers();
     }
 }

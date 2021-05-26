@@ -12,10 +12,9 @@
 @section('content')
 <h2>Añadir un tratamiento</h2>
 <div class="top_spacing bottom_spacing">
-<form method="POST" action="{{ route('Treatment.store') }}" class="form_container">
+<form method="POST" enctype="multipart/form-data" action="{{ route('Treatment.store') }}" class="form_container">
 @csrf
   <label for="treatment_path">Elige un tratamiento</label>
-
     <select name="treatment_path" id="treatment_path">
         <option value="">Elige a una opción</option>
         <option value="cosmetic_acupuncture">Acupuntura cosmetica</option>
@@ -28,10 +27,6 @@
         <option value="immune_system">Defensas imunitarias</option>
         <option value="anxiety">Tratamiento de la ansiedad</option>
     </select>
-
-
-
-
   <div class="">
     <label for="treatment_name" class="">{{ __('Titulo que va a parecer en la pagina Inicio') }}</label>
     <input id="treatment_name" type="text" @error('name') is-invalid @enderror name="treatment_name" value="{{ old('treatment_name') }}" required autocomplete="treatment_name" autofocus>
@@ -41,8 +36,6 @@
     </span>
     @enderror
   </div>
-
-
     <div class="">
       <label for="picture">Imagen del tratamiento</label>
       <input type="file" name="picture" id="picture">
@@ -52,11 +45,8 @@
       <input type="text" name="treatment_picture_description" id="treatment_picture_description">
     </div>
   </div>
-  <div class="align">
+  <div class="align bottom_spacing">
   <input class="button_text" type="submit" value="Añadir el tratamiento">
 </div>
   </form>
-
-
-
   @endsection

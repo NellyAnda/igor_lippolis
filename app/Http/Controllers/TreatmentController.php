@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Treatment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class TreatmentController extends Controller
 {
@@ -35,14 +36,28 @@ class TreatmentController extends Controller
   */
   public function store(Request $request)
   {
-    $request->validate(['treatment_name' => 'required','treatment_path' => 'required','treatment_picture_description' => 'required','picture' => 'required']);
+
+    $request->validate(
+      [
+        'treatment_name' => 'required',
+        'treatment_path' => 'required',
+        'treatment_picture_description' => 'required',
+        'picture' => 'required'
+      ]
+    );
     
+    
+
     $picture = $request->file('picture')->store('public/homepage_treatments');
     $picture = substr($picture, 7);
     
-    $treatments = new Treatment(['treatment_name' => $request->get('treatment_name'),'treatment_path' => $request->get('treatment_path'),
+    $treatments = new Treatment([
+      'treatment_name' => $request->get('treatment_name'),
+      'treatment_path' => $request->get('treatment_path'),
+      'treatment_picture_description' => $request->get('treatment_picture_description'),
+      'picture' => $picture
+    ]);
     
-    'treatment_picture_description' => $request->get('treatment_picture_description'),'picture' => $picture]);
     
     $treatments->save();
     
@@ -97,3 +112,5 @@ class TreatmentController extends Controller
     return redirect()->route('admin')->with('message', 'El tratamiento ha sido suprimido !');
   }
 }
+
+
