@@ -154,7 +154,7 @@
 		
 		<div class="top_spacing">
 			{{-- copyright --}}
-			<p>© Copyright Igor Lippolis</p>
+			<p>© 2021 Copyright Igor Lippolis</p>
 		</div>
 </div>
 

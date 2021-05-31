@@ -101,6 +101,10 @@ footer {
   width: 100%;
 }
 
+.titles_footer {
+  font-size: 20px;
+}
+
 .top_banner {
   height: 52px;
   position: fixed;
