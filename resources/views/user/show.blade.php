@@ -18,21 +18,21 @@
 		</div>
 		<div class="bottom_spacing align">
 			<p class="brown_emphasis"><span >Nombre :</p>
-				<p> {{ $user->first_name }} </p>
-			</div>
-			<div class="bottom_spacing align">
-				<p class="brown_emphasis">Dirección :</p>
-				<p> {{ $user->address }} </p>
-			</div>
-			<div class="bottom_spacing align">
-				<p class="brown_emphasis">Número de teléfono :</p>
-				<p> {{ $user->phone_number }} </p>
-			</div>
-			<div class="bottom_spacing align">
-				<p class="brown_emphasis">Correo electronico :</p>
-				<p> {{ $user->email }} </p>
-			</div>
-		</div>	
+			<p> {{ $user->first_name }} </p>
+		</div>
+		<div class="bottom_spacing align">
+			<p class="brown_emphasis">Dirección :</p>
+			<p> {{ $user->address }} </p>
+		</div>
+		<div class="bottom_spacing align">
+			<p class="brown_emphasis">Número de teléfono :</p>
+			<p> {{ $user->phone_number }} </p>
+		</div>
+		<div class="bottom_spacing align">
+			<p class="brown_emphasis">Correo electronico :</p>
+			<p> {{ $user->email }} </p>
+		</div>
+	</div>	
 		<div class="top_spacing bottom_spacing align">	
 			<a href="{{route('User.edit', ['User' => $user->id])}}"><button class="button_text">Modificar su perfil</button></a>
 		</div>	

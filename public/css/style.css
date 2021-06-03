@@ -75,6 +75,10 @@ footer {
   opacity: 0.9;
 }
 
+.file_input {
+  border: none;
+}
+
 .footer_social_networks {
   margin: 0 auto;
 }
@@ -89,7 +93,6 @@ footer {
 }
 
 .homepage_treatment_container {
-  background-color: blue;
   height: 100px;
 }
 
@@ -405,7 +408,8 @@ footer {
 .water_metal_elements,
 .therapies_text_containers,
 .treatments_containers,
-.user_info_containers {
+.user_info_containers,
+.add_treatments_containers {
   margin: 0 10%;
 }
 
@@ -452,7 +456,8 @@ footer {
 .yin_yang_containers,
 .treatments_containers,
 .user_info_containers,
-.footer_links {
+.footer_links,
+.add_treatments_containers {
   display: flex;
   flex-direction: column;
 }
@@ -792,6 +797,15 @@ footer {
 
 @media screen and (min-width: 992px) {
 
+  .select,
+  .file_input {
+    margin: 40px 0;
+  }
+
+  .file_input {
+    padding: 0;
+  }
+
   .mobile_navbar {
     display: none;
   }
@@ -1093,6 +1107,10 @@ footer {
     margin: 0;
   }
 
+  .file_input {
+    margin-top: 10px;
+  }
+
 }
 
 
@@ -1104,6 +1122,12 @@ footer {
 
   h3 {
     margin: 3% 5%;
+  }
+
+
+
+  .titles_footer {
+    font-size: 24px;
   }
 
   .admin_background_picture,
@@ -1152,7 +1176,8 @@ footer {
   .medicine_origin_containers,
   .basic_theories_containers,
   .treatments_containers,
-  .user_info_containers {
+  .user_info_containers,
+  .add_treatments_containers {
     margin: 0 6%;
   }
 
@@ -1249,6 +1274,9 @@ footer {
     margin-right: 15%;
   }
 
+  .select {
+    width: 80%;
+  }
 
 }
 
@@ -1269,12 +1297,18 @@ footer {
   .medicine_origin_containers,
   .basic_theories_containers,
   .treatments_containers,
-  .user_info_containers {
+  .user_info_containers,
+  .add_treatments_containers {
     margin: 0 7%;
   }
   
   .checkbox {
     width: 1%;
+  }
+
+  .select {
+    margin: 10px 0;
+    width: 60%;
   }
   
   .connection_registration_container {

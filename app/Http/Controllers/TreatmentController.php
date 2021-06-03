@@ -15,9 +15,10 @@ class TreatmentController extends Controller
   */
   public function index()
   {
-    //
-  }
-  
+		$treatments = Treatment::all();
+		return view('treatment.index',['treatment' => $treatments]);
+	}
+
   /**
   * Show the form for creating a new resource.
   *
@@ -61,7 +62,7 @@ class TreatmentController extends Controller
     
     $treatments->save();
     
-    return redirect()->route('home')->with('message-treatment-added', 'El tratamiento ha sido añadido');
+    return redirect()->route('Treatment.index', ['Treatment' => $treatments])->with('message-treatment-added', 'El tratamiento ha sido añadido');
   }
   
   /**
@@ -72,7 +73,8 @@ class TreatmentController extends Controller
   */
   public function show($id)
   {
-    //
+    $treatment = Treatment::find($id);
+		return view('treatment.show')->with('treatment' , $treatment);
   }
   
   /**
@@ -104,7 +106,7 @@ class TreatmentController extends Controller
   * @param  \App\Treatment  $treatment
   * @return \Illuminate\Http\Response
   */
-  public function destroy($id)
+  public function destroy(Request $request, $id)
   {
     $treatments = Treatment::find($id);
     $treatments->delete();

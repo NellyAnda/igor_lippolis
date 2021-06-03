@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Treatment;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+		$treatments = Treatment::all();
+        return view('home', ['treatment' => $treatments]);
     }
 
     public function basic_theories()

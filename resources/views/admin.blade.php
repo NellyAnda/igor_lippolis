@@ -18,7 +18,7 @@
 				<button type="submit" class="brown_button_text">{{ __('Añadir un tratamiento') }}</button> 
 			</a>
 			<a href="{{route('Treatment.index')}}">
-				<button type="submit" class="brown_button_text">{{ __('Modificar un tratamiento') }}</button> 
+				<button type="submit" class="brown_button_text">{{ __('Lista de los tratamientos') }}</button> 
 			</a>
 		</div>
 		<h3 class="admin_page top_spacing bottom_spacing">Citas</h3>

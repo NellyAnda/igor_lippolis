@@ -27,7 +27,7 @@
 </div>
 @endif
 <div class="user_info_containers">
-  <form method="POST" action="{{route('User.update', ['User' => $user->id])}}"  class="form_container align">
+  <form method="POST" action="{{route('User.update', ['User' => $user->id])}}"  class="form_container">
     @csrf
     @method('PUT')
     <div class="label_input_container">
@@ -84,7 +84,7 @@
   <div>
     <h3 class="top_spacing bottom_spacing change_password_title">Cambiar a mi contraseña</h3>
   </div>
-  <div class="user_info_containers align">    
+  <div class="user_info_containers">    
     <div class="form_container">
       <div class="label_input_container">
         <label for="password" class="">{{ __('Nueva contraseña') }}</label>
@@ -100,7 +100,7 @@
         <input id="password-confirm" type="password" name="new-password-confirmation" autocomplete="new-password">
       </div>
     </div>
-    <div class="top_spacing bottom_spacing">
+    <div class="top_spacing bottom_spacing align">
       <button type="submit" class="button_text">
         {{ __('Engravar') }}
       </button>

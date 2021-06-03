@@ -42,9 +42,7 @@
     
   </div>
   <div class="medicine_origin_container">
-      
         <img src="images/bamboo_grove.jpg" class="bamboo_grove_picture" alt="imagen de un camino en un bosque de bambú">
-      
       <div class="medicine_origin_containers top_spacing">
         <p>Su efectividad para el incentivo de los cambios bioquimicos necesarios en la superación de ciertas patologías como trastornos del <span class="colored_emphasis">estrés, ansiedad, insomnio, cansancio crónico, dolor, lesiones deportivas, problemas digestivos, problemas de la piel, desequilibrios emocionales, prevención del envejecimiento prematuro y de enfermedades</span>, y muchas otras dolencias ha sido ampliamente comprobada.</p>
         <p class="top_spacing">Para la cultura china la manifestación de una enfermedad grave indica que la persona ha estado por largo tiempo expuesta a una serie de condiciones y situaciones según las cuales descuido o perdió el equilibrio energético, de allí que toda la milenaria medicina oriental haga tanto énfasis en la búsqueda constante del equilibrio energético y los cuidado cotidianos que deben seguirse para mantener la <span class="colored_emphasis">armonía del cuerpo, la mente y el espíritu</span>. En este sitio web se explicará el origen de esta medicina , las teorías básicas de <span class="colored_emphasis">Yin-Yang</span> y de los <span class="colored_emphasis">5 elementos</span> y algunas <span class="colored_emphasis">técnicas principales de tratamiento</span>.</p>
@@ -54,9 +52,13 @@
 <div>
   <h3 class="top_spacing bottom_spacing">Tratamientos populares</h3>
 </div>
+<div>
 
+  @include('treatment.show')
 
-
-@yield('homepage_treatment_card')
+</div>
 
 @endsection
+
+
+
