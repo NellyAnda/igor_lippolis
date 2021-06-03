@@ -23,7 +23,7 @@
   
   <div>
     <div class="bottom_spacing">
-      <p class="brown_emphasis">Tiulo del tratamiento :</p> 
+      <p class="brown_emphasis">Título del tratamiento :</p> 
       <p>{{$treatment->treatment_name}}</p>
     </div>
     
@@ -31,9 +31,9 @@
       <p class="brown_emphasis">Nombre del tratamiento :</p> 
       <p>{{$treatment->treatment_path}}</p>
     </div>
-    
+   
     <div class="bottom_spacing">
-      <p class="brown_emphasis">Descripcion del imagen del tratamiento :</p> 
+      <p class="brown_emphasis">Descripción del imagen del tratamiento :</p> 
       <p>{{$treatment->treatment_picture_description}}</p>
     </div>
     

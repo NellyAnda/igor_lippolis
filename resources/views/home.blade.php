@@ -12,7 +12,7 @@
 @section('content')
 
 {{-- PAGE D'ACCUEIL --}}
-
+<div>
 <div class="presentation_container bottom_spacing">
   <div>
     <img src="images/igor_lippolis.jpg" class="igor" alt="imagen del terapeuta Igor Lippolis">
@@ -50,6 +50,7 @@
   </div>
 </div>
 <div>
+<div>
   <h3 class="top_spacing bottom_spacing">Tratamientos populares</h3>
 </div>
 <div>
@@ -57,7 +58,8 @@
   @include('treatment.show')
 
 </div>
-
+</div>
+</div>
 @endsection
 
 

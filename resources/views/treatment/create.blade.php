@@ -18,16 +18,16 @@
 <div class="label_input_container">
   <label for="treatment_path">Elige un tratamiento</label>
     <select name="treatment_path" id="treatment_path" class="select">
-        <option value="">Elige a una opción</option>
-        <option value="cosmetic_acupuncture">Acupuntura cosmetica</option>
-        <option value="smoking">Tabaquismo</option>
-        <option value="diet">Adelgazar</option>
-        <option value="pms">Sindrome premenstrual</option>
-        <option value="migraine">Cefalea</option>
-        <option value="lumbago">Lumbalgia</option>
-        <option value="insomnia">Insomnio</option>
-        <option value="immune_system">Defensas imunitarias</option>
-        <option value="anxiety">Tratamiento de la ansiedad</option>
+      <option value="">Elige a una opción</option>
+      <option value="cosmetic_acupuncture">Acupuntura cosmetica</option>
+      <option value="smoking">Tabaquismo</option>
+      <option value="diet">Adelgazar</option>
+      <option value="pms">Sindrome premenstrual</option>
+      <option value="migraine">Cefalea</option>
+      <option value="lumbago">Lumbalgia</option>
+      <option value="insomnia">Insomnio</option>
+      <option value="immune_system">Defensas imunitarias</option>
+      <option value="anxiety">Tratamiento de la ansiedad</option>
     </select>
   </div>
   <div class="label_input_container">

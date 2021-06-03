@@ -19,6 +19,7 @@ class TreatmentController extends Controller
 		return view('treatment.index',['treatment' => $treatments]);
 	}
 
+
   /**
   * Show the form for creating a new resource.
   *
@@ -46,8 +47,6 @@ class TreatmentController extends Controller
         'picture' => 'required'
       ]
     );
-    
-    
 
     $picture = $request->file('picture')->store('public/homepage_treatments');
     $picture = substr($picture, 7);
@@ -58,7 +57,6 @@ class TreatmentController extends Controller
       'treatment_picture_description' => $request->get('treatment_picture_description'),
       'picture' => $picture
     ]);
-    
     
     $treatments->save();
     
