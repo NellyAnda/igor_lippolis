@@ -75,6 +75,11 @@ footer {
   opacity: 0.9;
 }
 
+button {
+  background-color: #FFFFFF;
+}
+
+
 .file_input {
   border: none;
 }
@@ -90,10 +95,6 @@ footer {
   border-radius: 20px;
   padding: 20px 40px;
   font-size: 1rem;
-}
-
-.homepage_treatment_container {
-  height: 100px;
 }
 
 .desktop_navbar {
@@ -409,8 +410,31 @@ footer {
 .therapies_text_containers,
 .treatments_containers,
 .user_info_containers,
-.add_treatments_containers {
+.add_treatments_containers,
+.treatment_cards_container {
   margin: 0 10%;
+}
+
+
+.treatment_cards a {
+  text-decoration: none;
+}
+
+.treatment_cards {
+  width: 100%;
+  height: auto;
+}
+
+.treatment_cards_titles {
+  font-family: 'Titillium Web';
+  background-color: #FFFFFF;
+  color: #7BB03B; 
+  letter-spacing: 3px;
+  opacity: 0.9;
+  padding: 18px;
+  position: relative;
+  top: 66px;
+  width: 100%;
 }
 
 .form_container {
@@ -457,7 +481,8 @@ footer {
 .treatments_containers,
 .user_info_containers,
 .footer_links,
-.add_treatments_containers {
+.add_treatments_containers,
+.treatment_cards_container {
   display: flex;
   flex-direction: column;
 }
@@ -630,6 +655,25 @@ footer {
     font-size: 2rem;
   }
 
+  .treatment_cards_container,
+  .yin_yang_containers,
+  .therapies_colored_containers {
+    flex-direction: row;
+  }
+
+  .treatment_cards_container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .treatment_cards {
+    width: 45%;
+    height: auto;
+    
+  }
+  
+ 
+
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -678,7 +722,6 @@ footer {
   }
   
   .yin_yang_containers {
-    flex-direction: row;
     justify-content: space-evenly;
     margin: 0 5%;
   }
@@ -702,7 +745,6 @@ footer {
   }
 
   .therapies_colored_containers {
-    flex-direction: row;
     justify-content: left;
   }
 

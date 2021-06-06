@@ -13,12 +13,12 @@
 
 <h2>Tratamientos</h2>
 
-<div class="lotus_background_picture top_spacing bottom_spacing">
+<div class="lotus_background_picture top_spacing bottom_spacing"  id="cosmetic_acupuncture">
   <img src="{{asset('images/lotus.jpg')}}" class="lotus_picture" alt="imagen de un flor de loto rosa">
   <div class="lotus_text_container"> 
     <div class="lotus_text_containers">
       <div>
-        <h3 id="cosmetic_acupuncture" class="top_spacing bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
+        <h3 class="top_spacing bottom_spacing">Beneficios de la acupuntura cosmetica</h3>
       </div>
       <div class="treatments_containers">
         <ul>
@@ -55,11 +55,11 @@
   </div>
 </div>
 
-<div class="woman_breathing_background_picture top_spacing bottom_spacing">
+<div class="woman_breathing_background_picture top_spacing bottom_spacing"  id="smoking">
   <img src="{{asset('images/woman_breathing.jpg')}}" class="woman_breathing_picture" alt="imagen de una mujer mirando al cielo, respirando profundamente y estirando los brazos hacia atrás">
   <div class="smoking_text_container"> 
     <div class="smoking_text_containers">
-      <h3 id="smoking" class="top_spacing bottom_spacing">Tabaquismo</h3>
+      <h3 class="top_spacing bottom_spacing">Tabaquismo</h3>
     </div>
     <div class="treatments_containers smoking_text_containers">
       <p>La medicina tradicional china ayuda a retomar una <span class="dark_emphasis">vida sana</span> sin tabaco :</p>
@@ -72,8 +72,8 @@
 </div>
 
 
-<div class="dark_background acupuncture_main_container top_spacing bottom_spacing">
-  <h3 id="diet" class="bottom_spacing">Acupuntura para perder peso</h3>
+<div class="dark_background acupuncture_main_container top_spacing bottom_spacing" id="diet">
+  <h3 class="bottom_spacing">Acupuntura para perder peso</h3>
   <div class="acupuncture_treatment">
     <div class="treatments_containers acupuncture_text_containers top_spacing bottom_spacing">
       <p>
@@ -98,11 +98,11 @@
   </div>
   
   
-  <div class="hand_massage_background_picture top_spacing bottom_spacing">
+  <div class="hand_massage_background_picture top_spacing bottom_spacing" id="pms">
     <img src="{{asset('images/hand_massage.png')}}" class="hand_massage_picture" alt="imagen de una mujer recibiendo un masaje de manos">
     <div class="treatments_containers hand_massage_text_container"> 
       <div class="hand_massage_text_containers">
-        <h3 id="pms" class="top_spacing bottom_spacing">Sindrome premenstrual</h3>
+        <h3 class="top_spacing bottom_spacing">Sindrome premenstrual</h3>
       </div>
       <div class="hand_massage_text_containers">
         <p>El <span class="colored_emphasis">síndrome premenstrual</span> comprende síntomas emocionales y físicos que aparecen antes del <span class="colored_emphasis">período menstrual</span> (agotamiento, tristeza, perdida de concentración, irritabilidad, agresividad, distensión abdominal, insomnio...).<br>
@@ -113,12 +113,12 @@
     </div>
     
     
-    <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing">
+    <div class="woman_closed_eyes_background_picture top_spacing bottom_spacing" id="migraine">
       <img src="{{asset('images/woman_closed_eyes.jpg')}}" class="woman_closed_eyes_picture" alt="imagen del rostro de una mujer en las sombras con los ojos cerrados">
       <div class="headache_text_container"> 
         <div class="treatments_containers headache_text_containers">
           <div>
-            <h3 id="migraine" class="top_spacing bottom_spacing">Cefalea</h3>
+            <h3 class="top_spacing bottom_spacing">Cefalea</h3>
           </div>
           <div>
             <p>En la medicina tradicional china las <span class="colored_emphasis">cefaleas</span> no constituyen entidades aisladas patológicamente hablando, sino que son la consecuencia de desequilibrios fisiologicos y/o emocionales provocados por causas como debilidad constitucional, irregularidades alimentarias, alteraciones emocionales, traumatismos o descanso insuficiente entre otras.</p>
@@ -133,26 +133,26 @@
       </div>
     </div>
     
-    <div class="lumbalgia_insomnia_container">
+    <div class="lumbalgia_insomnia_container" id="lumbago">
       <div class="man_stretching_background_picture top_spacing bottom_spacing">
-        <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirado frente al mar">
+        <img src="{{asset('images/man_stretching.jpg')}}" class="man_stretching_picture" alt="imagen de un hombre estirando frente al mar">
         <div>
-          <h3 id="lumbago" class="top_spacing bottom_spacing">Lumbalgia</h3>
+          <h3 class="top_spacing bottom_spacing">Lumbalgia</h3>
         </div>
         <div class="treatments_containers">
           <p>Es la forma con la que se denomina al dolor en la región lumbar. Puede ser <span class="dark_emphasis">bilateral o unilateral</span>.<br>
-            Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como lumbalgia).<br>
+            Según la MTC, la lumbalgia, ya sea unilateral o bilateral, está estrechamente relacionada con el riñón que es el regente de esa área del cuerpo. Estasis, estancamiento de sangre o Insuficiencia del riñón pueden provocar un bloqueo o insuficiencia energética en la zona lumbar que da lugar a la inflamación (definida como <span class="dark_emphasis">lumbalgia</span>).<br>
             Con la combinación de técnicas como acupuntura, masaje tuina, moxa, auriculoterapia o ventosas se obtiene un resultado muy efectivo que <span class="dark_emphasis">disminuye progresivamente el dolor</span> lumbar en pocas sesiones de tratamiento. </p>
           </div>
         </div>
         
         
         
-        <div class="woman_opened_eyes_background_picture top_spacing bottom_spacing">
+        <div class="woman_opened_eyes_background_picture top_spacing bottom_spacing" id="insomnia">
           <img src="{{asset('images/woman_in_bed.jpg')}}" class="woman_opened_eyes_picture" alt="imagen de una mujer acostada en la cama sosteniendo una manta hasta debajo de sus ojos bien abiertos">
           <div class="woman_opened_eyes_text_container">
             <div>
-              <h3 id="insomnia" class="top_spacing bottom_spacing">Insomnio</h3>
+              <h3 class="top_spacing bottom_spacing">Insomnio</h3>
             </div>
             <div class="treatments_containers">
               <p>La acupuntura para el insomnio ha sido practicada durante cientos de años con resultados óptimos.<br>
@@ -164,11 +164,11 @@
         </div>
         
         
-        <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing">
+        <div class="chinese_herbal_medicine_background_picture top_spacing bottom_spacing" id="immune_system">
           <img src="{{asset('images/chinese_herbal_medicine_small.png')}}" class="chinese_herbal_medicine_picture" alt="imágenes de diferentes hierbas utilizadas en la medicina china">
             <div class="immune_system_text_container">
               <div class="immune_system_text_containers">
-                <h3 id="immune_system" class="top_spacing bottom_spacing">Defensas imunitarias</h3>
+                <h3 class="top_spacing bottom_spacing">Defensas imunitarias</h3>
               </div>
               <div class="treatments_containers immune_system_text_containers bottom_spacing">
                 <p><span class="colored_emphasis">Energéticamente</span> debe haber un equilibrio en el organismo para que los diferentes sistemas que lo integran puedan funcionar a su máximo potencial y en armonía. En el caso del <span class="colored_emphasis">sistema inmunologico</span>, en la medicina tradicional china encontramos el Wei Qi (energía defensiva) que tiene función de protección y adaptación del organismo análogas al sistema inmunológico.</p>
@@ -178,12 +178,12 @@
           </div>
           
           
-          <div class="woman_meditating_background_picture top_spacing bottom_spacing">
+          <div class="woman_meditating_background_picture top_spacing bottom_spacing" id="anxiety">
             <img src="{{asset('images/woman_meditating.jpg')}}" class="woman_meditating_picture" alt="imagen de una mujer sentada con las piernas cruzadas sobre una duna de arena y frente al desierto">
             <div class="anxiety_text_main_container"> 
               
               <div>
-                <h3 id="anxiety" class="top_spacing bottom_spacing">Tratamiento del ansiedad</h3>
+                <h3 class="top_spacing bottom_spacing">Tratamiento del ansiedad</h3>
               </div>
               <div class="treatments_containers anxiety_text_container">
                 <div class="anxiety_text_containers">
