@@ -83,7 +83,15 @@ footer {
 button,
 .brown_button_text {
   background-color: #FFFFFF;
+  cursor: pointer;
 }
+
+
+
+
+
+
+
 
 .file_input {
   border: none;

@@ -39,7 +39,7 @@
 					{{ session('status') }}
 				</div>
 				@endif
-				<a href="{{ route('home') }}">Pedir cita</a>
+				<a href="{{ route('Appointments.create') }}">Pedir cita</a>
 				@guest
 				@if (Route::has('register'))
 				<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
@@ -78,7 +78,7 @@
 					<li><a class="menuLink" href="{{ route('acupuncture') }}">Acupuntura</a></li>
 					<li><a class="menuLink" href="{{ route('therapeutic_techniques') }}">Tecnicas Terapeuticas</a></li>
 					<li><a class="menuLink" href="{{ route('treatments') }}">Tratamientos</a></li>
-					<li><a class="menuLink" href="{{ route('home') }}">Pedir cita</a></li>
+					<li><a class="menuLink" href="{{ route('Appointments.create') }}">Pedir cita</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -94,7 +94,7 @@
 					<li><a class="" href="{{ route('acupuncture') }}">Acupuntura</a></li>
 					<li><a class="" href="{{ route('therapeutic_techniques') }}">Tecnicas Terapeuticas</a></li>
 					<li><a class="" href="{{ route('treatments') }}">Tratamientos</a></li>
-					<li><a class="" href="{{ route('home') }}">Pedir cita</a></li>
+					<li><a class="" href="{{ route('Appointments.create') }}">Pedir cita</a></li>
 				</ul>
 			</nav>
 		</div>	

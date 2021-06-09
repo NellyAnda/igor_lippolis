@@ -18,6 +18,8 @@ Auth::routes(['verify' => true]);
 
 Route::resource('User','UserController');
 Route::resource('Treatment', 'TreatmentController');
+Route::resource('Appointments', 'AppointmentsController');
+
 
 Route::get('/basic_theories', 'HomeController@basic_theories')->name('basic_theories');
 Route::get('/acupuncture', 'HomeController@acupuncture')->name('acupuncture');
