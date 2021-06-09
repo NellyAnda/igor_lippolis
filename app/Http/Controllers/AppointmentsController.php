@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Appointments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -36,20 +37,29 @@ class AppointmentsController extends Controller
      */
     public function store(Request $request)
     {
+
+
         $request->validate(
-            [
-              'time' => 'required',
-              'place' => 'required',
+            [  
+                'appointment_date' => 'required',
+                'appointment_time' => 'required',
+                'place' => 'required',
             ]
           );
       
 
           $appointments = new Appointments([
-            'time' => $request->get('time'),
+            'appointment_date' => $request->get('appointment_date'),
+            'appointment_time' => $request->get('appointment_time'),
             'place' => $request->get('place'),
+            'user_id' => $request->get('user_id'),
+
           ]);
           
           $appointments->save();
+
+          return redirect()->route('User.show');
+
     }
 
     /**

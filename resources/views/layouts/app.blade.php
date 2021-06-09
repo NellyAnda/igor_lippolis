@@ -39,7 +39,7 @@
 					{{ session('status') }}
 				</div>
 				@endif
-				<a href="{{ route('Appointments.create') }}">Pedir cita</a>
+				<a href="{{ route('home') }}">Pedir cita</a>
 				@guest
 				@if (Route::has('register'))
 				<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>

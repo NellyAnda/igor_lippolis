@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Appointments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
@@ -48,7 +49,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
+        // $appointements = Appointments::all()->where('user_id',$id);
+
+        $user = User::with(['appointments'])->find($id);
 		return view('user.show', ['user' => $user]);
     }
 

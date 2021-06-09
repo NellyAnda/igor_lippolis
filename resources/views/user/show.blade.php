@@ -47,4 +47,7 @@
 	</div>
 	@endif
 </div>
+<div>
+	@include('appointments.show')
+</div>
 @endsection

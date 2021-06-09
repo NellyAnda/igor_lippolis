@@ -42,4 +42,8 @@ class User extends Authenticatable
     protected $date = [
         'delete_at'
     ];
+
+    public function appointments(){
+		return $this->belongsTo(Appointments::class);
+	}
 }

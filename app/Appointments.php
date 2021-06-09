@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Appointments extends Model
 {
     protected $fillable = [
-		'date', 'time', 'place', 'user_id',
+		'appointment_date', 'appointment_time', 'place', 'user_id',
 	];
+
+	public function user(){
+		return $this->belongsTo(User::class);
+	}
 }
