@@ -36,10 +36,7 @@
           </p>
           <p class="top_spacing">La Medicina Tradicional China considera al cuerpo humano como un todo, y atribuye la enfermedad al desequilibrio entre los diferentes elementos del mismo, por lo que su tratamiento, más que destinado a la curación de un síntoma concreto, se enfoca al restablecimiento del equilibrio corporal, enfatizando la necesidad de llevar una vida sana.</p>
         </div>  
-        
         <img src="images/chinese_tea_set.jpg" class="tea_set_picture top_spacing" alt="imagen de un juego de té chino">
-        
-        
       </div>
       <div class="medicine_origin_container">
         <img src="images/bamboo_grove.jpg" class="bamboo_grove_picture" alt="imagen de un camino en un bosque de bambú">
@@ -50,14 +47,12 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="treatment_cards_main_container">
     <div>
       <h3 class="top_spacing">Tratamientos populares</h3>
     </div>
     <div>
-      
       @include('treatment.show')
-      
     </div>
   </div>
   @endsection

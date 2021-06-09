@@ -38,7 +38,6 @@ class TreatmentController extends Controller
   */
   public function store(Request $request)
   {
-
     $request->validate(
       [
         'treatment_name' => 'required',
@@ -109,7 +108,7 @@ class TreatmentController extends Controller
     $treatments = Treatment::find($id);
     $treatments->delete();
     
-    return redirect()->route('admin')->with('message', 'El tratamiento ha sido suprimido !');
+    return redirect()->route('admin')->with('message-treatment-deleted', 'El tratamiento ha sido suprimido');
   }
 }
 

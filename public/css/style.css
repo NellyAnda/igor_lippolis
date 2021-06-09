@@ -16,6 +16,11 @@ section {
   width: 100%;
 }
 
+hr {
+  width: 100%;
+  color: #FEC84E;
+}
+
 h1, h2, h3, h4, label {
   font-family: 'Courgette';
 }
@@ -75,10 +80,10 @@ footer {
   opacity: 0.9;
 }
 
-button {
+button,
+.brown_button_text {
   background-color: #FFFFFF;
 }
-
 
 .file_input {
   border: none;
@@ -257,6 +262,10 @@ button {
   margin-top: 250px;
 }
 
+.treatment_cards:hover {
+  transform: scale(1.05)
+}
+
 .ham {
   background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
 }
@@ -411,18 +420,24 @@ button {
 .treatments_containers,
 .user_info_containers,
 .add_treatments_containers,
-.treatment_cards_container {
+.treatment_cards_container,
+.treatment_cards_container_admin {
   margin: 0 10%;
 }
-
 
 .treatment_cards a {
   text-decoration: none;
 }
 
-.treatment_cards {
+.treatment_cards,
+.treatment_cards_admin {
   width: 100%;
   height: auto;
+}
+
+.treatment_cards {
+  background: transparent no-repeat center;
+  background-size: cover;
 }
 
 .treatment_cards_titles {
@@ -482,7 +497,8 @@ button {
 .user_info_containers,
 .footer_links,
 .add_treatments_containers,
-.treatment_cards_container {
+.treatment_cards_container,
+.treatment_cards_container_admin {
   display: flex;
   flex-direction: column;
 }
@@ -565,27 +581,27 @@ button {
 }
 
 @media screen and (min-width: 576px) {
-
+  
   .top_navbar_links {
     width: 50%;
   }
-
+  
   .top_navbar {
     width: 35%;
   }
-
+  
   .top_navbar li {
     margin: 5px 0 5px 10px;
   }
-
+  
   .showNav {
     transform: translateY(350px);
   }
-
+  
   .nav_button {
     margin-top: 350px;
   }
-
+  
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -615,20 +631,20 @@ button {
     justify-content: space-around;
     margin: 10% 0;
   }  
-
+  
   .basic_theories_containers li,
   .treatments_containers li {
     padding: 5% 0;
   }
-
+  
   .top_spacing {
     padding-top: 5%;
   }
-
+  
   .bottom_spacing {
     padding-bottom: 5%;
   }
-
+  
   .suction_cups_picture,
   .acupuncture_picture,
   .ear_acupuncture_picture,
@@ -637,12 +653,11 @@ button {
     width: 60%;
     margin: 5% 20% 0 20%;
   }
-
+  
 }
 
-
 @media screen and (min-width: 768px) {
-
+  
   h1 {
     font-size: 3rem;
   }
@@ -654,26 +669,25 @@ button {
   h3 {
     font-size: 2rem;
   }
-
+  
   .treatment_cards_container,
+  .treatment_cards_container_admin,
   .yin_yang_containers,
   .therapies_colored_containers {
     flex-direction: row;
   }
-
-  .treatment_cards_container {
+  
+  .treatment_cards_container,
+  .treatment_cards_container_admin {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
+  
   .treatment_cards {
     width: 45%;
     height: auto;
-    
   }
   
- 
-
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -684,28 +698,28 @@ button {
     height:420px;
     background-size: contain;
   }
-
+  
   .top_navbar {
     width: 30%;
   }
-
+  
   .top_navbar_links {
     font-size: 1.1rem;
   }
-
+  
   .showNav {
     transform: translateY(420px);
   }
-
+  
   .nav_button {
     margin-top: 420px;
   }
-
+  
   .phone {
     display: inline;
     margin: 0 20px;
   }
-
+  
   .login_label_input_container,
   .label_input_container,
   .checkbox_container {
@@ -725,39 +739,39 @@ button {
     justify-content: space-evenly;
     margin: 0 5%;
   }
-
+  
   .yin_yang_containers p {
     width: 30%;
   }
-
+  
   .basic_theories_containers li,
   .treatments_containers li {
     padding: 3% 0;
   }
-
+  
   .yin_yang_pictures {
     padding: 0;
   }
-
+  
   .five_elements_pictures {
     width: 150px;
     padding: 5% 0;
   }
-
+  
   .therapies_colored_containers {
     justify-content: left;
   }
-
+  
   .therapies_colored_containers .therapies_text_containers {
     width: 50%;
     margin: 0 3%;
     padding: 0;
   } 
-
+  
   .therapies_colored_containers .therapies_text_containers .treatment_duration { 
     margin: 0;
   } 
-
+  
   .acupuncture_picture,
   .ear_acupuncture_picture,
   .phytotherapy_picture,
@@ -767,12 +781,12 @@ button {
     height: 100%;
     margin: 0;
   }
-
+  
   .man_stretching_picture,
   .woman_opened_eyes_picture {
     display: none;
   }
-
+  
   .man_stretching_background_picture {
     background-image: url('/images/man_stretching.jpg');
     background-size: cover;
@@ -781,7 +795,7 @@ button {
     background-position-y: center;
     background-position-x: center;
   }
-
+  
   .woman_opened_eyes_background_picture {
     background-image: url('/images/woman_in_bed.jpg');
     background-size: cover;
@@ -791,7 +805,7 @@ button {
     background-position-y: center;
     background-position-x: center;
   }
-
+  
   .woman_opened_eyes_text_container {
     width: 100%;
     height: 100%;
@@ -799,7 +813,7 @@ button {
     flex-direction: column;
     justify-content: flex-end;
   }
-
+  
   .footer_text_container {
     display: flex;
     flex-direction: row;
@@ -807,51 +821,46 @@ button {
     align-items: center;
     width: 100%;
   }
-
+  
   .footer_text_container :nth-child(1) {
     order: 1;
   }
-
+  
   .footer_text_container :nth-child(2) {
     order: 3;
   }
-
+  
   .footer_text_container :nth-child(3) {
     order: 2;
   }
-
+  
   .addresses,
   .opening_hours,
   .footer_links {
     width: 30%;
   }
-
+  
   .addresses p {
     margin: 5px 0;
   }
-
+  
   .opening_hours p {
     margin: 30px 0;
   }
-
+  
 }
 
-
 @media screen and (min-width: 992px) {
-
+  
   .select,
   .file_input {
     margin: 40px 0;
   }
-
-  .file_input {
-    padding: 0;
-  }
-
+ 
   .mobile_navbar {
     display: none;
   }
-
+  
   .desktop_navbar {
     display: block;
     position: -webkit-sticky;
@@ -861,17 +870,15 @@ button {
     background-color: #FFFFFF;
     z-index: 2;
   }
-
+  
   .top_navbar {
     width: 26%;
   }
-
+  
   .desktop_nav {
     height: 75px;
-    width: 100%;
-
-  }
-
+    width: 100%;  }
+  
   .desktop_nav ul {
     width: 100%;
     height: 100%;
@@ -881,19 +888,19 @@ button {
     justify-content: space-evenly;
     align-items: center;
   }
-
+  
   .desktop_nav ul li a {
     color: #000000;
     text-decoration: none;
     font-family: 'Courgette';
     font-size: 1.3rem;
   }
-
+  
   .desktop_nav ul li a:hover, 
   .desktop_nav ul li a:focus {
     border-bottom: 2px solid #FEC84E;
   }
-
+  
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -916,7 +923,7 @@ button {
   .message_input {
     width: 100%;
   }
-
+  
   .five_elements_picture,
   .stones_picture,
   .lotus_picture,
@@ -930,31 +937,31 @@ button {
   .stones_background_picture {
     background-image: url('/images/stones.png');
   }
-
+  
   .lotus_background_picture {
     background-image: url('/images/lotus.jpg'); 
     background-position-y: center;
   }
-
+  
   .woman_breathing_background_picture {
     background-image: url('/images/woman_breathing.jpg');
     background-position-y: center;
   }
-
+  
   .hand_massage_background_picture {
     background-image: url('/images/hand_massage.png');
     background-position-y: center;
   }
-
+  
   .woman_closed_eyes_background_picture {
     background-image: url('/images/woman_closed_eyes.jpg');
     background-position-y: center;
   }
-
+  
   .woman_meditating_background_picture {
     background-image: url('/images/woman_meditating.jpg');
   }
-
+  
   .stones_background_picture,
   .hand_massage_background_picture,
   .woman_closed_eyes_background_picture,
@@ -964,7 +971,7 @@ button {
   .lotus_text_containers li {
     color: #FFFFFF;
   }
-
+  
   .stones_background_picture,
   .lotus_background_picture,
   .woman_breathing_background_picture,
@@ -977,12 +984,11 @@ button {
     height: 100%;
     margin-bottom: 5%;
   }
-
-
+  
   .acupuncture_main_container {
     margin-bottom: 5%;
   }
-
+  
   .five_elements_background_picture {
     background-image: url('/images/five_elements.png');
     background-size: contain;
@@ -991,7 +997,7 @@ button {
     width: 100%;
     margin: 8% 0;
   }
-
+  
   .fire_element,
   .timber_earth_elements,
   .water_metal_elements,
@@ -1001,104 +1007,106 @@ button {
     display: flex;
     flex-direction: row;
   }
-
+  
   .five_elements_text {
     width: 25%;
   }
-
+  
+   
+  .file_input,
   .lotus_text_containers ul,
   .lotus_text_containers li,
-  .five_elements_text.bottom_spacing {
+  .five_elements_text.bottom_spacing,
+  .anxiety_text_main_container h3,
+  .treatment_cards_main_container h3 {
     padding: 0;
   }
-
+  
   .fire_element {
     margin-left: 20%;
     width: 80%;
   }
-
+  
   .timber_earth_elements,
   .water_metal_elements {
     justify-content: space-between;
   }
-
+  
   .timber_earth_elements {
     margin: 0 2%;
     padding-top: 9%;
   }
-
+  
   .water_metal_elements {
     margin: 0 8%;
     padding-top: 1%;
   }
-
+  
   .five_elements_containers {
     width: 30%;
   }
-
+  
   .therapies_colorless_containers .therapies_text_containers,
   .five_elements_main_container {
     margin: 0 5%;
   }
-   
-
+  
   .five_elements_main_container:first-child {
     justify-content: space-between;
   }
-
+  
   .five_elements_main_container:last-child {
     justify-content: space-around;
   }
-
+  
   .five_elements_main_container:first-child > .five_elements_containers:first-child,
   .five_elements_main_container:first-child > .five_elements_containers:last-child {
     padding-top: 25%;
   }
-
+  
   .five_elements_background_picture {
     height: 500px;
   }
-
+  
   .therapies_colored_containers .therapies_text_containers,
   .therapies_colorless_containers .therapies_text_containers {
     width: 60%;
   } 
-
-
+  
   .therapies_colorless_containers {
     flex-direction: row;
     align-items: center;
   }
-
+  
   .therapies_colorless_containers img {
     width: 90%;
   }
-
+  
   .lotus_text_containers ul,
   .lotus_text_containers h3,
   .smoking_text_containers h3,
   .hand_massage_text_containers h3 {
     margin: 0;
   }
-
+  
   .lotus_text_container,
   .smoking_text_container {
     justify-content: space-evenly;
   }
-
+  
   .smoking_text_containers:last-child {
     width: 50%;
     margin: 3% 0 10% 22%;
   }
-
+  
   .lotus_text_containers {
     width: 47%;
   }
-
+  
   .lotus_text_container:last-child{
     align-items: flex-end;
   }
-
+  
   .hand_massage_text_container {
     display: flex;
     flex-direction: column;
@@ -1106,23 +1114,23 @@ button {
     width: 47%;
     margin: 0;
   }
-
+  
   .hand_massage_text_containers p {
     margin: 10%;
   }
-
+  
   .headache_text_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
   }
-
+  
   .headache_text_containers {
     margin: 10% 6%;
     width: 30%;
   }
-
+  
   .anxiety_text_container {
     display: flex;
     flex-direction: row;
@@ -1130,48 +1138,50 @@ button {
     align-items: flex-start;
     margin: 0;
   }
-
+  
   .anxiety_text_containers {
     width: 40%;
     margin: 10% 5%;
   }
-
+  
   .anxiety_text_main_container h3 {
     color: #FFFFFF;
-    padding: 0;
   }
-
+  
   .headache_text_container p {
     margin: 5% 0;
   } 
-
+  
   .woman_meditating_background_picture {
     margin: 0;
   }
-
+  
   .file_input {
     margin-top: 10px;
   }
-
+  
 }
 
-
 @media screen and (min-width: 1200px) {
-
+  
   body {
     font-size: 1.1rem;
   }
-
+  
   h3 {
     margin: 3% 5%;
   }
-
-
-
+    
+  .treatment_cards {
+    width: 30%;
+    height: auto;
+    
+  }
+  
   .titles_footer {
     font-size: 24px;
   }
-
+  
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -1181,7 +1191,7 @@ button {
     height: 580px;
     background-size: cover;
   }
-
+  
   .top_navbar_links {
     width: 40%;
   }
@@ -1189,22 +1199,22 @@ button {
   .top_navbar {
     width: 21%;
   }
-
+  
   .desktop_nav ul li a {
     font-size: 1.5rem;
   }
-
+  
   .presentation_container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
+  
   .igor {
     width: 95%;
     padding-top: 50px;
   }
-
+  
   .acupuncture_background_picture {
     height: 580px;
     background-size: contain;
@@ -1213,7 +1223,7 @@ button {
   .yin_yang_containers {
     margin: 0;
   }
-
+  
   .presentation_container,
   .medicine_origin_containers,
   .basic_theories_containers,
@@ -1222,35 +1232,35 @@ button {
   .add_treatments_containers {
     margin: 0 6%;
   }
-
+  
   .basic_theories_containers ul,
   .treatments_containers ul {
     padding: 0 15% 0 5%;
   }
-
+  
   .timber_earth_elements,
   .water_metal_elements {
     padding-top: 5%;
   }
-
+  
   .five_elements_main_container:first-child > .five_elements_containers:first-child,
   .five_elements_main_container:first-child > .five_elements_containers:last-child {
     padding-top: 20%;
   }
-
+  
   .treatment_duration {
     padding-top: 2%;
   }
-
+  
   .therapies_colorless_containers
   .therapies_text_containers {
     width: 50%;
   } 
-
+  
   .therapies_colored_containers .therapies_text_containers {
     margin: 0 10%;
   }
-
+  
   .chinese_herbal_medicine_background_picture {
     background-image: url('/images/chinese_herbal_medicine.jpg');
     background-repeat: no-repeat;
@@ -1259,38 +1269,37 @@ button {
     height: 100%;
     margin-bottom: 5%;
   }
-
   
   .chinese_herbal_medicine_picture {
     display: none;
   }
-
+  
   .immune_system_text_container {
     display: flex;
     flex-direction: column;
     align-items: left;
   }
-
+  
   .immune_system_text_containers {
     width: 40%;
   }
-
+  
   .immune_system_text_container,
   .immune_system_text_containers,
   .immune_system_text_containers h3 {
     margin: 0;
   }
-
+  
   .immune_system_text_containers p {
     margin: 8% 5% 15% 10%;
   }
-
+  
   .change_password_title,
   .acupuncture_main_container h3,
   .immune_system_text_containers h3 {
     padding: 0;
   }
-
+  
   .medicine_origin_container,
   .medicine_origin_container:last-child,
   .acupuncture_treatment,
@@ -1305,25 +1314,25 @@ button {
     margin: 0 5%;
     width: 90%;
   }
-
+  
   .headache_text_containers {
     margin: 15% 6%;
     width: 35%;
   }
-
+  
   .hand_massage_text_containers p {
     margin-left: 5%;
     margin-right: 15%;
   }
-
+  
   .select {
     width: 80%;
   }
-
+  
 }
 
 @media screen and (min-width: 1400px) {
-
+  
   .admin_background_picture,
   .homepage_background_picture,
   .basic_theories_background_picture,
@@ -1334,7 +1343,7 @@ button {
     height: 800px;
     background-size: cover;
   }
-
+  
   .presentation_container,
   .medicine_origin_containers,
   .basic_theories_containers,
@@ -1347,7 +1356,7 @@ button {
   .checkbox {
     width: 1%;
   }
-
+  
   .select {
     margin: 10px 0;
     width: 60%;
@@ -1356,15 +1365,15 @@ button {
   .connection_registration_container {
     margin: 6% 0;
   }
-
+  
   .five_elements_background_picture {
     height: 600px;
   }
-
+  
   .water_metal_elements {
     padding-top: 8%;
   }
-
+  
   .fire_element {
     margin-left: 25%;
     width: 75%;
@@ -1373,11 +1382,11 @@ button {
   .timber_earth_elements {
     margin: 0 3%;
   }
-
+  
   .water_metal_elements {
     margin: 0 10%;
   }
-
+  
   .stones_background_picture,
   .lotus_background_picture,
   .woman_breathing_background_picture,
@@ -1389,15 +1398,15 @@ button {
   .woman_meditating_background_picture {
     background-size: cover;
   }
-
+  
   .therapies_colorless_containers img {
     width: 90%;
   }
-
+  
   .therapies_colorless_containers {
     justify-content: space-evenly;
   }
-
+  
   .top_spacing {
     padding-top: 3%;
   }
@@ -1405,30 +1414,29 @@ button {
   .bottom_spacing {
     padding-bottom: 3%;
   }
-
+  
   .lumbalgia_insomnia_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-
- 
+  
   .man_stretching_background_picture,
   .woman_opened_eyes_background_picture {
     width: 45%;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+  
   .anxiety_text_containers {
     margin: 10% 5% 25% 5%;
   }
-
+  
   .immune_system_text_containers {
     margin-bottom: 0;
   }
-
+  
   .immune_system_text_containers {
     margin-left: 5%;
     padding: 0;
@@ -1438,60 +1446,58 @@ button {
   .immune_system_text_containers p {
     margin: 21% 5% 25% 0;
   }
-
   
   .chinese_herbal_medicine_background_picture {
     padding: 0;
   }
-
+  
   .change_password_title {
     padding-bottom: 0;
     margin: 0;
   }
-
+  
   .man_stretching_background_picture,
   .woman_opened_eyes_background_picture,
   .lotus_background_picture {
     height: 1000px;
   }
-
+  
   .woman_closed_eyes_background_picture,
   .woman_breathing_background_picture {
     height: 800px;
   }
-
+  
   .headache_text_container {
     height: 100%;
     align-items: center;
   }
-
-
+  
   .headache_text_container h3 {
     padding: 0 0 10% 0;
   }
-
+  
   .hand_massage_text_containers {
     width: 60%;
     justify-content: center;
   }
-
+  
   .hand_massage_text_containers p {
     margin: 20% 0;
   }
-
+  
   .smoking_text_containers:last-child {
     margin: 8% 0 10% 22%;
   }
-
+  
   .treatments_containers ul {
     padding: 10% 15% 20% 5%;
   }
-
+  
   .treatments_containers ul li {
     padding: 1% 0;
   }
-
-
-
+  
+  
+  
   
 } 
