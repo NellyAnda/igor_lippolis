@@ -4,26 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>@yield('pageTitle')</title> 
-	
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	
 	<title>{{ config('app.name', 'Laravel') }}</title>
-	
 	<!-- Scripts -->
-	
 	<script src="https://kit.fontawesome.com/f3115f342a.js" crossorigin="anonymous"></script>
-	
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
-	
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">	
 	<!-- Styles -->
-	
-	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-	
-	
+	<link href="{{ asset('css/style.css') }}" rel="stylesheet">	
 </head>
 <body>
 	<header>
@@ -39,7 +29,7 @@
 					{{ session('status') }}
 				</div>
 				@endif
-				<a href="{{ route('home') }}">Pedir cita</a>
+				<a href="{{ route('Appointments.create') }}">Pedir cita</a>
 				@guest
 				@if (Route::has('register'))
 				<li><a href="{{ route('register') }}"> {{ __('Registrarse') }} </a></li>
@@ -61,9 +51,6 @@
 					</li>
 				</ul>
 				@endguest
-				
-				
-				
 			</div>
 		</div>
 		<div>
@@ -84,7 +71,6 @@
 		</div>
 		<script type="text/javascript" src="{{ asset('js/navbar.js') }}" ></script>
 	</header>
-		
 	<main>
 		<div class="desktop_navbar">
 			<nav class="desktop_nav">
@@ -101,64 +87,49 @@
 		@yield('content')
 	</main>
 	<footer class="footer_background_picture">
-
-
 		<div class="footer_main_container">
-
-		<div class="top_spacing social_networks footer_social_networks">
-			{{-- social network --}}
-			
-			<a href="{{ url('https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/') }}" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="footer_social_network" alt="icono de Facebook"></a>
-			<a href="{{ url('https://www.instagram.com/igor.chinesemedicine/') }}" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="footer_social_network" alt="icono de Instagram"></a>
-			<a href="tel:+34632387065" class="phone_container"><img src="{{asset('images/phone.svg')}}" class="footer_social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
-		</div>
-		
-		<div class="footer_text_container">
-			
-			<div class="top_spacing addresses">
-				{{-- direccion --}}
-				<h4 class="titles_footer">Direcciones :</h4>
-				<div>
-					<div class="top_spacing">
-						<a href="{{ url('https://www.google.com/maps/place/Carrer+de+Maria+Ant%C3%B2nia,+08196,+Barcelona,+Spain/@41.433214,2.084091,16.75z/data=!4m5!3m4!1s0x12a497686b7a0819:0x9cef2d0348f82a96!8m2!3d41.4334187!4d2.0868481') }}" target="_blank" class="footer_link footer_address_link"><p>Las planas<br>Calle Maria Antonia<br>08196 Sant Cugat</p></a>
+			<div class="top_spacing social_networks footer_social_networks">
+				{{-- social network --}}
+				<a href="{{ url('https://www.facebook.com/pages/category/Therapist/Igor-Lippolis-109216020577172/') }}" target="_blank"><img src="{{asset('images/facebook.svg')}}" class="footer_social_network" alt="icono de Facebook"></a>
+				<a href="{{ url('https://www.instagram.com/igor.chinesemedicine/') }}" target="_blank"><img src="{{asset('images/instagram.svg')}}" class="footer_social_network" alt="icono de Instagram"></a>
+				<a href="tel:+34632387065" class="phone_container"><img src="{{asset('images/phone.svg')}}" class="footer_social_network" alt="icono de telefono"><span class="phone">632 387 065</span></a>
+			</div>
+			<div class="footer_text_container">
+				<div class="top_spacing addresses">
+					{{-- addresses --}}
+					<h4 class="titles_footer">Direcciones :</h4>
+					<div>
+						<div class="top_spacing">
+							<a href="{{ url('https://www.google.com/maps/place/Carrer+de+Maria+Ant%C3%B2nia,+08196,+Barcelona,+Spain/@41.433214,2.084091,16.75z/data=!4m5!3m4!1s0x12a497686b7a0819:0x9cef2d0348f82a96!8m2!3d41.4334187!4d2.0868481') }}" target="_blank" class="footer_link footer_address_link"><p>Las planas<br>Calle Maria Antonia<br>08196 Sant Cugat</p></a>
+						</div>
+						<div class="top_spacing">
+							<a href="{{ url('https://www.google.com/maps/place/Carrer+de+Proven%C3%A7a,+292,+3,+08008+Barcelona,+Spain/@41.3943214,2.1597714,18z/data=!4m5!3m4!1s0x12a4a293b9386e99:0xc506ffb755143d79!8m2!3d41.39433!4d2.161328') }}" target="_blank" class="footer_link footer_address_link"><p>Calle Provenza 292, 6-3<br>08008 Barcelona<br>Metro: Diagonal (L3 - L5)<br>Ferrocarril : Provença</p></a>
+						</div>
+						<div class="top_spacing bottom_spacing dark_emphasis">
+							<p>Tratamientos a domicilio</p>
+						</div>
 					</div>
-					<div class="top_spacing">
-						<a href="{{ url('https://www.google.com/maps/place/Carrer+de+Proven%C3%A7a,+292,+3,+08008+Barcelona,+Spain/@41.3943214,2.1597714,18z/data=!4m5!3m4!1s0x12a4a293b9386e99:0xc506ffb755143d79!8m2!3d41.39433!4d2.161328') }}" target="_blank" class="footer_link footer_address_link"><p>Calle Provenza 292, 6-3<br>08008 Barcelona<br>Metro: Diagonal (L3 - L5)<br>Ferrocarril : Provença</p></a>
-					</div>
-					<div class="top_spacing bottom_spacing dark_emphasis">
-						<p>Tratamientos a domicilio</p>
+				</div>	
+				<div class="top_spacing bottom_spacing opening_hours">
+					{{-- schedule --}}
+					<h4 class="titles_footer">Horarios de atención :</h4>
+					<div>
+						<p class="top_spacing"><span class="dark_emphasis">De lunes a sábado :</span><br>De las 9 a las 20</p>
+						<p class="top_spacing"><span class="dark_emphasis">Los domingos :</span><br>Cerrado (se puede solicitar cita con<br> antelación o por emergencias)</p>
 					</div>
 				</div>
-			</div>
-
-	
-			<div class="top_spacing bottom_spacing opening_hours">
-				{{-- horarios --}}
-				<h4 class="titles_footer">Horarios de atención :</h4>
-				<div>
-					<p class="top_spacing"><span class="dark_emphasis">De lunes a sábado :</span><br>De las 9 a las 20</p>
-					<p class="top_spacing"><span class="dark_emphasis">Los domingos :</span><br>Cerrado (se puede solicitar cita con<br> antelación o por emergencias)</p>
+				<div class="top_spacing footer_links">
+					{{-- legal mentions --}}
+					<a href="" class="footer_link bottom_spacing">Aviso legal</a>
+					<a href="" class="footer_link bottom_spacing">Política de privacidad</a>
+					<a href="" class="footer_link bottom_spacing">Política de cookies</a>
 				</div>
 			</div>
-
-			<div class="top_spacing footer_links">
-				{{-- legal mentions --}}
-				<a href="" class="footer_link bottom_spacing">Aviso legal</a>
-				<a href="" class="footer_link bottom_spacing">Política de privacidad</a>
-				<a href="" class="footer_link bottom_spacing">Política de cookies</a>
+			<div class="top_spacing">
+				{{-- copyright --}}
+				<p>© 2021 Copyright Igor Lippolis</p>
 			</div>
-
-		
-
 		</div>
-		
-		<div class="top_spacing">
-			{{-- copyright --}}
-			<p>© 2021 Copyright Igor Lippolis</p>
-		</div>
-</div>
-
-
 	</footer>
 </body>
 </html>

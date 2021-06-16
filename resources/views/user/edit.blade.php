@@ -60,7 +60,7 @@
     <div class="label_input_container">
       <label for="phone_number" class="">{{ __('Número de teléfono') }}</label>
       
-      <input id="phone_number" type="tel" @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ $user->phone_number }}" required autocomplete="phone_number" autofocus>
+      <input id="phone_number" type="tel" @error('phone_number') is-invalid @enderror name="phone_number" value="{{ $user->phone_number }}" required autocomplete="phone_number" autofocus>
       @error('phone_number')
       <span class="invalid-feedback" role="alert">
         <strong>{{ $message }}</strong>
@@ -109,6 +109,11 @@
   <form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}" style="display: contents">
     @csrf
     @method('DELETE')
+    <p>para borrar tu cuenta</p>
+    <div class="label_input_container bottom_spacing">
+      <label for="password" class="">{{ __('Contraseña actual') }}</label>
+      <input id="password" type="password" @error('password') is-invalid @enderror name="current-password" required autocomplete="new-password">
+    </div>
     <div class="bottom_spacing align">
       <button type="submit" class="button_text">{{ __('Borrar su cuenta') }}</button>
     </div>

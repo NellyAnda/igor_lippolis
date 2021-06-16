@@ -26,27 +26,27 @@
 </div>
 <div class="radio">
   
-  <input type="radio" value="9.00-10.00" name="appointment_time">
+  <input type="radio" value="09:00:00" name="appointment_time">
   <label for="">9.00-10.00</label>
-  <input type="radio" value="10.00-11.00" name="appointment_time">
+  <input type="radio" value="10:00:00" name="appointment_time">
   <label for="">10.00-11.00</label>
-  <input type="radio" value="11.00-12.00" name="appointment_time">
+  <input type="radio" value="11:00:00" name="appointment_time">
   <label for="">11.00-12.00</label>
-  <input type="radio" value="12.00-13.00" name="appointment_time">
+  <input type="radio" value="12:00:00" name="appointment_time">
   <label for="">12.00-13.00</label>
-  <input type="radio" value="13.00-14.00" name="appointment_time">
+  <input type="radio" value="13:00:00" name="appointment_time">
   <label for="">13.00-14.00</label>
-  <input type="radio" value="14.00-15.00" name="appointment_time">
+  <input type="radio" value="14:00:00" name="appointment_time">
   <label for="">14.00-15.00</label>
-  <input type="radio" value="15.00-16.00" name="appointment_time">
+  <input type="radio" value="15:00:00" name="appointment_time">
   <label for="">15.00-16.00</label>
-  <input type="radio" value="16.00-17.00" name="appointment_time">
+  <input type="radio" value="16:00:00" name="appointment_time">
   <label for="">16.00-17.00</label>
-  <input type="radio" value="17.00-18.00" name="appointment_time">
+  <input type="radio" value="17:00:00" name="appointment_time">
   <label for="">17.00-18.00</label>
-  <input type="radio" value="18.00-19.00" name="appointment_time">
+  <input type="radio" value="18:00:00" name="appointment_time">
   <label for="">18.00-19.00</label>
-  <input type="radio" value="19.00-20.00" name="appointment_time">
+  <input type="radio" value="19:00:00" name="appointment_time">
   <label for="">19.00-20.00</label>
 </div>
 

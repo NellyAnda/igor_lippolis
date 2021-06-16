@@ -25,7 +25,7 @@ Route::get('/basic_theories', 'HomeController@basic_theories')->name('basic_theo
 Route::get('/acupuncture', 'HomeController@acupuncture')->name('acupuncture');
 Route::get('/therapeutic_techniques', 'HomeController@therapeutic_techniques')->name('therapeutic_techniques');
 Route::get('/treatments', 'HomeController@treatments')->name('treatments');
-Route::get('/admin', 'HomeController@admin')->name('admin');
+Route::get('/admin', 'HomeController@admin')->name('admin')->middleware('auth');
 
 
 Route::get('/', 'HomeController@index')->name('home');

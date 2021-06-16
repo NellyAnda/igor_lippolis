@@ -40,14 +40,13 @@
     <hr/>
     @endforeach
   </div>
-    <div class="admin_page_buttons_containers top_spacing">
-      <a href="{{route('Treatment.create')}}" class="bottom_spacing">
-        <button type="submit" class="brown_button_text">{{ __('Añadir un tratamiento') }}</button> 
-      </a>
-      <a href="{{route('home')}}" class="bottom_spacing">
-        <button type="submit" class="brown_button_text">{{ __('Volver a la pagina de inicio') }}</button> 
-      </a>
-    </div>
-  
+  <div class="admin_page_buttons_containers top_spacing">
+    <a href="{{route('Treatment.create')}}" class="bottom_spacing">
+      <button type="submit" class="brown_button_text">{{ __('Añadir un tratamiento') }}</button> 
+    </a>
+    <a href="{{route('home')}}" class="bottom_spacing">
+      <button type="submit" class="brown_button_text">{{ __('Volver a la pagina de inicio') }}</button> 
+    </a>
+  </div>
 </div>
 @endsection

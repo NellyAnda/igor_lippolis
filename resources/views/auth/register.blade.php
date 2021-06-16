@@ -108,7 +108,7 @@
 						@enderror
 					</div>
 				
-					<div class="buttons_container align">
+					<div class="buttons_container align bottom_spacing">
 						<button type="submit" class="button_text">
 							{{ __('REGISTRAR') }}
 						</button>
