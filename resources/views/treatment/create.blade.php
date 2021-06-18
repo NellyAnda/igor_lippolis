@@ -14,7 +14,6 @@
   <p class="add_treatments_containers top_spacing bottom_spacing">Para que funcione, hay que rellenar todos los campos y elegir las opciones adecuadas.</p>
   <form method="POST" enctype="multipart/form-data" action="{{ route('Treatment.store') }}" class="form_container">
     @csrf
-    
     <div class="label_input_container">
       <label for="treatment_path">Elige un tratamiento</label>
       <select name="treatment_path" id="treatment_path" class="select">

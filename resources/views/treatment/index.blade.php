@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Trataminetos de la pagina de inicio')
+@section('pageTitle', 'Tratamientos de la pagina de inicio')
 
 @section('image_header')
 <div class="admin_background_picture">
