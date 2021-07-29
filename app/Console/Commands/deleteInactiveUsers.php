@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use App\User;
+use Illuminate\Support\Facades\Log;
+
 
 class deleteInactiveUsers extends Command
 {
@@ -40,6 +42,7 @@ class deleteInactiveUsers extends Command
 
     public function deleteInactiveUsers()
     {
+        Log::info('test');
         $date = \strtotime(Carbon::now().'- 3 years');
         $users = User::all()->where('last_login_at','>',$date);
 

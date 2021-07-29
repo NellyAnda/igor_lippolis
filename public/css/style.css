@@ -86,6 +86,15 @@ section {
   width: 100%;
 }
 
+.appointment_label {
+  font-family: 'Titillium Web';
+}
+
+.appointments_times {
+  margin-left: 100px;
+  
+}
+
 .admin_page_main_container {
   width: 100%;
 }
@@ -167,7 +176,7 @@ section {
 }
 
 .radio {
-  display: inline;
+  display: inline-block;
  }
 
 .showTopNav {
@@ -515,7 +524,13 @@ section {
 .acupuncture_treatment {
   display: flex;
   flex-direction: column-reverse;
+ 
 }
+
+.medicine_origin_container {
+  width: 100%;
+}
+
 
 .acupuncture_treatment:last-child,
 .medicine_origin_container:last-child {
@@ -1186,6 +1201,14 @@ section {
   
   .titles_footer {
     font-size: 24px;
+  }
+
+  .meridian_picture,
+  .abdominal_acupuncture_picture,
+  .tea_set_picture,
+  .bamboo_grove_picture {
+    width: 25%;
+    margin: 0 5%;
   }
   
   .admin_background_picture,

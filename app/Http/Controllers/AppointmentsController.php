@@ -18,7 +18,13 @@ class AppointmentsController extends Controller
     */
     public function index()
     {
-        //
+        
+        // Auth::user()->administrator === 1;
+    
+       
+        $appointments = Appointments::with('user')->get();
+        return view('appointments.index', ['appointments'=>$appointments]);
+
     }
     
     /**
@@ -28,7 +34,8 @@ class AppointmentsController extends Controller
     */
     public function create()
     {
-        return view('appointments.create');
+        $appointments = Appointments::with('user')->get();
+        return view('appointments.create', ['appointments'=>$appointments]);
     }
     
     /**
